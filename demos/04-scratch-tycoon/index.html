@@ -2,49 +2,53 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>04 · 刮刮大亨 Scratch Tycoon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>刮刮大亨 Scratch Tycoon</title>
+<link rel="stylesheet" href="../../shared/xg.css">
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; background: #12301f; color: #f2ffe9; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; }
-  h1 { margin: 10px 0 2px; font-size: 22px; }
-  .sub { font-size: 13px; opacity: .8; margin-bottom: 8px; text-align: center; max-width: 760px; }
-  #wrap { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
-  #cardBox { position: relative; }
-  canvas { border-radius: 12px; cursor: grab; touch-action: none; box-shadow: 0 6px 20px #0008; }
-  .panel { background: #1c4630; border-radius: 10px; padding: 12px; width: 280px; font-size: 14px; }
-  .panel h3 { margin: 4px 0 6px; font-size: 15px; color: #ffe066; }
-  button { width: 100%; padding: 8px; margin: 3px 0; border: 0; border-radius: 6px; background: #ffe066; color: #12301f; font-weight: 700; cursor: pointer; }
+  body { margin: 0; background: radial-gradient(circle at 30% 0, #1f6b40, #0b2416 70%); color: #f2ffe9; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; min-height: 100vh; }
+  #wrap { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; align-items: flex-start; padding: 52px 8px 12px; }
+  #cardBox { text-align: center; }
+  canvas { border-radius: 14px; cursor: grab; touch-action: none; box-shadow: 0 10px 30px #0009; display: block; }
+  .panel { background: #1c4630dd; border-radius: 12px; padding: 10px; width: 300px; font-size: 13px; }
+  .panel h3 { margin: 8px 0 4px; font-size: 14px; color: #ffe066; }
+  button { width: 100%; padding: 7px; margin: 2px 0; border: 0; border-radius: 8px; background: #ffe066; color: #12301f; font-weight: 800; cursor: pointer; font-size: 13px; touch-action: manipulation; }
+  button small { font-weight: 500; opacity: .8; }
   button:disabled { background: #3b5e48; color: #8fae98; cursor: not-allowed; }
   button.sel { outline: 3px solid #fff; }
   .row { display: flex; justify-content: space-between; }
-  #big { font-size: 26px; color: #ffe066; text-align: center; margin: 4px 0; }
-  #result { text-align: center; min-height: 24px; font-weight: 700; margin-top: 6px; }
-  #goal { height: 10px; background: #0b1f14; border-radius: 5px; overflow: hidden; }
-  #goalFill { height: 100%; background: #ffe066; width: 0; }
-  a { color: #ffe066; }
+  #big { font-size: 28px; color: #ffe066; text-align: center; font-weight: 900; }
+  #goal { height: 10px; background: #0b1f14; border-radius: 5px; overflow: hidden; margin: 4px 0; }
+  #goalFill { height: 100%; background: linear-gradient(90deg, #ffe066, #ff9f43); width: 0; }
+  #result { text-align: center; min-height: 26px; font-weight: 800; margin-top: 6px; font-size: 15px; }
+  #tiers { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
+  #ach { font-size: 12px; opacity: .85; line-height: 1.6; }
+  @media (max-height: 560px) { #wrap { padding-top: 46px; } }
 </style>
 </head>
 <body>
-<h1>🎟️ 刮刮大亨 Scratch Tycoon</h1>
-<div class="sub">用鼠标在卡片上来回刮开涂层，3 个相同金额 = 赢得该金额，🍀 让本卡奖金翻倍。用奖金升级幸运、刷子和自动刮卡机，<b>赚到 $1,000,000</b> 通关。（纯虚构游戏币）</div>
 <div id="wrap">
   <div id="cardBox"><canvas id="c" width="420" height="420"></canvas><div id="result"></div></div>
   <div class="panel">
     <div id="big">$0</div>
     <div id="goal"><div id="goalFill"></div></div>
-    <div class="row" style="margin-top:6px"><span>目标</span><b>$1,000,000</b></div>
+    <div class="row"><span>下一个里程碑</span><b id="nextGoal"></b></div>
     <div class="row"><span>已刮卡片</span><b id="count">0</b></div>
-    <h3>🛒 选择卡种（点击购买新卡）</h3>
+    <div class="row"><span>幸运星（转生加成）</span><b id="stars">0</b></div>
+    <h3>🛒 卡种（点击购买新卡）</h3>
     <div id="tiers"></div>
     <h3>⬆️ 升级</h3>
     <button id="uLuck"></button>
     <button id="uBrush"></button>
     <button id="uAuto"></button>
     <button id="uSpeed"></button>
-    <div style="font-size:12px;opacity:.7;margin-top:8px"><a href="../../index.html">← 返回目录</a></div>
+    <button id="uGold"></button>
+    <h3>🏅 成就</h3>
+    <div id="ach"></div>
   </div>
 </div>
+<script src="../../shared/xg.js"></script>
 <script src="game.js"></script>
 </body>
 </html>

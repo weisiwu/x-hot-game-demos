@@ -98,5 +98,36 @@ module.exports = {
       return [['触屏调价', o0 !== o1], ['触屏出价成交', (await h.ev('__demo.R.deals + __demo.R.heat')) >= 1]];
     },
   },
+
+  '04-scratch-tycoon': {
+    async play(h) {
+      await h.clickSel('#t0'); await sleep(100);
+      const bought = await h.ev('!!__demo.card && !__demo.card.done');
+      const r = await h.rect('#c');
+      for (let row = 0; row < 14; row++) {
+        const y = r.y + r.h * (0.2 + row * 0.055); const pts = [];
+        for (let i = 0; i <= 12; i++) pts.push([r.x + r.w * (0.05 + 0.9 * i / 12), y]);
+        await h.drag(pts, 8);
+        if (await h.ev('__demo.card.done')) break;
+      }
+      const done = await h.ev('__demo.card.done');
+      await h.ev('__demo.S.money = 500'); await sleep(250);
+      await h.clickSel('#uAuto'); await sleep(3500);
+      return [['购买刮刮卡', bought], ['鼠标刮开后自动结算', done], ['自动刮卡机工作', (await h.ev('__demo.S.cards')) >= 2]];
+    },
+    async finish(h) { const before = await h.ev('__demo.G.state + " | " + (document.querySelector(".xg-overlay.show h2") || {}).textContent'); await h.ev('__demo.S.money = 2e6; __demo.S.wonOnce = false'); await sleep(600); const ok = await h.ev('__demo.S.wonOnce'); if (!ok) console.log('    [debug] before:', before, ' after:', await h.ev('__demo.G.state + " | " + (document.querySelector(".xg-overlay.show h2") || {}).textContent')); return [['达到百万触发通关', ok]]; },
+    async afterReload(h) { return [['金钱/升级/卡片数已保存', await h.ev('__demo.S.money >= 1e6 && __demo.S.auto >= 1 && __demo.S.cards >= 2')]]; },
+    async touch(h) {
+      await h.tapSel('#t0'); await sleep(100);
+      const r = await h.rect('#c');
+      for (let row = 0; row < 14; row++) {
+        const y = r.y + r.h * (0.2 + row * 0.055); const pts = [];
+        for (let i = 0; i <= 12; i++) pts.push([r.x + r.w * (0.05 + 0.9 * i / 12), y]);
+        await h.touchDrag(pts);
+        if (await h.ev('__demo.card && __demo.card.done')) break;
+      }
+      return [['手指刮开卡片', await h.ev('!!__demo.card && __demo.card.done')]];
+    },
+  },
 };
 module.exports.sleep = sleep; module.exports.canvasPt = canvasPt; module.exports.vbtn = vbtn;
