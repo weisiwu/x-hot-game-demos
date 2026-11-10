@@ -1,0 +1,50 @@
+{
+ "09-felt": [
+  {
+   "job_id": "d1f7d187-f133-471a-b8bb-95cd7d8de884",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-c-backgrounds/09-felt.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3023679,
+    "sha256": "50e7a18a52c4817ea0c2a9e3c3358437e807a22d4cd4965f030198882fa086a5"
+   }
+  }
+ ],
+ "11-cliff": [
+  {
+   "job_id": "8f6e2ea1-884e-4ae7-a82a-06cdfcc4af6c",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-c-backgrounds/11-cliff.png",
+    "size": [
+     1024,
+     1536
+    ],
+    "bytes": 3976341,
+    "sha256": "4fdf514fdbabe892e8579bf5790fb89e96dc54aedcf67fd62daccab7cee5a2c7"
+   }
+  }
+ ],
+ "12-deck": [
+  {
+   "job_id": "f78a009c-8184-4e27-9dec-2e46b31841c6",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-c-backgrounds/12-deck.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3182060,
+    "sha256": "84de79d76ab2984a468daf88f4c0f12f49596175e97f06e2fac0a38bedfda370"
+   }
+  }
+ ]
+}

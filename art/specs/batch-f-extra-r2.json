@@ -1,0 +1,12 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-f-extra",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "12-mech-sniper",
+   "prompt": "Square icon of a sniper mech with a very long railgun barrel and a scope visor, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  }
+ ]
+}

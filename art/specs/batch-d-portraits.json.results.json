@@ -1,0 +1,82 @@
+{
+ "03-cust-normal": [
+  {
+   "job_id": "62d9322e-0667-4eee-8322-ff846156eaa6",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/03-cust-normal.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2587914,
+    "sha256": "30a5b3d6707d6c69d4db69c3085e568ad7816a76ae75000dae66a2b0ec90f5ae"
+   }
+  }
+ ],
+ "03-cust-desperate": [
+  {
+   "job_id": "062d8222-35aa-4499-ae41-77f9c403e432",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/03-cust-desperate.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2505182,
+    "sha256": "03f0f116b22a6d71361f5c3da08350d9d54fc5ad23716c76ae7babb427d3021f"
+   }
+  }
+ ],
+ "03-cust-haggler": [
+  {
+   "job_id": "0edc1a2a-1670-4174-b9ce-e1ce4a61d822",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/03-cust-haggler.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2738233,
+    "sha256": "beff8136fb445fe46bd0eccc06bd9001f8a39531c5e74387fb64e660e7e0848e"
+   }
+  }
+ ],
+ "03-cust-thief": [
+  {
+   "job_id": "3e5395cd-918b-44b0-a746-65ee2073302f",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/03-cust-thief.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2441466,
+    "sha256": "b3c0ef28067654980ac7cdc3158f38fb5e0e88a5e93fd0fe9914fb6df7221f61"
+   }
+  }
+ ],
+ "03-cust-regular": [
+  {
+   "job_id": "f6e1549a-af7c-4d47-b7c7-41e7d8ed4e85",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/03-cust-regular.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2515138,
+    "sha256": "29a566e873ba0991b56b0a8a5603beafa27f6ef18c49136c42c2341a1f35f8a9"
+   }
+  }
+ ]
+}

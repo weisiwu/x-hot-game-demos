@@ -1,0 +1,12 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-a-covers-01-06",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "06-cover",
+   "prompt": "Key art for a co-op raft game: two cute green frogs on a small wooden raft propelled by fizzing soda bottles shooting bubbly jets, racing upstream on a blue river with rocks and lily pads, lush green banks. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  }
+ ]
+}

@@ -262,7 +262,8 @@
     $('bScan').textContent = `🔍 扫描（剩 ${R.scans}）`;
     document.querySelectorAll('[data-d]').forEach(b => b.disabled = !has);
     if (c) {
-      $('cEmoji').textContent = c.face + (c.type === 'buyer' ? '💵' : c.it.emoji);
+      const portrait = { normal: 'normal', desperate: 'desperate', haggler: 'haggler', thief: 'thief', regular: 'regular', undercover: 'thief', buyer: 'buyer' }[c.type];
+      $('cEmoji').innerHTML = `<img src="../../assets/03-night-market-pawn/cust-${portrait}.webp" alt=""><span>${c.type === 'buyer' ? '💵' : c.it.emoji}</span>`;
       $('cType').textContent = `${c.name} · ${c.T.label}`;
       const item = c.type === 'buyer' ? c.want : c;
       $('custTitle').textContent = c.type === 'buyer' ? '🛍 买家' : '📦 卖家';
@@ -287,7 +288,7 @@
 
   const G = XG.game({
     id: '03-night-market-pawn', title: '🏮 夜市旧货摊', subtitle: '在霓虹夜市摆摊 7 个晚上：低价收货、高价卖出，识破仿品和赃物，别被便衣抓到，交得起摊位费。',
-    cover: '../../assets/03-night-market-pawn/cover.svg', music: 'night', save: SAVE, noMKey: false,
+    cover: '../../assets/03-night-market-pawn/cover.webp', music: 'night', save: SAVE, noMKey: false,
     tutorial: [
       { title: '收货', text: '卖家报出要价，用 <b>±10 / ±50</b> 调整出价后点“出价收购”。出价低于对方心理底价会被还价，耐心 ❤️ 用完就走人。快捷键：↑↓ 调价，Enter 出价。', touch: '点按钮调价、出价。' },
       { title: '卖货', text: '库存里有货时会来<b>买家</b>。给他报价，报价不超过他心里的上限就能成交。声誉越高，买家愿意出的价越高。', touch: '' },

@@ -2,28 +2,29 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>12 · 机甲布阵 Mech Formation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>机甲布阵 Mech Formation</title>
+<link rel="stylesheet" href="../../shared/xg.css">
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; background: #11161c; color: #e7edf3; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; }
-  h1 { margin: 10px 0 2px; font-size: 22px; }
-  .sub { font-size: 13px; opacity: .8; margin-bottom: 6px; text-align: center; max-width: 900px; }
-  #wrap { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-  canvas { border-radius: 10px; cursor: pointer; max-width: 100%; }
-  #side { width: 250px; background: #1b232c; border-radius: 10px; padding: 12px; font-size: 14px; }
-  .row { display: flex; justify-content: space-between; margin: 3px 0; }
-  button { width: 100%; padding: 8px; margin: 3px 0; border: 0; border-radius: 6px; background: #2d3b48; color: #e7edf3; cursor: pointer; text-align: left; font-size: 13px; }
+  body { margin: 0; background: radial-gradient(circle at 50% 0, #1f2a38, #0b0f15 70%); color: #e7edf3; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+  #wrap { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; align-items: flex-start; padding: 50px 6px 10px; }
+  canvas { border-radius: 12px; cursor: pointer; touch-action: none; display: block; box-shadow: 0 8px 30px #0009; }
+  #side { width: 270px; background: #1b232cdd; border-radius: 12px; padding: 10px; font-size: 13px; }
+  .row { display: flex; justify-content: space-between; margin: 2px 0; }
+  .row b { color: #ffcc4d; }
+  #shop { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 6px; }
+  button { padding: 6px; border: 0; border-radius: 8px; background: #2d3b48; color: #e7edf3; cursor: pointer; font-size: 12px; text-align: left; touch-action: manipulation; display: flex; gap: 6px; align-items: center; }
+  button img { width: 34px; height: 34px; border-radius: 8px; flex: none; }
   button.sel { outline: 2px solid #ffcc4d; background: #3b4d5e; }
-  button.go { background: #ffcc4d; color: #222; font-weight: 800; text-align: center; font-size: 15px; }
+  button.go { background: #ffcc4d; color: #222; font-weight: 800; justify-content: center; font-size: 15px; width: 100%; margin-top: 6px; padding: 10px; }
+  button.wide { width: 100%; margin-top: 4px; justify-content: center; }
   button:disabled { opacity: .4; cursor: not-allowed; }
-  #log { font-size: 13px; min-height: 40px; color: #ffcc4d; margin-top: 6px; }
-  a { color: #8fc8ff; }
+  #syn { font-size: 12px; line-height: 1.6; margin-top: 6px; color: #9fd0ff; min-height: 20px; }
+  #log { font-size: 12px; min-height: 34px; color: #ffcc4d; margin-top: 6px; line-height: 1.4; }
 </style>
 </head>
 <body>
-<h1>🤖 机甲布阵 Mech Formation</h1>
-<div class="sub">准备阶段：在右侧选择机甲，点击<b>下半场</b>格子部署；对已有同类机甲再点一次 = 升级；右键（或选中“回收”后点击）出售。点“开战”后自动战斗。打赢 <b>7 波</b>敌军获胜，基地耐久归零失败。</div>
 <div id="wrap">
   <canvas id="c" width="560" height="560"></canvas>
   <div id="side">
@@ -32,12 +33,14 @@
     <div class="row"><span>🏰 基地耐久</span><b id="hp"></b></div>
     <div class="row"><span>部署上限</span><b id="cap"></b></div>
     <div id="shop"></div>
-    <button id="bSell">♻️ 回收模式（返还 70%）</button>
+    <div id="syn"></div>
+    <button id="bSell" class="wide">♻️ 回收模式（返还 70%）</button>
+    <button id="bSpeed" class="wide">⏩ 战斗速度 ×1</button>
     <button id="bGo" class="go">⚔️ 开战</button>
     <div id="log"></div>
-    <div style="font-size:12px;opacity:.7;margin-top:8px"><a href="../../index.html">← 返回目录</a></div>
   </div>
 </div>
+<script src="../../shared/xg.js"></script>
 <script src="game.js"></script>
 </body>
 </html>

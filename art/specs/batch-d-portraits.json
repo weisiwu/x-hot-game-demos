@@ -1,0 +1,108 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-d-portraits",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "03-cust-normal",
+   "prompt": "Square portrait avatar of a friendly ordinary middle-aged man in a casual jacket, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "03-cust-desperate",
+   "prompt": "Square portrait avatar of a nervous worried young woman clutching her bag, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "03-cust-haggler",
+   "prompt": "Square portrait avatar of a smug shrewd bargaining uncle with a gold tooth and folded arms, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "03-cust-thief",
+   "prompt": "Square portrait avatar of a shady person in a hoodie and sunglasses glancing sideways, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "03-cust-regular",
+   "prompt": "Square portrait avatar of a cheerful elderly grandma regular customer with a shopping basket, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "03-cust-buyer",
+   "prompt": "Square portrait avatar of a stylish young collector holding cash, excited, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "10-caller-service",
+   "prompt": "Square portrait avatar of a overly polite fake customer service agent with a headset, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "10-caller-police",
+   "prompt": "Square portrait avatar of a fake police officer with an exaggerated stern face and a toy badge, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "10-caller-mentor",
+   "prompt": "Square portrait avatar of a too-cheerful online part-time job mentor holding a phone, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "10-caller-prize",
+   "prompt": "Square portrait avatar of a flashy prize announcer with confetti, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "10-caller-friend",
+   "prompt": "Square portrait avatar of a mysterious 'old classmate' with a hat and fake mustache, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "10-caller-invest",
+   "prompt": "Square portrait avatar of a slick crypto investment guru in a shiny suit with charts, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "12-mech-guard",
+   "prompt": "Square icon of a heavy shield guard mech with a big riot shield, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "12-mech-gunner",
+   "prompt": "Square icon of a rapid-fire gunner mech with twin barrels, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "12-mech-artillery",
+   "prompt": "Square icon of a artillery mech with a large mortar cannon on its back, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "12-mech-raider",
+   "prompt": "Square icon of a fast lightweight raider mech with energy blades, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "12-mech-medic",
+   "prompt": "Square icon of a small repair drone mech with wrench arms and a green cross light, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  }
+ ]
+}

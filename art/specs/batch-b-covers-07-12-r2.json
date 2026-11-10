@@ -1,0 +1,24 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-b-covers-07-12",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "10-cover",
+   "prompt": "Key art for an anti-scam phone hotline game: a friendly volunteer with a headset at a desk in a cozy call center booth, a retro phone ringing with exaggerated cartoon ringing lines, a shield icon shape made of light, sticky notes on the wall. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "11-cover",
+   "prompt": "Key art for a stamina climbing game: a small cute climber with a backpack clinging to a tall rocky cliff with handholds, snowy summit and red flag far above, clouds and wind swirls, dramatic vertical composition. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "12-cover",
+   "prompt": "Key art for a mech auto-battler strategy game: a squad of chunky cute toy-like battle mechs (shield mech, gunner, artillery, fast raider, repair drone) facing an enemy squad on a grid battlefield, sci-fi lighting. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  }
+ ]
+}

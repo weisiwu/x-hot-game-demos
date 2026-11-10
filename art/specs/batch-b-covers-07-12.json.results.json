@@ -1,0 +1,50 @@
+{
+ "07-cover": [
+  {
+   "job_id": "4e4d4f98-e8fa-450b-945e-bdf597a594ad",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-b-covers-07-12/07-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3770881,
+    "sha256": "745f451cc2c53e3c5373bc7ed0e86545e22ae25759f4985df81072a8ab9b8c00"
+   }
+  }
+ ],
+ "08-cover": [
+  {
+   "job_id": "8c3f1b2d-267b-45be-9058-6dce22d35751",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-b-covers-07-12/08-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3947792,
+    "sha256": "9f867c2416a67a105cb9a51f14581f9f47c654eb2ba1f562937f30b91618a958"
+   }
+  }
+ ],
+ "09-cover": [
+  {
+   "job_id": "40904483-4fff-4e3d-89dd-e9b6f90b5b9a",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-b-covers-07-12/09-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3832402,
+    "sha256": "2e4032cf2017f27102338bb36bbd46843212efb23b217a5acfbc4dd86b7a561c"
+   }
+  }
+ ]
+}

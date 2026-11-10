@@ -1,0 +1,12 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-e-retry",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "07-cover-v2",
+   "prompt": "Key art for an arcade beach volleyball game: two dome-shaped jelly slime characters (perfect half-circle bodies sitting on the sand, no arms, no legs, simple big eyes), one orange and one teal, on opposite sides of a volleyball net on a sunny sandy beach at sunset, a volleyball flying high above the net, ocean behind. Original character design. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  }
+ ]
+}

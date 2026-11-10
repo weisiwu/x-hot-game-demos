@@ -1,0 +1,66 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-c-backgrounds",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "01-ground",
+   "prompt": "Top-down view of farm dirt ground with a few scattered straw pieces and small pebbles, seamless even lighting, texture for a game background, flat top-down orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "02-lawn",
+   "prompt": "Top-down view of a neatly mowed green park lawn with subtle mowing stripes and a few tiny flowers, seamless even lighting, game background texture, flat top-down orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "06-grass",
+   "prompt": "Seamless tileable top-down grass texture with small clovers and tiny pebbles, even lighting, game texture, flat orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "07-beach",
+   "prompt": "Side view game background of a tropical beach at sunset: gradient orange sky with soft clouds, calm turquoise sea across the middle, smooth golden sand across the bottom third, a few palm trees at the far edges, empty center area. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "08-arena",
+   "prompt": "Seamless tileable top-down dark magical stone floor texture with faint glowing purple runes, even lighting, game texture, flat orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "09-felt",
+   "prompt": "Seamless green casino felt table texture with subtle fabric grain and a soft vignette, game background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "11-cliff",
+   "prompt": "Vertical game background of a tall grey granite mountain cliff face with cracks and small ledges, snowy peaks and blue sky at the top, mist at the bottom, side view, empty climbable middle. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1536
+  },
+  {
+   "name": "12-deck",
+   "prompt": "Top-down view of a sci-fi metal battle arena floor with panel lines and hazard stripes along the edges, even lighting, game background, flat orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "05-floor",
+   "prompt": "Top-down view of a warm wooden classroom floor with parquet planks, even lighting, seamless game background texture, flat orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "03-backdrop",
+   "prompt": "Wide blurred background of an Asian night market street at night with red lanterns, neon signs and warm bokeh lights, dark purple tones, suitable as a website background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  }
+ ]
+}

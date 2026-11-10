@@ -1,0 +1,82 @@
+{
+ "01-ground": [
+  {
+   "job_id": "e2838473-661e-4ce8-95f1-e462b4c79470",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-c-backgrounds/01-ground.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3078673,
+    "sha256": "1488922df76f738ad26a4868bc30d494f4e7c623450fb067f031f1a2e9312864"
+   }
+  }
+ ],
+ "02-lawn": [
+  {
+   "job_id": "a368faab-8df8-4082-99a9-9b37e7f91ab6",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-c-backgrounds/02-lawn.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3503164,
+    "sha256": "66a48f004a3cf2ccbb96c6100224f141bf3c78fe603629647d6b2c988cd9ec09"
+   }
+  }
+ ],
+ "06-grass": [
+  {
+   "job_id": "bd589031-9d6b-4ed4-a224-0e3654860bb1",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-c-backgrounds/06-grass.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2450055,
+    "sha256": "9693591c70c60967442dd5d0cde9a97ff033188db6d1c3fb72e190afb292e01c"
+   }
+  }
+ ],
+ "07-beach": [
+  {
+   "job_id": "bfe7f8fc-e731-4b4f-96a2-c12b9b66d425",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-c-backgrounds/07-beach.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3137339,
+    "sha256": "19fc336f205c7e510d69058397ee93dce975117c69e830fd9c8141049540a980"
+   }
+  }
+ ],
+ "08-arena": [
+  {
+   "job_id": "d254b148-6844-47fa-8e2f-5d666d5adced",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-c-backgrounds/08-arena.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2482724,
+    "sha256": "c898631f5fa23e695e580abffc7701081d4769a4df9cd01cece6d84d485352d8"
+   }
+  }
+ ]
+}

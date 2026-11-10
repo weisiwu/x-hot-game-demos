@@ -1,0 +1,12 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-b-covers-07-12",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "12-cover",
+   "prompt": "Key art for a mech auto-battler strategy game: a squad of chunky cute toy-like battle mechs (shield mech, gunner, artillery, fast raider, repair drone) facing an enemy squad on a grid battlefield, sci-fi lighting. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  }
+ ]
+}

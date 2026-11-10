@@ -1,0 +1,18 @@
+{
+ "10-caller-mentor": [
+  {
+   "job_id": "3b7cd552-d000-4772-a2f6-945098c6f438",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/10-caller-mentor.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2265363,
+    "sha256": "60d20a747fdb0f017f156beb752924eb367646dbe555fa9c46c26b7d8332be76"
+   }
+  }
+ ]
+}

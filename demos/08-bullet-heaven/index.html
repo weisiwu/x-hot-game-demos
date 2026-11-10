@@ -2,22 +2,17 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>08 · 弹幕天堂 Bullet Heaven Mini</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>弹幕天堂 Mini · Bullet Heaven</title>
+<link rel="stylesheet" href="../../shared/xg.css">
 <style>
-  body { margin: 0; background: #07070d; color: #fff; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; }
-  h1 { margin: 10px 0 2px; font-size: 22px; }
-  .sub { font-size: 13px; opacity: .8; margin-bottom: 6px; text-align: center; max-width: 900px; }
-  canvas { border-radius: 10px; max-width: 100%; }
-  kbd { background: #fff2; padding: 1px 6px; border-radius: 4px; }
-  a { color: #b9a6ff; }
+  body { margin: 0; background: #07070d; color: #fff; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; overflow: hidden; }
+  canvas { border-radius: 12px; margin-top: 6px; touch-action: none; display: block; box-shadow: 0 8px 30px #000; }
 </style>
 </head>
 <body>
-<h1>✨ 弹幕天堂 Bullet Heaven Mini</h1>
-<div class="sub"><kbd>WASD</kbd>/方向键 移动，武器自动攻击。捡起 💎 升级，从 3 张卡里选强化（点击或按 <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd>）。<b>坚持 3 分钟</b>并击败最后的大怪即胜利。结算获得的星币可在开始界面买永久强化。</div>
 <canvas id="c" width="900" height="600"></canvas>
-<div style="font-size:12px;opacity:.7;margin:6px"><a href="../../index.html">← 返回目录</a></div>
+<script src="../../shared/xg.js"></script>
 <script src="game.js"></script>
 </body>
 </html>

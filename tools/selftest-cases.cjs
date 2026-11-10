@@ -223,5 +223,32 @@ module.exports = {
       return [['触屏 ▶ 移动', x1 > x0 + 30], ['触屏「跳」', vy < 0], ['双人显示两组共 8 个按钮', vis === 8], ['双人同时操作两边', a1[0] > a0[0] + 20 && a1[1] < a0[1] - 20]];
     },
   },
+
+  '08-bullet-heaven': {
+    async play(h) {
+      await h.hold('KeyD', 800); await sleep(3500);
+      const g = await h.ev('({ x: __demo.R.p.x, kills: __demo.R.kills, shots: __demo.R.shots.length })');
+      await h.ev('__demo.R.xp = __demo.R.need'); await sleep(200);
+      const lv = await h.ev('__demo.mode');
+      await h.press('Digit1'); await sleep(150);
+      return [['WASD 移动', g.x > 50], ['自动攻击', g.kills > 0 || g.shots > 0], ['升级三选一', lv === 'levelup' && (await h.ev('__demo.mode')) === 'play']];
+    },
+    async finish(h) {
+      await h.ev('(() => { const R = __demo.R; R.t = R.S.time - 0.3; R.p.hp = R.p.maxHp = 1e6; R.dmgMul = 400; })()');
+      const ok = await h.waitFor('__demo.G.state === "end" || __demo.mode === "levelup"', 30000, 300);
+      for (let i = 0; i < 20 && (await h.ev('__demo.G.state')) !== 'end'; i++) { if ((await h.ev('__demo.mode')) === 'levelup') await h.press('Digit1'); await sleep(500); }
+      return [['Boss 出现并被击败', ok && (await h.ev('__demo.SV.clears.S0 >= 1'))]];
+    },
+    async afterReload(h) { return [['星币与通关记录已保存（修复 file:// 存档问题后走统一存档）', await h.ev('__demo.SV.coins > 0 && __demo.SV.clears.S0 >= 1 && __demo.SV.unlocked >= 2')]]; },
+    async touch(h) {
+      const r = await h.rect('#c'); const cx = r.x + r.w * 0.5, cy = r.y + r.h * 0.6;
+      const x0 = await h.ev('__demo.R.p.x');
+      await h.touchDrag([[cx, cy], [cx + 25, cy], [cx + 50, cy]], 700);
+      const x1 = await h.ev('__demo.R.p.x');
+      await h.ev('__demo.R.xp = __demo.R.need'); await sleep(250);
+      const p = await canvasPt(h, 225, 300, '#c'); await h.tap(p[0], p[1]); await sleep(150);
+      return [['触屏摇杆移动', x1 > x0 + 30], ['点击升级卡片', (await h.ev('__demo.mode')) === 'play']];
+    },
+  },
 };
 module.exports.sleep = sleep; module.exports.canvasPt = canvasPt; module.exports.vbtn = vbtn;

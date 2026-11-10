@@ -1,0 +1,18 @@
+{
+ "07-cover-v2": [
+  {
+   "job_id": "a53b11d1-28ce-46b9-8ed9-6bf067447511",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-e-retry/07-cover-v2.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3871546,
+    "sha256": "da0227a73cd9c91fb1a3afad9283e3ea7416c8952e66a8fe4423b0eb6378644e"
+   }
+  }
+ ]
+}

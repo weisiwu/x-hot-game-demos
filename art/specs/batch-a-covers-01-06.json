@@ -1,0 +1,42 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-a-covers-01-06",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "01-cover",
+   "prompt": "Key art for a casual game about finding a needle in a giant haystack: a huge golden haystack on a sunny farm field at golden hour, a tiny shiny silver needle glinting among the straw, a wooden rake and a magnifying glass leaning nearby, scattered straw. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "02-cover",
+   "prompt": "Key art for a cozy co-op cleaning game: two cute round chibi park sweepers with brooms sweeping piles of orange and red autumn leaves in a city park with maple trees, a small wooden compost station, a little round robot vacuum helping. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "03-cover",
+   "prompt": "Key art for a night market pawn shop game: a cozy second-hand goods stall at an Asian night market under red paper lanterns and neon signs, vintage camera, pocket watch, record player and pearl necklace on the counter, a shopkeeper with a jeweler's loupe. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "04-cover",
+   "prompt": "Key art for a scratch card tycoon game: an ornate golden lottery scratch card half scratched with a coin, sparkling silver foil flakes, four-leaf clovers and diamonds, piles of gold coins, green felt background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "05-cover",
+   "prompt": "Key art for a mischievous classroom prank game: a bright cartoon school classroom, a teacher writing on a green chalkboard with her back turned, a sneaky grinning kid tiptoeing between desks holding a whoopee cushion, classmates giggling. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "06-cover",
+   "prompt": "Key art for a co-op raft game: two cute green frogs on a small wooden raft propelled by fizzing soda bottles shooting bubbly jets, racing upstream on a blue river with rocks and lily pads, lush green banks. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  }
+ ]
+}

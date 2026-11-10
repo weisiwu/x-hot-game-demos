@@ -1,0 +1,50 @@
+{
+ "03-cust-buyer": [
+  {
+   "job_id": "3788a6c6-0690-4cb5-a039-a5c506ce70f2",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/03-cust-buyer.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2560917,
+    "sha256": "f7c44966d0b0afdab24cd16b363178921ab18dde8c80c00738623e252e778bed"
+   }
+  }
+ ],
+ "10-caller-service": [
+  {
+   "job_id": "32ee6f11-4388-4067-b96e-f23c5221c488",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/10-caller-service.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2281977,
+    "sha256": "c91b63e6c18c0a7eae9f20247e7c37206331636a78e5c36e928c6609898f0c37"
+   }
+  }
+ ],
+ "10-caller-police": [
+  {
+   "job_id": "efa89f00-6f17-4346-8b15-2f6794b06544",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/10-caller-police.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 2280519,
+    "sha256": "f1f0d3da49fcbb22b2e9b6e300e5cfc1af0528beb3f1af025e9746cd2b3a741c"
+   }
+  }
+ ]
+}

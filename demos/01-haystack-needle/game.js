@@ -10,6 +10,7 @@
   const CELL = 20, GW = Math.ceil(W / CELL), GH = Math.ceil(H / CELL);
   const COLORS = ['#e8c565', '#d9b04e', '#c99a3a', '#f2d98a', '#b98a35'];
   const STRAWS_PER_COIN = 45;
+  const groundImg = XG.img('../../assets/01-haystack-needle/ground.webp', () => { st.dirty = true; });
 
   // 关卡：稻草数、针数、钉子（干扰物）数、是否有风、时间限制（秒）
   const LEVELS = [
@@ -123,6 +124,7 @@
     const g = octx.createRadialGradient(W / 2, H / 2, 50, W / 2, H / 2, W * 0.7);
     g.addColorStop(0, '#6b5032'); g.addColorStop(1, '#3e2c19');
     octx.fillStyle = g; octx.fillRect(0, 0, W, H);
+    if (XG.ready(groundImg)) { octx.globalAlpha = 0.9; octx.drawImage(groundImg, 0, 0, W, H); octx.globalAlpha = 1; }
     octx.fillStyle = 'rgba(0,0,0,.18)'; octx.beginPath(); octx.ellipse(W / 2, H * 0.55, W * 0.48, H * 0.44, 0, 0, Math.PI * 2); octx.fill();
     // 金属物（底层）
     for (const m of metals) {
@@ -299,7 +301,7 @@
   // ---------- 外壳 ----------
   const G = XG.game({
     id: '01-haystack-needle', title: '🪡 草堆寻针', subtitle: '10 个越来越大的草堆，拨开稻草找出所有的针。小心生锈的钉子和吹回稻草的风！',
-    cover: '../../assets/01-haystack-needle/cover.svg', music: 'calm', save: SAVE,
+    cover: '../../assets/01-haystack-needle/cover.webp', music: 'calm', save: SAVE,
     tutorial: [
       { title: '拨开稻草', text: '在草堆上<b>按住并拖动</b>，光标圈内最上层的稻草会被拨走。拨开的稻草会自动换成 🪙 金币。', touch: '手指按住草堆拖动即可。' },
       { title: '找到针', text: '看到银色的针以后，<b>单击它</b>（不要拖动）。针上最多只能压着 1 根稻草才算拿到。露出来的针会偶尔闪光。', touch: '轻点针的位置。' },

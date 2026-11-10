@@ -1,0 +1,18 @@
+{
+ "12-mech-sniper": [
+  {
+   "job_id": "255d1259-2dfc-4799-b863-fcf59a16b70a",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-f-extra/12-mech-sniper.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1713859,
+    "sha256": "74d14f0244079d38d1c200c91eec7122bb74e9939f332d6a129b214da454bc20"
+   }
+  }
+ ]
+}

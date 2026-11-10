@@ -1,0 +1,82 @@
+{
+ "01-cover": [
+  {
+   "job_id": "eb0e4a01-f32c-47a9-8f3c-7d41f48c7a17",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-a-covers-01-06/01-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 4299200,
+    "sha256": "5e564f0dd5743bd75db3b53ff283e1339f8bde99efb6ecbd93c34b7e2fdaf77a"
+   }
+  }
+ ],
+ "02-cover": [
+  {
+   "job_id": "1227dc5b-95d3-404f-82a9-66256cb42a98",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-a-covers-01-06/02-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 4286575,
+    "sha256": "a4794a00463a8201610b9cb884e69e82b5aa7fbe64deb45aedf7b6e67c28bd3f"
+   }
+  }
+ ],
+ "03-cover": [
+  {
+   "job_id": "b9c9ef6a-190c-417b-bffc-890f1c99047d",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-a-covers-01-06/03-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 4079008,
+    "sha256": "1be84d3d6eecaac190943eb48831100e73642213fa7d0c7682ae41ca2b890814"
+   }
+  }
+ ],
+ "04-cover": [
+  {
+   "job_id": "af2d2c1e-0569-42ff-9b16-897eb6ef1405",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-a-covers-01-06/04-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 4112324,
+    "sha256": "eafb6c69d2eef3ea687d2bb45c96490496deb9a4736b87246d8c07829f10e017"
+   }
+  }
+ ],
+ "05-cover": [
+  {
+   "job_id": "24ceff0d-8349-486b-880d-e530bb2ebb40",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-a-covers-01-06/05-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3827383,
+    "sha256": "0fd60f1342f2c09edf294ff5506588712337c8bd7a3e6c590f464aa799fafe32"
+   }
+  }
+ ]
+}

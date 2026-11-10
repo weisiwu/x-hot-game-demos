@@ -1,0 +1,18 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-c-backgrounds",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "05-floor",
+   "prompt": "Top-down view of a warm wooden classroom floor with parquet planks, even lighting, seamless game background texture, flat orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "03-backdrop",
+   "prompt": "Wide blurred background of an Asian night market street at night with red lanterns, neon signs and warm bokeh lights, dark purple tones, suitable as a website background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  }
+ ]
+}

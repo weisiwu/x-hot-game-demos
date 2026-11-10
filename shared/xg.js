@@ -292,6 +292,9 @@
     return resize;
   };
   XG.landscape = () => window.innerWidth >= window.innerHeight;
+  // 加载图片素材：返回 Image，加载完成后回调（画布绘制前用 XG.ready(img) 判断）
+  XG.img = (src, onload) => { const im = new Image(); im.onload = () => onload && onload(im); im.src = src; return im; };
+  XG.ready = im => !!(im && im.complete && im.naturalWidth);
   XG.canvasPos = (canvas, e) => { const r = canvas.getBoundingClientRect(); return { x: (e.clientX - r.left) * canvas.width / r.width, y: (e.clientY - r.top) * canvas.height / r.height }; };
 
   /* ---------------- toast ---------------- */

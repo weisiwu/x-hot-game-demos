@@ -1,0 +1,34 @@
+{
+ "05-floor": [
+  {
+   "job_id": "cdb5bec6-ec0c-41ac-8c1a-47d37371b246",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-c-backgrounds/05-floor.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3259951,
+    "sha256": "0f246301ad3ca0b83bcf73e13fa4f11683288862fb0e4a3f7e031f4daa59e2f1"
+   }
+  }
+ ],
+ "03-backdrop": [
+  {
+   "job_id": "977e52c1-1766-464f-b21f-7a812b719e75",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-c-backgrounds/03-backdrop.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3709881,
+    "sha256": "6a8d48960de533b74a4f1fa2ef73f8be81934937f90acf97022cfcba8fa0d787"
+   }
+  }
+ ]
+}

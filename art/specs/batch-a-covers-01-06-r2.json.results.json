@@ -1,0 +1,18 @@
+{
+ "06-cover": [
+  {
+   "job_id": "7f2ce049-b3ff-43b7-a11f-ec08258d92f9",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-a-covers-01-06/06-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 4383906,
+    "sha256": "28b099a94a25b828f58816678e824c782e3b3be4359fa98f47e8d86a610be050"
+   }
+  }
+ ]
+}

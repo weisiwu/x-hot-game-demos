@@ -10,6 +10,7 @@
   const leafCanvas = document.createElement('canvas'); leafCanvas.width = GW; leafCanvas.height = GH;
   const lctx = leafCanvas.getContext('2d');
   const $ = id => document.getElementById(id);
+  const lawnImg = XG.img('../../assets/02-leaf-sweepers/lawn.webp');
 
   const LEVELS = [
     { name: '社区小公园', trees: 3, density: 0.55, limit: 240, wind: 0, puddles: 0, target: 0.9 },
@@ -226,12 +227,12 @@
   function draw() {
     const d = img.data;
     for (let i = 0; i < leaf.length; i++) {
-      const v = leaf[i], g = lawn[i] ? [74, 135, 58] : [196, 178, 138], c = LEAF_RGB[hue[i]];
-      const a = Math.min(1, v * 1.4);
-      const stripe = lawn[i] && ((i / GW | 0) % 6 < 3) ? 8 : 0;
-      d[i * 4] = g[0] + stripe + (c[0] - g[0]) * a; d[i * 4 + 1] = g[1] + stripe + (c[1] - g[1]) * a; d[i * 4 + 2] = g[2] + (c[2] - g[2]) * a; d[i * 4 + 3] = 255;
+      const v = leaf[i], c = LEAF_RGB[hue[i]], a = Math.min(1, v * 1.4);
+      if (lawn[i]) { d[i * 4] = c[0]; d[i * 4 + 1] = c[1]; d[i * 4 + 2] = c[2]; d[i * 4 + 3] = a * 255; }
+      else { const g = [205, 186, 145]; d[i * 4] = g[0] + (c[0] - g[0]) * a; d[i * 4 + 1] = g[1] + (c[1] - g[1]) * a; d[i * 4 + 2] = g[2] + (c[2] - g[2]) * a; d[i * 4 + 3] = 235; }
     }
     lctx.putImageData(img, 0, 0);
+    if (XG.ready(lawnImg)) ctx.drawImage(lawnImg, 0, 0, W, H); else { ctx.fillStyle = '#4a873a'; ctx.fillRect(0, 0, W, H); }
     ctx.imageSmoothingEnabled = true; ctx.drawImage(leafCanvas, 0, 0, W, H);
     for (const p of st.puddles) { ctx.fillStyle = 'rgba(90,150,210,.55)'; ctx.beginPath(); ctx.ellipse(p.x, p.y, p.rx, p.ry, 0, 0, Math.PI * 2); ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.35)'; ctx.lineWidth = 2; ctx.stroke(); }
     // 堆肥站
@@ -308,7 +309,7 @@
 
   const G = XG.game({
     id: '02-leaf-sweepers', title: '🍂 落叶清扫队', subtitle: '天黑之前把公园扫干净！卖落叶换钱、升级扫帚、买扫地机器人，8 个公园越来越大、风越来越猛。支持本地双人合作。',
-    cover: '../../assets/02-leaf-sweepers/cover.svg', music: 'cozy', save: SAVE,
+    cover: '../../assets/02-leaf-sweepers/cover.webp', music: 'cozy', save: SAVE,
     tutorial: [
       { title: '扫落叶', text: '用 <b>WASD</b>（或方向键）走动，身边圆圈里的落叶会被自动扫进袋子。', touch: '在画面上按住拖动，出现的摇杆控制移动。' },
       { title: '卖给堆肥站', text: '头顶的条是落叶袋，满了就回到<b>堆肥站</b>，进站自动卖掉换钱。', touch: '' },

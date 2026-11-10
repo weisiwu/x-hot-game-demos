@@ -251,7 +251,7 @@
 
   const G = XG.game({
     id: '05-class-clown', title: '🏫 课堂捣蛋王', subtitle: '6 节课，6 种老师。趁老师不注意溜出座位搞恶作剧，别被抓到，也别被班长告状！',
-    cover: '../../assets/05-class-clown/cover.svg', music: 'retro', save: SAVE,
+    cover: '../../assets/05-class-clown/cover.webp', music: 'retro', save: SAVE,
     tutorial: [
       { title: '溜出座位', text: '老师背对全班<b>写板书</b>时，用 WASD / 方向键离开座位（黄框）。', touch: '在画面左侧拖动摇杆移动。' },
       { title: '恶作剧', text: '走到 ⭐ 处，<b>按住空格</b>直到进度条满。进度会保留，可以分几次完成。', touch: '按住右下角「恶作剧」按钮。' },

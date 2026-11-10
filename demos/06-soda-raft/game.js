@@ -15,6 +15,7 @@
   const SAVE = XG.save('06-soda-raft', { tutorialSeen: false, unlocked: 1, stars: {}, best: {}, coins: 0 });
   const SV = SAVE.data;
   let S = null;
+  const grassImg = XG.img('../../assets/06-soda-raft/grass.webp'); let grassPat = null;
 
   function banks(L) {
     const p1 = Math.random() * 10, p2 = Math.random() * 10;
@@ -135,6 +136,7 @@
     ctx.fillStyle = '#4a9a3a'; ctx.fillRect(0, 0, W, H);
     if (!S) return;
     const cam = S.cam, B = S.B;
+    if (XG.ready(grassImg)) { if (!grassPat) grassPat = ctx.createPattern(grassImg, 'repeat'); ctx.save(); ctx.translate(0, -(cam % 512) - 512); ctx.fillStyle = grassPat; ctx.fillRect(0, 0, W, H + 1024); ctx.restore(); }
     // 草地纹理
     ctx.fillStyle = '#3f8a33';
     for (let i = 0; i < 40; i++) { const yy = ((i * 131 - cam * 1) % (H + 60) + H + 60) % (H + 60) - 30; ctx.fillRect((i * 97) % W, yy, 4, 10); }
@@ -223,7 +225,7 @@
 
   const G = XG.game({
     id: '06-soda-raft', title: '🥤 汽水木筏', subtitle: '两只青蛙摇晃汽水瓶当喷气引擎，驾驶一条木筏逆流而上！6 条河流，石头、漂流木、漩涡和鳄鱼越来越多。适合两人合作。',
-    cover: '../../assets/06-soda-raft/cover.svg', music: 'upbeat', save: SAVE,
+    cover: '../../assets/06-soda-raft/cover.webp', music: 'upbeat', save: SAVE,
     tutorial: [
       { title: '两个喷口', text: '木筏左边喷口是 <b>A</b>，右边是 <b>L</b>。只喷一边会<b>转弯</b>（喷左边往右转），两边一起喷才<b>直行</b>。两个人玩时一人管一边！单人也可以用 ← → 转向、↑ 双喷。', touch: '按住屏幕左半边 = 左喷口，右半边 = 右喷口，两个拇指一起按就直行。两人玩就一人按一边。' },
       { title: '汽水量', text: '一直喷会把汽水用光，松开会慢慢回满。捡 🥤 立即补充。', touch: '' },

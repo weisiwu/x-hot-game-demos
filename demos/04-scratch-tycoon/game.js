@@ -249,7 +249,7 @@
 
   const G = XG.game({
     id: '04-scratch-tycoon', title: '🎟️ 刮刮大亨', subtitle: '从 $30 起步，刮出百万身家！升级幸运、刷子和自动刮卡机，解锁更贵的卡种。进度自动保存。（纯虚构游戏币）',
-    cover: '../../assets/04-scratch-tycoon/cover.svg', music: 'upbeat', save: SAVE,
+    cover: '../../assets/04-scratch-tycoon/cover.webp', music: 'upbeat', save: SAVE,
     tutorial: [
       { title: '刮卡', text: '买一张卡，然后在卡面上<b>按住鼠标来回刮</b>。刮开约 60% 自动结算。九宫格里出现 <b>3 个相同金额</b>就赢得该金额。手刮的中奖额外 +25%。空格键 = 再买一张当前卡种。', touch: '手指在卡面上来回涂抹。' },
       { title: '特殊符号', text: '🍀 让这张卡奖金翻倍；💎 头奖格额外送 25 倍卡价。', touch: '' },

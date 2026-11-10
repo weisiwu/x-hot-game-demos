@@ -1,0 +1,34 @@
+{
+ "10-cover": [
+  {
+   "job_id": "459e15cf-594f-4013-9cec-c22859e6917f",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-b-covers-07-12/10-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3857446,
+    "sha256": "9e693595c5018fbcfc56579c55508a4a9a3d237b68b6313366a3dada1eca9406"
+   }
+  }
+ ],
+ "11-cover": [
+  {
+   "job_id": "dd930810-60de-4447-b931-72bf994fc3c1",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-b-covers-07-12/11-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3947824,
+    "sha256": "181ece8d3ac32055d46d744c4217971ae952e20d4aaa2e707db36df4e213ec1d"
+   }
+  }
+ ]
+}

@@ -19,6 +19,7 @@
 
   const mk = (x, color, name) => ({ x, y: GROUND, vx: 0, vy: 0, color, name, onGround: true, spikeCD: 0, touching: false, ai: null });
   let M = null; // 当前比赛
+  const beachImg = XG.img('../../assets/07-pocket-volley/beach.webp');
   const ball = { x: 200, y: 150, vx: 0, vy: 0, spin: 0, trail: [] };
 
   function startMatch(mode, oi) {
@@ -175,6 +176,8 @@
   function draw() {
     const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#ff9a5a'); g.addColorStop(0.55, '#ffd9a0'); g.addColorStop(1, '#ffe8c0');
     ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    if (XG.ready(beachImg)) { ctx.drawImage(beachImg, 0, -40, W, W * beachImg.naturalHeight / beachImg.naturalWidth); ctx.fillStyle = 'rgba(232,194,122,.85)'; ctx.fillRect(0, GROUND, W, H - GROUND); }
+    else {
     ctx.fillStyle = '#fff1c4'; ctx.beginPath(); ctx.arc(700, 110, 46, 0, Math.PI * 2); ctx.fill();
     ctx.fillStyle = '#3fa7d6'; ctx.fillRect(0, 300, W, 60);
     ctx.strokeStyle = 'rgba(255,255,255,.4)'; ctx.lineWidth = 2;
@@ -183,6 +186,7 @@
     ctx.fillStyle = '#f0cf8a'; ctx.fillRect(0, 350, W, H - 350);
     ctx.fillStyle = '#e8c27a'; ctx.fillRect(0, GROUND, W, H - GROUND);
     ctx.fillStyle = '#d9b06a'; for (let i = 0; i < 40; i++) ctx.fillRect((i * 53) % W, GROUND + 10 + (i * 17) % 50, 3, 2);
+    }
     ctx.fillStyle = '#0002'; ctx.fillRect(NET_X + 4, NET_TOP + 4, NET_W, GROUND - NET_TOP);
     ctx.fillStyle = '#fff'; ctx.fillRect(NET_X - NET_W / 2, NET_TOP, NET_W, GROUND - NET_TOP);
     ctx.fillStyle = '#c33'; ctx.fillRect(NET_X - NET_W / 2 - 2, NET_TOP - 4, NET_W + 4, 6);
@@ -223,7 +227,7 @@
 
   const G = XG.game({
     id: '07-pocket-volley', title: '🏐 口袋排球', subtitle: '沙滩街机排球：在巡回赛里依次击败 6 位越来越强的对手，或者和朋友本地双人对战。',
-    cover: '../../assets/07-pocket-volley/cover.svg', music: 'sport', save: SAVE,
+    cover: '../../assets/07-pocket-volley/cover.webp', music: 'sport', save: SAVE,
     tutorial: [
       { title: '移动与跳跃', text: '<b>A / D</b>（或 ← →）左右移动，<b>W</b>（或 ↑ / 空格）跳起来用身体顶球。球会按你身体碰到它的角度弹出去。', touch: '左下 ◀ ▶ 移动，右下「跳」。' },
       { title: '扣球', text: '在空中靠近球时按 <b>S</b>（或 ↓）扣球，球会高速砸向对面场地。', touch: '右下「扣」。' },

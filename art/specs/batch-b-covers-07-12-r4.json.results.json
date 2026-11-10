@@ -1,0 +1,18 @@
+{
+ "12-cover": [
+  {
+   "job_id": "98f53722-ae6a-43b3-8e58-0fe75a6f9871",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-b-covers-07-12/12-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 4010540,
+    "sha256": "9cbff82eece2b361593fe5f8720719f72473b5fa8effa4e16170b6d5bdd3dae0"
+   }
+  }
+ ]
+}

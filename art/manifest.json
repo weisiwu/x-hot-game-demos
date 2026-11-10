@@ -1,0 +1,813 @@
+[
+ {
+  "name": "01-cover",
+  "batch": "batch-a-covers-01-06",
+  "prompt": "Key art for a casual game about finding a needle in a giant haystack: a huge golden haystack on a sunny farm field at golden hour, a tiny shiny silver needle glinting among the straw, a wooden rake and a magnifying glass leaning nearby, scattered straw. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-a-covers-01-06.json",
+    "job_id": "eb0e4a01-f32c-47a9-8f3c-7d41f48c7a17",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 4299200,
+   "sha256": "5e564f0dd5743bd75db3b53ff283e1339f8bde99efb6ecbd93c34b7e2fdaf77a"
+  },
+  "output": {
+   "path": "assets/01-haystack-needle/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 180884,
+   "sha256": "eab0d13b89cf51aba00ccbf4c66f6b230600f2ab482828d14c97a1e4797c80cd"
+  },
+  "result": "used"
+ },
+ {
+  "name": "02-cover",
+  "batch": "batch-a-covers-01-06",
+  "prompt": "Key art for a cozy co-op cleaning game: two cute round chibi park sweepers with brooms sweeping piles of orange and red autumn leaves in a city park with maple trees, a small wooden compost station, a little round robot vacuum helping. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-a-covers-01-06.json",
+    "job_id": "1227dc5b-95d3-404f-82a9-66256cb42a98",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 4286575,
+   "sha256": "a4794a00463a8201610b9cb884e69e82b5aa7fbe64deb45aedf7b6e67c28bd3f"
+  },
+  "output": {
+   "path": "assets/02-leaf-sweepers/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 160450,
+   "sha256": "d4c49579c51cbb310667cc6250dc08a72a8e92e5c9a1c33da93a4de30907c3ab"
+  },
+  "result": "used"
+ },
+ {
+  "name": "03-cover",
+  "batch": "batch-a-covers-01-06",
+  "prompt": "Key art for a night market pawn shop game: a cozy second-hand goods stall at an Asian night market under red paper lanterns and neon signs, vintage camera, pocket watch, record player and pearl necklace on the counter, a shopkeeper with a jeweler's loupe. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-a-covers-01-06.json",
+    "job_id": "b9c9ef6a-190c-417b-bffc-890f1c99047d",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 4079008,
+   "sha256": "1be84d3d6eecaac190943eb48831100e73642213fa7d0c7682ae41ca2b890814"
+  },
+  "output": {
+   "path": "assets/03-night-market-pawn/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 128560,
+   "sha256": "1dd362ae7f532cc697b7a6192105620186155a6b830157581dd2ece3dda2a903"
+  },
+  "result": "used"
+ },
+ {
+  "name": "04-cover",
+  "batch": "batch-a-covers-01-06",
+  "prompt": "Key art for a scratch card tycoon game: an ornate golden lottery scratch card half scratched with a coin, sparkling silver foil flakes, four-leaf clovers and diamonds, piles of gold coins, green felt background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-a-covers-01-06.json",
+    "job_id": "af2d2c1e-0569-42ff-9b16-897eb6ef1405",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 4112324,
+   "sha256": "eafb6c69d2eef3ea687d2bb45c96490496deb9a4736b87246d8c07829f10e017"
+  },
+  "output": {
+   "path": "assets/04-scratch-tycoon/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 168738,
+   "sha256": "e02af8d03ff43bd4daf2f26c454cb47f258076760462f4554fafbaf6caf14544"
+  },
+  "result": "used"
+ },
+ {
+  "name": "05-cover",
+  "batch": "batch-a-covers-01-06",
+  "prompt": "Key art for a mischievous classroom prank game: a bright cartoon school classroom, a teacher writing on a green chalkboard with her back turned, a sneaky grinning kid tiptoeing between desks holding a whoopee cushion, classmates giggling. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-a-covers-01-06.json",
+    "job_id": "24ceff0d-8349-486b-880d-e530bb2ebb40",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3827383,
+   "sha256": "0fd60f1342f2c09edf294ff5506588712337c8bd7a3e6c590f464aa799fafe32"
+  },
+  "output": {
+   "path": "assets/05-class-clown/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 97664,
+   "sha256": "5aa6bab118aedd647f8b5c87931cedf9e474efecfe8d7af82061040e93c1b937"
+  },
+  "result": "used"
+ },
+ {
+  "name": "06-cover",
+  "batch": "batch-a-covers-01-06",
+  "prompt": "Key art for a co-op raft game: two cute green frogs on a small wooden raft propelled by fizzing soda bottles shooting bubbly jets, racing upstream on a blue river with rocks and lily pads, lush green banks. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "10-cover",
+  "batch": "batch-b-covers-07-12",
+  "prompt": "Key art for an anti-scam phone hotline game: a friendly volunteer with a headset at a desk in a cozy call center booth, a retro phone ringing with exaggerated cartoon ringing lines, a shield icon shape made of light, sticky notes on the wall. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "11-cover",
+  "batch": "batch-b-covers-07-12",
+  "prompt": "Key art for a stamina climbing game: a small cute climber with a backpack clinging to a tall rocky cliff with handholds, snowy summit and red flag far above, clouds and wind swirls, dramatic vertical composition. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "12-cover",
+  "batch": "batch-b-covers-07-12",
+  "prompt": "Key art for a mech auto-battler strategy game: a squad of chunky cute toy-like battle mechs (shield mech, gunner, artillery, fast raider, repair drone) facing an enemy squad on a grid battlefield, sci-fi lighting. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "07-cover",
+  "batch": "batch-b-covers-07-12",
+  "prompt": "Key art for an arcade beach volleyball game: two cute round blob characters, one orange one blue, jumping at a volleyball net on a sunny sandy beach at sunset, ocean in the background, a volleyball in mid air. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-b-covers-07-12.json",
+    "job_id": "4e4d4f98-e8fa-450b-945e-bdf597a594ad",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3770881,
+   "sha256": "745f451cc2c53e3c5373bc7ed0e86545e22ae25759f4985df81072a8ab9b8c00"
+  },
+  "result": "rejected in review (not used)"
+ },
+ {
+  "name": "08-cover",
+  "batch": "batch-b-covers-07-12",
+  "prompt": "Key art for a bullet heaven survival game: a small glowing purple mage hero in the center of a dark magical arena surrounded by swarms of cute slimes and bats, orbiting glowing blades and magic bolts radiating outward, sparkling blue gems. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-b-covers-07-12.json",
+    "job_id": "8c3f1b2d-267b-45be-9058-6dce22d35751",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3947792,
+   "sha256": "9f867c2416a67a105cb9a51f14581f9f47c654eb2ba1f562937f30b91618a958"
+  },
+  "output": {
+   "path": "assets/08-bullet-heaven/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 100428,
+   "sha256": "420ce501fb61595d2dea80b5724998ae0fe771fda3e735aa97b3dfe5f161b097"
+  },
+  "result": "used"
+ },
+ {
+  "name": "09-cover",
+  "batch": "batch-b-covers-07-12",
+  "prompt": "Key art for a dice roguelike game: five ivory dice tumbling on a green casino felt table, glowing magical charms and talismans around them, poker chips, warm dramatic lighting. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-b-covers-07-12.json",
+    "job_id": "40904483-4fff-4e3d-89dd-e9b6f90b5b9a",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3832402,
+   "sha256": "2e4032cf2017f27102338bb36bbd46843212efb23b217a5acfbc4dd86b7a561c"
+  },
+  "output": {
+   "path": "assets/09-dice-roguelike/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 103498,
+   "sha256": "1d0d87e5b2d8a43d729bdcb45a4bda9b639e0964c252ef808e5a47bf906885a7"
+  },
+  "result": "used"
+ },
+ {
+  "name": "09-felt",
+  "batch": "batch-c-backgrounds",
+  "prompt": "Seamless green casino felt table texture with subtle fabric grain and a soft vignette, game background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "11-cliff",
+  "batch": "batch-c-backgrounds",
+  "prompt": "Vertical game background of a tall grey granite mountain cliff face with cracks and small ledges, snowy peaks and blue sky at the top, mist at the bottom, side view, empty climbable middle. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1536
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "12-deck",
+  "batch": "batch-c-backgrounds",
+  "prompt": "Top-down view of a sci-fi metal battle arena floor with panel lines and hazard stripes along the edges, even lighting, game background, flat orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "05-floor",
+  "batch": "batch-c-backgrounds",
+  "prompt": "Top-down view of a warm wooden classroom floor with parquet planks, even lighting, seamless game background texture, flat orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "03-backdrop",
+  "batch": "batch-c-backgrounds",
+  "prompt": "Wide blurred background of an Asian night market street at night with red lanterns, neon signs and warm bokeh lights, dark purple tones, suitable as a website background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "01-ground",
+  "batch": "batch-c-backgrounds",
+  "prompt": "Top-down view of farm dirt ground with a few scattered straw pieces and small pebbles, seamless even lighting, texture for a game background, flat top-down orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-c-backgrounds.json",
+    "job_id": "e2838473-661e-4ce8-95f1-e462b4c79470",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3078673,
+   "sha256": "1488922df76f738ad26a4868bc30d494f4e7c623450fb067f031f1a2e9312864"
+  },
+  "output": {
+   "path": "assets/01-haystack-needle/ground.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 53680,
+   "sha256": "a9d4094ade11961a64b96da8a4c22129296b9481a5a8edebcac3c6d5f2e00988"
+  },
+  "result": "used"
+ },
+ {
+  "name": "02-lawn",
+  "batch": "batch-c-backgrounds",
+  "prompt": "Top-down view of a neatly mowed green park lawn with subtle mowing stripes and a few tiny flowers, seamless even lighting, game background texture, flat top-down orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-c-backgrounds.json",
+    "job_id": "a368faab-8df8-4082-99a9-9b37e7f91ab6",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3503164,
+   "sha256": "66a48f004a3cf2ccbb96c6100224f141bf3c78fe603629647d6b2c988cd9ec09"
+  },
+  "output": {
+   "path": "assets/02-leaf-sweepers/lawn.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 86160,
+   "sha256": "4eef3131dacf0a2869db1888db7edfb9ba358df1287c4571382ef833ed0cc131"
+  },
+  "result": "used"
+ },
+ {
+  "name": "06-grass",
+  "batch": "batch-c-backgrounds",
+  "prompt": "Seamless tileable top-down grass texture with small clovers and tiny pebbles, even lighting, game texture, flat orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-c-backgrounds.json",
+    "job_id": "bd589031-9d6b-4ed4-a224-0e3654860bb1",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2450055,
+   "sha256": "9693591c70c60967442dd5d0cde9a97ff033188db6d1c3fb72e190afb292e01c"
+  },
+  "output": {
+   "path": "assets/06-soda-raft/grass.webp",
+   "size": [
+    512,
+    512
+   ],
+   "bytes": 66212,
+   "sha256": "521f6e677ce85532839da808b39d135caa8b5841f66493d04f1ac3208859857f"
+  },
+  "result": "used"
+ },
+ {
+  "name": "07-beach",
+  "batch": "batch-c-backgrounds",
+  "prompt": "Side view game background of a tropical beach at sunset: gradient orange sky with soft clouds, calm turquoise sea across the middle, smooth golden sand across the bottom third, a few palm trees at the far edges, empty center area. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-c-backgrounds.json",
+    "job_id": "bfe7f8fc-e731-4b4f-96a2-c12b9b66d425",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3137339,
+   "sha256": "19fc336f205c7e510d69058397ee93dce975117c69e830fd9c8141049540a980"
+  },
+  "output": {
+   "path": "assets/07-pocket-volley/beach.webp",
+   "size": [
+    880,
+    587
+   ],
+   "bytes": 48508,
+   "sha256": "621502fbf8dd50c154140614491903d19f108282d7acb755ee20425b38cdbf9a"
+  },
+  "result": "used"
+ },
+ {
+  "name": "08-arena",
+  "batch": "batch-c-backgrounds",
+  "prompt": "Seamless tileable top-down dark magical stone floor texture with faint glowing purple runes, even lighting, game texture, flat orthographic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-c-backgrounds.json",
+    "job_id": "d254b148-6844-47fa-8e2f-5d666d5adced",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2482724,
+   "sha256": "c898631f5fa23e695e580abffc7701081d4769a4df9cd01cece6d84d485352d8"
+  },
+  "output": {
+   "path": "assets/08-bullet-heaven/arena.webp",
+   "size": [
+    512,
+    512
+   ],
+   "bytes": 41442,
+   "sha256": "9aa416162cd795c07a6b91d6c2fc7b8e3ce2f98d7c051b319e9c68b9f0bd7efe"
+  },
+  "result": "used"
+ },
+ {
+  "name": "03-cust-buyer",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a stylish young collector holding cash, excited, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "10-caller-service",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a overly polite fake customer service agent with a headset, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "10-caller-police",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a fake police officer with an exaggerated stern face and a toy badge, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "10-caller-mentor",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a too-cheerful online part-time job mentor holding a phone, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "10-caller-prize",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a flashy prize announcer with confetti, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "10-caller-friend",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a mysterious 'old classmate' with a hat and fake mustache, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "10-caller-invest",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a slick crypto investment guru in a shiny suit with charts, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "12-mech-guard",
+  "batch": "batch-d-portraits",
+  "prompt": "Square icon of a heavy shield guard mech with a big riot shield, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "12-mech-gunner",
+  "batch": "batch-d-portraits",
+  "prompt": "Square icon of a rapid-fire gunner mech with twin barrels, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "12-mech-artillery",
+  "batch": "batch-d-portraits",
+  "prompt": "Square icon of a artillery mech with a large mortar cannon on its back, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "12-mech-raider",
+  "batch": "batch-d-portraits",
+  "prompt": "Square icon of a fast lightweight raider mech with energy blades, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "12-mech-medic",
+  "batch": "batch-d-portraits",
+  "prompt": "Square icon of a small repair drone mech with wrench arms and a green cross light, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "result": "missing (job not downloaded)"
+ },
+ {
+  "name": "03-cust-normal",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a friendly ordinary middle-aged man in a casual jacket, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-d-portraits.json",
+    "job_id": "62d9322e-0667-4eee-8322-ff846156eaa6",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2587914,
+   "sha256": "30a5b3d6707d6c69d4db69c3085e568ad7816a76ae75000dae66a2b0ec90f5ae"
+  },
+  "output": {
+   "path": "assets/03-night-market-pawn/cust-normal.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 16712,
+   "sha256": "7d6796db9b183791c489bbf12a87cff70b39766fb1a0b66a315934c849d11877"
+  },
+  "result": "used"
+ },
+ {
+  "name": "03-cust-desperate",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a nervous worried young woman clutching her bag, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-d-portraits.json",
+    "job_id": "062d8222-35aa-4499-ae41-77f9c403e432",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2505182,
+   "sha256": "03f0f116b22a6d71361f5c3da08350d9d54fc5ad23716c76ae7babb427d3021f"
+  },
+  "output": {
+   "path": "assets/03-night-market-pawn/cust-desperate.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 15524,
+   "sha256": "b7697a8e5c52bb2df69476d73e77b658d218b44fb2301d14148a6b3cdd961f07"
+  },
+  "result": "used"
+ },
+ {
+  "name": "03-cust-haggler",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a smug shrewd bargaining uncle with a gold tooth and folded arms, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-d-portraits.json",
+    "job_id": "0edc1a2a-1670-4174-b9ce-e1ce4a61d822",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2738233,
+   "sha256": "beff8136fb445fe46bd0eccc06bd9001f8a39531c5e74387fb64e660e7e0848e"
+  },
+  "output": {
+   "path": "assets/03-night-market-pawn/cust-haggler.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 19248,
+   "sha256": "0ba74940ee0d25a204a48ae0aab8a474ba526cafcbd09f02c1dd58ce505dfb62"
+  },
+  "result": "used"
+ },
+ {
+  "name": "03-cust-thief",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a shady person in a hoodie and sunglasses glancing sideways, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-d-portraits.json",
+    "job_id": "3e5395cd-918b-44b0-a746-65ee2073302f",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2441466,
+   "sha256": "b3c0ef28067654980ac7cdc3158f38fb5e0e88a5e93fd0fe9914fb6df7221f61"
+  },
+  "output": {
+   "path": "assets/03-night-market-pawn/cust-thief.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 13322,
+   "sha256": "ff60ec40022c8eaf3105bc95ea62cdcc4116e3aa66df307dda5863f9f2d34285"
+  },
+  "result": "used"
+ },
+ {
+  "name": "03-cust-regular",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a cheerful elderly grandma regular customer with a shopping basket, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-d-portraits.json",
+    "job_id": "f6e1549a-af7c-4d47-b7c7-41e7d8ed4e85",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2515138,
+   "sha256": "29a566e873ba0991b56b0a8a5603beafa27f6ef18c49136c42c2341a1f35f8a9"
+  },
+  "output": {
+   "path": "assets/03-night-market-pawn/cust-regular.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 18726,
+   "sha256": "e3f08f545903d873f06ebe6af568d2ef05d738b4755276686dd71bb549892a0e"
+  },
+  "result": "used"
+ },
+ {
+  "name": "07-cover-v2",
+  "batch": "batch-e-retry",
+  "prompt": "Key art for an arcade beach volleyball game: two dome-shaped jelly slime characters (perfect half-circle bodies sitting on the sand, no arms, no legs, simple big eyes), one orange and one teal, on opposite sides of a volleyball net on a sunny sandy beach at sunset, a volleyball flying high above the net, ocean behind. Original character design. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-e-retry.json",
+    "job_id": "a53b11d1-28ce-46b9-8ed9-6bf067447511",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3871546,
+   "sha256": "da0227a73cd9c91fb1a3afad9283e3ea7416c8952e66a8fe4423b0eb6378644e"
+  },
+  "output": {
+   "path": "assets/07-pocket-volley/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 96058,
+   "sha256": "f18e6014ef07a15003a5b89ff7d3b6c4c2e057e758a7f523e288404b4e3ce2a8"
+  },
+  "result": "used"
+ }
+]
