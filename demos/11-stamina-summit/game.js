@@ -121,7 +121,7 @@
         buttons: [...(last ? [] : [{ label: '▶ 下一座山', primary: true, id: 'xgNext', onClick: () => G.start(S.pi + 1) }]), { label: '🔁 再爬一次', primary: last, id: 'xgAgain', onClick: () => G.start(S.pi) }, { label: '🏠 菜单', onClick: () => G.menu() }] });
     } else {
       SAVE.write();
-      G.end({ win: false, title: '🩹 伤得太重，只能下山了……', sub: `爬到了 ${Math.round(S.peakY / 3)} / ${S.P.height / 3} 米。多在平台回体力，避开灰色裂纹和蓝色冰岩。`, buttons: [{ label: '🔁 再试一次', primary: true, id: 'xgAgain', onClick: () => G.start(S.pi) }, { label: '🏠 菜单', onClick: () => G.menu() }] });
+      G.end({ win: false, title: '🩹 伤得太重，只能下山了……', sub: `爬到了 ${Math.round(S.peakY / 3)} / ${Math.round(S.P.height / 3)} 米。多在平台回体力，避开灰色裂纹和蓝色冰岩。`, buttons: [{ label: '🔁 再试一次', primary: true, id: 'xgAgain', onClick: () => G.start(S.pi) }, { label: '🏠 菜单', onClick: () => G.menu() }] });
     }
   }
 
@@ -167,7 +167,7 @@
     if (S.gustFx > 0) { ctx.strokeStyle = `rgba(255,255,255,${S.gustFx})`; ctx.lineWidth = 2; for (let i = 0; i < 12; i++) { const yy = (i * 53) % H; ctx.beginPath(); ctx.moveTo(0, yy); ctx.lineTo(W * (1 - S.gustFx), yy + 10); ctx.stroke(); } }
     ctx.fillStyle = 'rgba(0,0,0,.6)'; ctx.fillRect(10, 10, 340, 70);
     ctx.fillStyle = '#fff'; ctx.textAlign = 'left'; ctx.font = 'bold 14px sans-serif';
-    ctx.fillText(`⛰️ ${S.P.name} ${Math.round(-S.py / 3)}/${S.P.height / 3} 米  ⏱ ${XG.fmtTime(S.t)}  摔 ${S.falls}  🪢${S.ropes}`, 20, 30);
+    ctx.fillText(`⛰️ ${S.P.name} ${Math.round(-S.py / 3)}/${Math.round(S.P.height / 3)} 米  ⏱ ${XG.fmtTime(S.t)}  摔 ${S.falls}  🪢${S.ropes}`, 20, 30);
     ctx.fillStyle = '#222'; ctx.fillRect(20, 42, 320, 18);
     ctx.fillStyle = '#5a1f1f'; ctx.fillRect(20 + 320 * S.maxSt / 100, 42, 320 * (1 - S.maxSt / 100), 18);
     ctx.fillStyle = S.st < 25 ? '#ff5d5d' : '#ffd84d'; ctx.fillRect(20, 42, 320 * Math.max(0, S.st) / 100, 18);
@@ -195,7 +195,7 @@
     const stars = Object.values(SV.stars).reduce((a, b) => a + b, 0);
     G.menu(`<div class="xg-stats"><span>已解锁山峰</span><b>${SV.unlocked} / ${PEAKS.length}</b><span>星星</span><b>${stars} / ${PEAKS.length * 3}</b><span>累计攀爬</span><b>${SV.meters} 米</b></div>`, [
       { label: `▶ 出发：${PEAKS[Math.min(SV.unlocked, PEAKS.length) - 1].name}`, primary: true, id: 'xgStart', onClick: () => G.start(Math.min(SV.unlocked, PEAKS.length) - 1) },
-      { label: '🗺 选择山峰', id: 'xgLevels', onClick: () => G.levelSelect(PEAKS.map((p, i) => ({ name: `${i + 1}. ${p.name}`, sub: `${p.height / 3} 米`, locked: i >= SV.unlocked, stars: SV.stars['P' + i] || 0 })), i => G.start(i), '选择山峰') },
+      { label: '🗺 选择山峰', id: 'xgLevels', onClick: () => G.levelSelect(PEAKS.map((p, i) => ({ name: `${i + 1}. ${p.name}`, sub: `${Math.round(p.height / 3)} 米`, locked: i >= SV.unlocked, stars: SV.stars['P' + i] || 0 })), i => G.start(i), '选择山峰') },
       { label: '📖 教程', onClick: () => G.tutorial(menu) },
     ]);
   }

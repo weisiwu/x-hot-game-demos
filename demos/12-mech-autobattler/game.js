@@ -14,7 +14,7 @@
     medic: { name: '维修机', cost: 4, hp: 80, dmg: 0, range: 3, cd: 1.0, speed: 1.0, heal: 22, desc: '治疗血最少的友军', syn: '2 台：治疗量 +30%' },
     sniper: { name: '狙击机', cost: 5, hp: 65, dmg: 55, range: 7.5, cd: 2.6, speed: 0.6, desc: '超远程单体高伤', syn: '2 台：狙击暴击率 30%' },
   };
-  const ICON = {}; Object.keys(TYPES).forEach(k => ICON[k] = XG.img(`${A}mech-${k === 'sniper' ? 'gunner' : k}.webp`));
+  const ICON = {}; Object.keys(TYPES).forEach(k => ICON[k] = XG.img(`${A}mech-${k}.webp`));
   const deckImg = XG.img(`${A}deck.webp`);
   const SAVE = XG.save('12-mech-autobattler', { tutorialSeen: false, run: null, bestWave: 0, wins: 0, runs: 0, endlessBest: 0, speed: 1 });
   const SV = SAVE.data;
@@ -25,7 +25,7 @@
   const shop = $('shop');
   for (const k in TYPES) {
     const b = document.createElement('button'); b.id = 'b_' + k;
-    b.innerHTML = `<img src="${A}mech-${k === 'sniper' ? 'gunner' : k}.webp" alt="" style="${k === 'sniper' ? 'filter:hue-rotate(160deg)' : ''}"><span><b>${TYPES[k].name}</b> ${TYPES[k].cost}⚡<br><small style="opacity:.75">${TYPES[k].desc}</small></span>`;
+    b.innerHTML = `<img src="${A}mech-${k}.webp" alt=""><span><b>${TYPES[k].name}</b> ${TYPES[k].cost}⚡<br><small style="opacity:.75">${TYPES[k].desc}</small></span>`;
     b.onclick = () => { if (!S) return; S.sel = k; S.sell = false; XG.audio.sfx('click'); render(); };
     shop.appendChild(b);
   }
@@ -172,7 +172,7 @@
     ctx.fillStyle = '#0006'; ctx.beginPath(); ctx.ellipse(cx, cy + r * 0.8, r, r * 0.35, 0, 0, Math.PI * 2); ctx.fill();
     ctx.save(); ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.closePath(); ctx.fillStyle = team ? '#5a2430' : '#1f3f5c'; ctx.fill(); ctx.clip();
     const im = ICON[type];
-    if (XG.ready(im)) { if (type === 'sniper') ctx.filter = 'hue-rotate(160deg)'; ctx.drawImage(im, cx - r, cy - r, r * 2, r * 2); ctx.filter = 'none'; }
+    if (XG.ready(im)) ctx.drawImage(im, cx - r, cy - r, r * 2, r * 2);
     if (team) { ctx.fillStyle = 'rgba(255,40,60,.28)'; ctx.fillRect(cx - r, cy - r, r * 2, r * 2); }
     ctx.restore();
     ctx.strokeStyle = boss ? '#ffcc4d' : team ? '#ff6b6b' : '#6bc7ff'; ctx.lineWidth = boss ? 4 : 2.5; ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.stroke();

@@ -174,6 +174,7 @@
     ctx.fillStyle = '#fff'; ctx.font = 'bold 12px sans-serif'; ctx.textAlign = 'center'; ctx.fillText(p.name, p.x, p.y - PR * 2 - 8);
   }
   function draw() {
+    const tt = performance.now() / 1000;
     const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#ff9a5a'); g.addColorStop(0.55, '#ffd9a0'); g.addColorStop(1, '#ffe8c0');
     ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
     if (XG.ready(beachImg)) { ctx.drawImage(beachImg, 0, -40, W, W * beachImg.naturalHeight / beachImg.naturalWidth); ctx.fillStyle = 'rgba(232,194,122,.85)'; ctx.fillRect(0, GROUND, W, H - GROUND); }
@@ -181,7 +182,6 @@
     ctx.fillStyle = '#fff1c4'; ctx.beginPath(); ctx.arc(700, 110, 46, 0, Math.PI * 2); ctx.fill();
     ctx.fillStyle = '#3fa7d6'; ctx.fillRect(0, 300, W, 60);
     ctx.strokeStyle = 'rgba(255,255,255,.4)'; ctx.lineWidth = 2;
-    const tt = performance.now() / 1000;
     for (let i = 0; i < 12; i++) { const x = (i * 83 + tt * 20) % W; ctx.beginPath(); ctx.moveTo(x, 320 + (i % 3) * 12); ctx.lineTo(x + 24, 320 + (i % 3) * 12); ctx.stroke(); }
     ctx.fillStyle = '#f0cf8a'; ctx.fillRect(0, 350, W, H - 350);
     ctx.fillStyle = '#e8c27a'; ctx.fillRect(0, GROUND, W, H - GROUND);

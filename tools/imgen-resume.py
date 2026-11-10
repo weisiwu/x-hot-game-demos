@@ -11,7 +11,9 @@ GEN = '/workspace/jianxian/scripts/art/imgen-gen.py'
 spec_path = Path(sys.argv[1]).resolve(); rounds = int(sys.argv[2]) if len(sys.argv) > 2 else 4
 spec = json.loads(spec_path.read_text())
 out = Path(spec['out_dir'])
-for r in range(2, 2 + rounds):
+start_r = 2
+while spec_path.with_name(f'{spec_path.stem}-r{start_r}.json').exists(): start_r += 1  # 不覆盖之前轮次的记录
+for r in range(start_r, start_r + rounds):
     todo = [j for j in spec['jobs'] if not (out / (j['name'] + '.png')).exists()]
     if not todo:
         print('全部完成'); break

@@ -250,5 +250,115 @@ module.exports = {
       return [['触屏摇杆移动', x1 > x0 + 30], ['点击升级卡片', (await h.ev('__demo.mode')) === 'play']];
     },
   },
+
+  '09-dice-roguelike': {
+    async play(h) {
+      await h.clickSel('#dice .die');
+      const held = await h.ev('__demo.S.held[0]');
+      const r0 = await h.ev('__demo.S.rerolls');
+      await h.clickSel('#bReroll'); await sleep(100);
+      const r1 = await h.ev('__demo.S.rerolls');
+      const h0 = await h.ev('__demo.S.hands');
+      await h.clickSel('#bScore'); await sleep(150);
+      const st = await h.ev('({ hands: __demo.S.hands, phase: __demo.S.phase, score: __demo.S.score })');
+      return [['点击骰子锁定', held], ['重掷消耗次数', r1 === r0 - 1], ['计分出手', st.score > 0 && (st.hands === h0 - 1 || st.phase === 'shop')]];
+    },
+    async finish(h) {
+      let shopSeen = false;
+      for (let i = 0; i < 40 && (await h.ev('__demo.G.state')) !== 'end'; i++) {
+        const ph = await h.ev('__demo.S.phase');
+        if (ph === 'shop') { shopSeen = true; await h.clickSel('#bNext'); continue; }
+        if (ph === 'play') { await h.ev('(() => { const S = __demo.S; S.score = __demo.target() - 1; S.dice = [6, 6, 6, 6, 6]; })()'); await h.clickSel('#bScore'); await sleep(120); }
+        else await sleep(200);
+      }
+      return [['过关进入商店', shopSeen], ['连过 8 轮通关', (await h.ev('__demo.SV.wins')) >= 1]];
+    },
+    async afterReload(h) { return [['通关记录已保存', await h.ev('__demo.SV.wins >= 1 && __demo.SV.best >= 8')]]; },
+    async touch(h) {
+      await h.tapSel('#dice .die'); const held = await h.ev('__demo.S.held[0]');
+      await h.tapSel('#bScore'); await sleep(150);
+      return [['触屏锁定骰子', held], ['触屏计分', (await h.ev('__demo.S.score')) > 0]];
+    },
+  },
+  '10-scam-buster-hotline': {
+    async play(h) {
+      await h.clickSel('#bAnswer'); await sleep(300);
+      if (await h.exists('#keypad')) { await h.clickSel('[data-k="2"]'); await h.clickSel('[data-k="1"]'); await sleep(500); }
+      const m0 = await h.ev('__demo.R.mins');
+      await h.clickSel('#opts button'); await sleep(700);
+      const m1 = await h.ev('__demo.R.mins');
+      // 按住“信号不好”
+      const hb = await h.ev(`(() => { const b = [...document.querySelectorAll('#opts button')].find(b => b.classList.contains('hold')); if (!b) return null; b.scrollIntoView({ block: 'center' }); const r = b.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()`);
+      let held = true;
+      if (hb) { const a = await h.ev('__demo.R.mins'); await h.drag([[hb[0], hb[1]], [hb[0] + 1, hb[1]]], 1200); await sleep(500); held = (await h.ev('__demo.R.mins')) > a; }
+      await h.ev(`[...document.querySelectorAll('#opts button')].find(b => b.textContent.includes('挂断')).click()`); await sleep(150);
+      const quiz = await h.exists('#quiz input');
+      await h.clickSel('#quiz input'); await h.clickSel('#bGrade'); await sleep(150);
+      return [['回应能拖住时间', m1 > m0], ['按住制造杂音能拖时间', held], ['挂断后出现话术识别', quiz], ['提交识别进入下一通', (await h.ev('__demo.R.idx')) === 1]];
+    },
+    async finish(h) {
+      for (let i = 0; i < 12 && (await h.ev('__demo.G.state')) !== 'end'; i++) {
+        if (await h.exists('#opts .primary:not(#bGrade)')) { await h.clickSel('#opts .primary'); await sleep(250); }
+        if (await h.exists('#bAnswer')) { await h.clickSel('#bAnswer'); await sleep(250); }
+        if (await h.exists('#keypad')) { await h.clickSel('[data-k="1"]'); await sleep(500); }
+        await h.ev('__demo.R.mins = 500');
+        const hang = await h.ev(`(() => { const b = [...document.querySelectorAll('#opts button')].find(b => b.textContent.includes('挂断')); if (b) { b.click(); return true; } return false; })()`);
+        await sleep(150);
+        if (await h.exists('#bGrade')) { await h.clickSel('#bGrade'); await sleep(200); }
+        if (!hang) await sleep(300);
+      }
+      return [['打完一个班次', (await h.ev('__demo.SV.unlocked')) >= 2]];
+    },
+    async afterReload(h) { return [['班次解锁与通话记录已保存', await h.ev('__demo.SV.unlocked >= 2 && __demo.SV.calls >= 5')]]; },
+    async touch(h) {
+      await h.tapSel('#bAnswer'); await sleep(300);
+      if (await h.exists('#keypad')) { await h.tapSel('[data-k="1"]'); await sleep(500); }
+      const m0 = await h.ev('__demo.R.mins'); await h.tapSel('#opts button'); await sleep(700);
+      return [['触屏接听并回应', (await h.ev('__demo.R.mins')) > m0]];
+    },
+  },
+  '11-stamina-summit': {
+    async play(h) {
+      const t = await h.ev(`(() => { const S = __demo.S; const c = S.holds.filter(x => x.type !== 'ledge' && __demo.reachable(x)).sort((a, b) => a.y - b.y)[0]; return { x: c.x, y: c.y - S.cam, wy: c.y }; })()`);
+      const p = await canvasPt(h, t.x, t.y, '#c'); await h.click(p[0], p[1]); await sleep(500);
+      const s = await h.ev('({ py: __demo.S.py, st: __demo.S.st })');
+      return [['点击岩点攀爬', Math.abs(s.py - t.wy) < 2], ['攀爬消耗体力', s.st < 100]];
+    },
+    async finish(h) {
+      await h.ev('(() => { const S = __demo.S; const top = S.ledges[S.ledges.length - 1]; S.px = top.x; S.py = top.y + 80; S.cur = { type: "rock", x: S.px, y: S.py }; __demo.moveTo(S.holds.find(x => x.ledge === top), top.x); })()');
+      await sleep(600);
+      return [['登顶通关', (await h.ev('__demo.SV.summits')) >= 1]];
+    },
+    async afterReload(h) { return [['登顶记录已保存', await h.ev('__demo.SV.summits >= 1 && __demo.SV.unlocked >= 2')]]; },
+    async touch(h) {
+      const t = await h.ev(`(() => { const S = __demo.S; const c = S.holds.filter(x => x.type !== 'ledge' && __demo.reachable(x)).sort((a, b) => a.y - b.y)[0]; return { x: c.x, y: c.y - S.cam, wy: c.y }; })()`);
+      const p = await canvasPt(h, t.x, t.y, '#c'); await h.tap(p[0], p[1]); await sleep(500);
+      return [['手指点岩点攀爬', Math.abs((await h.ev('__demo.S.py')) - t.wy) < 2]];
+    },
+  },
+  '12-mech-autobattler': {
+    async play(h) {
+      const c = async (x, y) => { const p = await canvasPt(h, x * 70 + 35, y * 70 + 35, '#c'); await h.click(p[0], p[1]); await sleep(60); };
+      await c(3, 5); await h.clickSel('#b_gunner'); await c(4, 6); await h.clickSel('#b_guard'); await c(2, 5); await c(2, 5);
+      const b = await h.ev('({ n: __demo.S.board.length, lv: __demo.S.board.find(u => u.x === 2).lv })');
+      await h.clickSel('#bGo'); await sleep(200);
+      const phase = await h.ev('__demo.S.phase');
+      const ended = await h.waitFor('__demo.S.phase === "build"', 60000, 500);
+      return [['点击格子部署机甲', b.n === 3], ['再点同类 = 升级', b.lv === 2], ['开战进入自动战斗', phase === 'battle'], ['战斗结束结算', ended]];
+    },
+    async finish(h) {
+      await h.ev('(() => { const S = __demo.S; S.wave = 10; S.board = []; for (let x = 0; x < 8; x++) S.board.push({ type: x % 2 ? "artillery" : "sniper", x, y: 7, lv: 3 }); for (let x = 0; x < 4; x++) S.board.push({ type: "guard", x: x * 2, y: 4, lv: 3 }); __demo.startBattle(); })()');
+      const ok = await h.waitFor('__demo.G.state === "end"', 60000, 500);
+      return [['击退第 10 波通关', ok && (await h.ev('__demo.SV.wins')) >= 1]];
+    },
+    async afterReload(h) { return [['通关记录已保存', await h.ev('__demo.SV.wins >= 1 && __demo.SV.bestWave >= 10')]]; },
+    async touch(h) {
+      const t = async (x, y) => { const p = await canvasPt(h, x * 70 + 35, y * 70 + 35, '#c'); await h.tap(p[0], p[1]); };
+      await t(3, 5); await h.tapSel('#b_gunner'); await t(4, 6);
+      const n = await h.ev('__demo.S.board.length');
+      await h.tapSel('#bGo'); await sleep(200);
+      return [['触屏部署', n === 2], ['触屏开战', (await h.ev('__demo.S.phase')) === 'battle']];
+    },
+  },
 };
 module.exports.sleep = sleep; module.exports.canvasPt = canvasPt; module.exports.vbtn = vbtn;

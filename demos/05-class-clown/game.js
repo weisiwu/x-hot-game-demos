@@ -7,6 +7,7 @@
   const desks = [];
   for (let r = 0; r < 3; r++) for (let c = 0; c < 5; c++) desks.push({ x: 150 + c * 150, y: 250 + r * 100, w: 80, h: 40, kid: XG.pick(['🧒', '👧', '👦', '🧒🏻', '👧🏽']) });
   const MY = 12;
+  const floorImg = XG.img('../../assets/05-class-clown/floor.webp');
   const mySeat = { x: desks[MY].x, y: desks[MY].y + 42 };
   const POOL = {
     boardL: { x: 250, y: 75, name: '黑板上画小猪', need: 3.0, icon: '🐷' },
@@ -183,8 +184,8 @@
   function draw() {
     // 地板
     ctx.fillStyle = '#cdb68a'; ctx.fillRect(0, 0, W, H);
-    ctx.strokeStyle = '#bfa676'; ctx.lineWidth = 1;
-    for (let y = 130; y < H; y += 30) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    if (XG.ready(floorImg)) ctx.drawImage(floorImg, 0, 40, W, H);
+    else { ctx.strokeStyle = '#bfa676'; ctx.lineWidth = 1; for (let y = 130; y < H; y += 30) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); } }
     ctx.fillStyle = '#efe4cc'; ctx.fillRect(0, 0, W, 125);
     ctx.fillStyle = '#1f4d36'; ctx.fillRect(100, 20, 700, 92); ctx.strokeStyle = '#8a6a3a'; ctx.lineWidth = 6; ctx.strokeRect(100, 20, 700, 92);
     ctx.fillStyle = '#e7f0e0'; ctx.font = '16px sans-serif'; ctx.textAlign = 'left';

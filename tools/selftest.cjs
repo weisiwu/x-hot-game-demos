@@ -15,7 +15,7 @@ const ROOT = path.resolve(__dirname, '..');
 const SHOTS = path.resolve(process.argv[2] || path.join(os.tmpdir(), 'xhgd-shots'));
 const ONLY = (process.argv[3] || '').split(',').filter(Boolean);
 const PORT = 9333 + Math.floor(Math.random() * 300);
-const HPORT = 8700 + Math.floor(Math.random() * 200);
+let HPORT = 0; // 运行时挑一个空闲端口
 const CHROME = process.env.CHROME || 'google-chrome';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const getJSON = (u, method = 'GET') => new Promise((res, rej) => {
@@ -101,7 +101,9 @@ const TESTS = require('./selftest-cases.cjs');
 
 (async () => {
   fs.mkdirSync(SHOTS, { recursive: true });
+  HPORT = await new Promise(res => { const srv = require('node:net').createServer(); srv.listen(0, '127.0.0.1', () => { const p = srv.address().port; srv.close(() => res(p)); }); });
   const server = spawn('python3', ['-m', 'http.server', String(HPORT), '--bind', '127.0.0.1'], { cwd: ROOT, stdio: 'ignore' });
+  for (let i = 0; i < 50; i++) { const up = await new Promise(r => http.get(`http://127.0.0.1:${HPORT}/index.html`, x => { x.resume(); r(x.statusCode === 200); }).on('error', () => r(false))); if (up) break; await sleep(100); }
   const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'xhgd-chrome-'));
   const chrome = spawn(CHROME, ['--headless=new', `--remote-debugging-port=${PORT}`, `--user-data-dir=${prof}`, '--no-first-run', '--no-default-browser-check', '--disable-gpu', '--autoplay-policy=no-user-gesture-required', 'about:blank'], { stdio: 'ignore' });
   let ok = false;
