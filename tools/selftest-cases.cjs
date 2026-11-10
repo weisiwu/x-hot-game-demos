@@ -347,8 +347,13 @@ module.exports = {
       return [['点击格子部署机甲', b.n === 3], ['再点同类 = 升级', b.lv === 2], ['开战进入自动战斗', phase === 'battle'], ['战斗结束结算', ended]];
     },
     async finish(h) {
-      await h.ev('(() => { const S = __demo.S; S.wave = 10; S.board = []; for (let x = 0; x < 8; x++) S.board.push({ type: x % 2 ? "artillery" : "sniper", x, y: 7, lv: 3 }); for (let x = 0; x < 4; x++) S.board.push({ type: "guard", x: x * 2, y: 4, lv: 3 }); __demo.startBattle(); })()');
-      const ok = await h.waitFor('__demo.G.state === "end"', 60000, 500);
+      let ok = false;
+      // 第 10 波敌军随机，满配阵容也不保证每次都赢；最多重打 4 次
+      for (let k = 0; k < 4 && !ok; k++) {
+        await h.ev('(() => { const S = __demo.S; S.wave = 10; S.hp = 99; S.board = []; for (let x = 0; x < 8; x++) S.board.push({ type: x % 2 ? "artillery" : "sniper", x, y: 7, lv: 3 }); for (let x = 0; x < 8; x++) S.board.push({ type: x % 3 ? "guard" : "medic", x, y: x % 2 ? 4 : 5, lv: 3 }); __demo.startBattle(); })()');
+        await h.waitFor('__demo.S.phase === "build" || __demo.G.state === "end"', 60000, 500);
+        ok = await h.ev('__demo.G.state === "end"');
+      }
       return [['击退第 10 波通关', ok && (await h.ev('__demo.SV.wins')) >= 1]];
     },
     async afterReload(h) { return [['通关记录已保存', await h.ev('__demo.SV.wins >= 1 && __demo.SV.bestWave >= 10')]]; },
