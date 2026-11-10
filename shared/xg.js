@@ -227,9 +227,9 @@
     const base = $el('div', 'xg-stick-base'); const knob = $el('div', 'xg-stick-knob'); base.appendChild(knob);
     const hint = $el('div', 'xg-stick-hint', opt.hint || '拖动移动'); hint.style.left = '12px';
     zone.appendChild(base); zone.appendChild(hint); L.appendChild(zone);
-    const st = { x: 0, y: 0, active: false, pid: null, ox: 0, oy: 0, held: new Set(), zone };
+    const st = { x: 0, y: 0, active: false, pid: null, ox: 0, oy: 0, held: new Set(), zone, rest: null };
     const rest = () => { const r = zone.getBoundingClientRect(); base.style.left = (opt.restX != null ? opt.restX : 90) + 'px'; base.style.top = (r.height - (opt.restBottom != null ? opt.restBottom : 90)) + 'px'; base.style.opacity = '0.6'; };
-    rest(); window.addEventListener('resize', rest);
+    st.rest = rest; rest(); window.addEventListener('resize', rest);
     const keys = opt.keys;
     const setDir = () => {
       if (!keys) return;
@@ -270,6 +270,8 @@
     b.addEventListener('contextmenu', e => e.preventDefault());
     T.buttons[id] = st; return st;
   };
+  // 把摇杆区域/按钮放到指定的屏幕矩形（px），常用于只覆盖画布区域，避免挡住页面上的按钮
+  T.place = (id, r) => { const s = T.sticks[id] || T.buttons[id]; if (!s) return; const e = s.zone || s.el; Object.assign(e.style, { left: r.left + 'px', top: r.top + 'px', width: r.width + 'px', height: r.height + 'px' }); if (s.rest) s.rest(); };
   T.setVisible = (id, vis) => { const s = T.sticks[id] || T.buttons[id]; if (!s) return; (s.zone || s.el).style.display = vis ? '' : 'none'; };
   T.show = on => { layer().classList.toggle('show', on && T.enabled); };
 

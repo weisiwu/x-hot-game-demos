@@ -36,5 +36,67 @@ module.exports = {
       return [['手指拖动拨开稻草', after > before], ['轻点拿起针', (await h.ev('__demo.st.found')) >= 1 || (await h.ev('__demo.G.state')) === 'end']];
     },
   },
+  '02-leaf-sweepers': {
+    async play(h) {
+      const x0 = await h.ev('__demo.players[0].x');
+      await h.hold('KeyD', 900);
+      const p = await h.ev('({ x: __demo.players[0].x, bag: __demo.players[0].bag })');
+      await h.ev('__demo.S.money = 500'); await sleep(50);
+      await h.ev('document.getElementById("u_robots").disabled = false'); await sleep(50);
+      await h.clickSel('#u_robots'); await sleep(200);
+      return [['WASD 移动', Math.abs(p.x - x0) > 40], ['移动时扫到落叶', p.bag > 0], ['商店买扫地机器人', (await h.ev('__demo.robots().length')) === 1]];
+    },
+    async finish(h) { await h.ev('__demo.leaf.fill(0)'); await sleep(300); return [['清洁度达标过关', (await h.ev('__demo.S.unlocked')) >= 2]]; },
+    async afterReload(h) { return [['升级与解锁已保存', (await h.ev('__demo.S.up.robots >= 1 && __demo.S.unlocked >= 2'))]]; },
+    async touch(h) {
+      const r = await h.rect('#c');
+      const x0 = await h.ev('__demo.players[0].x');
+      const cx = r.x + r.w * 0.5, cy = r.y + r.h * 0.5;
+      await h.touchDrag([[cx, cy], [cx + 20, cy], [cx + 45, cy]], 700);
+      const x1 = await h.ev('__demo.players[0].x');
+      // 双人：左右半屏两个摇杆同时操作
+      await h.ev('__demo.S.twoP = true; __demo.G.start(0)'); await sleep(300);
+      const a0 = await h.ev('[__demo.players[0].y, __demo.players[1].y]');
+      const lx = r.x + r.w * 0.25, rx = r.x + r.w * 0.75;
+      await h.touch('touchStart', [[lx, cy, 1], [rx, cy, 2]]);
+      for (let k = 1; k <= 4; k++) { await h.touch('touchMove', [[lx, cy - k * 12, 1], [rx, cy + k * 12, 2]]); await sleep(20); }
+      await sleep(700); await h.touch('touchEnd', []);
+      const a1 = await h.ev('[__demo.players[0].y, __demo.players[1].y]');
+      return [['单人摇杆移动', x1 > x0 + 30], ['双人分屏：P1 上移', a1[0] < a0[0] - 30], ['双人分屏：P2 下移', a1[1] > a0[1] + 30]];
+    },
+  },
+
+  '03-night-market-pawn': {
+    async play(h) {
+      // 等一位卖家（跳过买家）
+      for (let i = 0; i < 10 && (await h.ev('!__demo.cust || __demo.cust.type === "buyer"')); i++) { await h.clickSel('#bReject').catch(() => {}); await sleep(600); }
+      const s0 = await h.ev('__demo.R.scans');
+      await h.clickSel('#bScan');
+      const s1 = await h.ev('__demo.R.scans');
+      await h.ev('__demo.setOffer(__demo.cust.ask)');
+      await h.clickSel('#bOffer'); await sleep(900);
+      const r = await h.ev('({ deals: __demo.R.deals, heat: __demo.R.heat, inv: __demo.R.inv.length })');
+      return [['扫描鉴定', s1 === s0 - 1], ['按要价出价能成交（或被便衣抓）', r.deals >= 1 || r.heat >= 1]];
+    },
+    async finish(h) {
+      await h.ev('__demo.R.night = 7; __demo.R.money = 5000; __demo.R.heat = 0');
+      let ended = false;
+      for (let i = 0; i < 40 && !ended; i++) {
+        ended = await h.ev('__demo.G.state === "end"');
+        if (!ended && await h.ev('!!__demo.cust')) await h.clickSel('#bReject').catch(() => {});
+        await sleep(650);
+      }
+      return [['撑过第 7 夜进入结算', ended && (await h.ev('__demo.D.wins')) >= 1]];
+    },
+    async afterReload(h) { return [['通关记录与最佳成绩已保存', await h.ev('__demo.D.wins >= 1 && __demo.D.best > 0')]]; },
+    async touch(h) {
+      for (let i = 0; i < 10 && (await h.ev('!__demo.cust || __demo.cust.type === "buyer"')); i++) { await h.tapSel('#bReject').catch(() => {}); await sleep(600); }
+      const o0 = await h.ev('document.getElementById("offer").textContent');
+      await h.tapSel('[data-d="50"]');
+      const o1 = await h.ev('document.getElementById("offer").textContent');
+      await h.ev('__demo.setOffer(__demo.cust.ask)'); await h.tapSel('#bOffer'); await sleep(900);
+      return [['触屏调价', o0 !== o1], ['触屏出价成交', (await h.ev('__demo.R.deals + __demo.R.heat')) >= 1]];
+    },
+  },
 };
 module.exports.sleep = sleep; module.exports.canvasPt = canvasPt; module.exports.vbtn = vbtn;

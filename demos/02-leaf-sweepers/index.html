@@ -2,25 +2,25 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>02 · 落叶清扫队 Leaf Sweepers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>落叶清扫队 Leaf Sweepers</title>
+<link rel="stylesheet" href="../../shared/xg.css">
 <style>
-  body { margin: 0; background: #14200f; color: #eef5e6; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; }
-  h1 { margin: 10px 0 2px; font-size: 22px; }
-  .sub { font-size: 13px; opacity: .75; margin-bottom: 6px; text-align: center; }
-  canvas { border-radius: 10px; max-width: 100%; image-rendering: pixelated; }
-  #shop { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; margin: 8px 0; max-width: 900px; }
-  #shop button { padding: 7px 10px; border: 0; border-radius: 6px; background: #e0913a; color: #1d1206; font-weight: 700; cursor: pointer; font-size: 13px; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #14200f; color: #eef5e6; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; overflow-x: hidden; }
+  #top { height: 6px; }
+  canvas { border-radius: 12px; touch-action: none; box-shadow: 0 8px 30px #0008; display: block; }
+  #shop { display: flex; gap: 5px; flex-wrap: wrap; justify-content: center; margin: 6px 0; max-width: 900px; padding: 0 6px; }
+  #shop button { padding: 6px 9px; border: 0; border-radius: 8px; background: #e0913a; color: #1d1206; font-weight: 800; cursor: pointer; font-size: 12px; line-height: 1.25; }
+  #shop button small { display: block; font-weight: 600; opacity: .85; }
   #shop button:disabled { background: #3b4a33; color: #93a389; cursor: not-allowed; }
-  a { color: #ffcf8a; }
 </style>
 </head>
 <body>
-<h1>🍂 落叶清扫队 Leaf Sweepers</h1>
-<div class="sub">WASD 移动扫落叶，袋子装满后回到中央<b>堆肥站</b>自动卖出，用钱升级工具、买扫地机器人。把公园清扫到 <b>95%</b> 即胜利。<br>按 <b>P</b> 加入本地 2P（方向键控制，升级全队共享）。数字键 1–5 快速购买。</div>
+<div id="top"></div>
 <canvas id="c" width="900" height="540"></canvas>
 <div id="shop"></div>
-<div style="font-size:12px;opacity:.7;margin-bottom:10px"><a href="../../index.html">← 返回目录</a></div>
+<script src="../../shared/xg.js"></script>
 <script src="game.js"></script>
 </body>
 </html>
