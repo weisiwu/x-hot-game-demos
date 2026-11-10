@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb35c"/><stop offset="1" stop-color="#ffe2a8"/></linearGradient>
+    <radialGradient id="hay" cx="0.45" cy="0.35" r="0.8"><stop offset="0" stop-color="#f6d77a"/><stop offset="0.6" stop-color="#d9a73e"/><stop offset="1" stop-color="#9c6b1f"/></radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#sky)"/>
+  <circle cx="520" cy="80" r="44" fill="#fff4c9" opacity="0.9"/>
+  <path d="M0 250 Q160 220 320 245 T640 238 V360 H0Z" fill="#7aa64a"/>
+  <path d="M0 290 Q200 270 640 292 V360 H0Z" fill="#5f8a36"/>
+  <ellipse cx="300" cy="292" rx="210" ry="22" fill="#000" opacity="0.18"/>
+  <path d="M100 290 Q120 110 300 92 Q480 110 500 290 Z" fill="url(#hay)"/>
+  <g stroke="#f9e7a6" stroke-width="3" stroke-linecap="round" opacity="0.85">
+    <path d="M150 250 l40 -18M180 200 l36 10M230 150 l30 -20M300 120 l-28 18M340 140 l40 6M400 170 l-30 22M430 230 l38 -12M250 230 l44 6M330 210 l-36 -14M200 270 l30 -8M380 260 l40 4M280 180 l30 18M360 100 l24 16M140 220 l-20 26M460 260 l-26 -18"/>
+  </g>
+  <g stroke="#b9822b" stroke-width="2.5" stroke-linecap="round" opacity="0.8">
+    <path d="M170 230 l30 12M220 180 l-34 8M270 140 l26 14M320 160 l-30 -10M370 190 l36 -6M410 220 l-26 -20M300 250 l32 -14M240 260 l-26 -10M450 200 l20 22"/>
+  </g>
+  <circle cx="352" cy="196" r="34" fill="url(#glow)"/>
+  <line x1="332" y1="208" x2="374" y2="184" stroke="#eef3f8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="334" cy="207" r="3.5" fill="none" stroke="#8fa1b3" stroke-width="2"/>
+  <g transform="translate(470 180) rotate(-30)">
+    <circle r="46" fill="#cfefff" fill-opacity="0.35" stroke="#5a3d1e" stroke-width="10"/>
+    <rect x="-8" y="48" width="16" height="70" rx="6" fill="#5a3d1e"/>
+  </g>
+  <text x="320" y="345" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="900" fill="#3a2410">HAYSTACK HUNT</text>
+</svg>
