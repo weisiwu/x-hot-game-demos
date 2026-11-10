@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>06 · 汽水木筏 Soda Raft</title>
+<style>
+  body { margin: 0; background: #0f2a3d; color: #eaf6ff; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; }
+  h1 { margin: 10px 0 2px; font-size: 22px; }
+  .sub { font-size: 13px; opacity: .85; margin-bottom: 6px; text-align: center; max-width: 900px; }
+  canvas { border-radius: 10px; max-width: 100%; }
+  kbd { background: #fff2; padding: 1px 6px; border-radius: 4px; }
+  a { color: #9fe3ff; }
+</style>
+</head>
+<body>
+<h1>💨 汽水木筏 Soda Raft</h1>
+<div class="sub">两只青蛙共乘一条木筏，靠摇晃汽水瓶的“汽水喷射”逆流而上！左侧喷口 <kbd>A</kbd>，右侧喷口 <kbd>L</kbd>（适合两人合作，各管一边）。单人可用 <kbd>←</kbd><kbd>→</kbd> 转向、<kbd>↑</kbd> 双喷。只喷一侧会转弯，两侧同时喷才直行。捡 🥤 补充汽水，撞石头掉血。到达终点旗帜获胜！</div>
+<canvas id="c" width="900" height="600"></canvas>
+<div style="font-size:12px;opacity:.7;margin:6px"><a href="../../index.html">← 返回目录</a></div>
+<script src="game.js"></script>
+</body>
+</html>

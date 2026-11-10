@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X 热门玩法 · 12 个浏览器小游戏 Demo</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0e1117; color: #e8ecf2; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  .wrap { max-width: 1080px; margin: auto; padding: 24px 16px; }
+  h1 { margin: 0 0 6px; }
+  p.lead { opacity: .8; margin-top: 0; font-size: 14px; line-height: 1.6; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; margin-top: 18px; }
+  a.card { display: block; background: #171c26; border: 1px solid #2a3242; border-radius: 12px; padding: 14px 16px; color: inherit; text-decoration: none; transition: transform .1s, border-color .1s; }
+  a.card:hover { transform: translateY(-2px); border-color: #6aa8ff; }
+  .card .t { font-weight: 800; font-size: 17px; }
+  .card .d { font-size: 13px; opacity: .85; margin: 6px 0; line-height: 1.5; }
+  .card .k { font-size: 12px; color: #8fb8ff; }
+  footer { margin-top: 24px; font-size: 12px; opacity: .65; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎮 近期热门玩法 · 12 个可玩浏览器 Demo</h1>
+  <p class="lead">基于 2026 年 10–11 月公开报道（Steam Next Fest 榜单、GameDiscoverCo 月报、Discord 趋势榜、X 上的爆款帖子报道等）整理出的热门玩法方向，每个方向做了一个<strong>原创的简化可玩实现</strong>。纯 HTML/JS，无需构建，直接点开即可玩。来源与局限详见仓库 README.md。</p>
+  <div class="grid">
+    <a class="card" href="demos/01-haystack-needle/index.html"><div class="t">01 · 🪡 草堆寻针</div><div class="d">拖动鼠标拨开上万根稻草找一根针，拨开的稻草换工具升级。</div><div class="k">趋势：X 上爆火的"大海捞针"帖 / 找针增量游戏</div></a>
+    <a class="card" href="demos/02-leaf-sweepers/index.html"><div class="t">02 · 🍂 落叶清扫队</div><div class="d">扫落叶、卖给堆肥站、换大扫帚买扫地机器人，支持本地双人合作。</div><div class="k">趋势：合作 + 增量清洁类爆款</div></a>
+    <a class="card" href="demos/03-night-market-pawn/index.html"><div class="t">03 · 🏮 夜市旧货摊</div><div class="d">夜市旧货摊：鉴定成色、比对失窃登记序列号、砍价，撑过 5 天。</div><div class="k">趋势：Next Fest 热门的店主经营模拟</div></a>
+    <a class="card" href="demos/04-scratch-tycoon/index.html"><div class="t">04 · 🎟️ 刮刮大亨</div><div class="d">鼠标刮开涂层，升级幸运与自动刮卡机，赚到一百万。</div><div class="k">趋势：刮刮卡增量游戏</div></a>
+    <a class="card" href="demos/05-class-clown/index.html"><div class="t">05 · 🏫 课堂捣蛋王</div><div class="d">趁老师写板书溜出座位恶作剧，小心老师回头和班长告状。</div><div class="k">趋势：教室恶作剧派对 / 社交潜行</div></a>
+    <a class="card" href="demos/06-soda-raft/index.html"><div class="t">06 · 🥤 汽水木筏</div><div class="d">两只青蛙靠"汽水喷射"操控同一条木筏逆流而上，双人合作。</div><div class="k">趋势：搞笑物理合作派对游戏</div></a>
+    <a class="card" href="demos/07-pocket-volley/index.html"><div class="t">07 · 🏐 口袋排球</div><div class="d">极简街机排球，跳跃扣球，先到 7 分获胜，可本地双人。</div><div class="k">趋势：街机体育类 demo</div></a>
+    <a class="card" href="demos/08-bullet-heaven/index.html"><div class="t">08 · ✨ 弹幕天堂 Mini</div><div class="d">自动攻击、升级三选一、坚持 3 分钟并击败大怪，带局外成长。</div><div class="k">趋势：Bullet Heaven（幸存者类）</div></a>
+    <a class="card" href="demos/09-dice-roguelike/index.html"><div class="t">09 · 🎲 骰运连连</div><div class="d">掷骰凑牌型，"筹码×倍率"计分，买护符改造规则连过 8 轮。</div><div class="k">趋势：roguelike 计分构筑</div></a>
+    <a class="card" href="demos/10-scam-buster-hotline/index.html"><div class="t">10 · ☎️ 反诈拖延热线</div><div class="d">接听模拟诈骗电话，拖住骗子、不泄露信息、识别话术。</div><div class="k">趋势：AI 来电呼叫中心合作喜剧（反诈视角）</div></a>
+    <a class="card" href="demos/11-stamina-summit/index.html"><div class="t">11 · 🧗 体力登顶</div><div class="d">点击岩点攀爬，管理体力与伤势，躲阵风，登上山顶。</div><div class="k">趋势：合作攀爬类 "friendslop"</div></a>
+    <a class="card" href="demos/12-mech-autobattler/index.html"><div class="t">12 · 🤖 机甲布阵</div><div class="d">部署并升级机甲，自动战斗，击退 7 波敌军。</div><div class="k">趋势：机甲自走棋 / auto-battler</div></a>
+  </div>
+  <footer>所有 demo 均为原创的玩法致敬与简化实现，不使用任何原作的名称、角色、美术或音乐。热度信息只引用公开报道中写明的内容，未做任何编造。</footer>
+</div>
+</body>
+</html>

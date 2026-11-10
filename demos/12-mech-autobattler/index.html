@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>12 · 机甲布阵 Mech Formation</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #11161c; color: #e7edf3; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; }
+  h1 { margin: 10px 0 2px; font-size: 22px; }
+  .sub { font-size: 13px; opacity: .8; margin-bottom: 6px; text-align: center; max-width: 900px; }
+  #wrap { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  canvas { border-radius: 10px; cursor: pointer; max-width: 100%; }
+  #side { width: 250px; background: #1b232c; border-radius: 10px; padding: 12px; font-size: 14px; }
+  .row { display: flex; justify-content: space-between; margin: 3px 0; }
+  button { width: 100%; padding: 8px; margin: 3px 0; border: 0; border-radius: 6px; background: #2d3b48; color: #e7edf3; cursor: pointer; text-align: left; font-size: 13px; }
+  button.sel { outline: 2px solid #ffcc4d; background: #3b4d5e; }
+  button.go { background: #ffcc4d; color: #222; font-weight: 800; text-align: center; font-size: 15px; }
+  button:disabled { opacity: .4; cursor: not-allowed; }
+  #log { font-size: 13px; min-height: 40px; color: #ffcc4d; margin-top: 6px; }
+  a { color: #8fc8ff; }
+</style>
+</head>
+<body>
+<h1>🤖 机甲布阵 Mech Formation</h1>
+<div class="sub">准备阶段：在右侧选择机甲，点击<b>下半场</b>格子部署；对已有同类机甲再点一次 = 升级；右键（或选中“回收”后点击）出售。点“开战”后自动战斗。打赢 <b>7 波</b>敌军获胜，基地耐久归零失败。</div>
+<div id="wrap">
+  <canvas id="c" width="560" height="560"></canvas>
+  <div id="side">
+    <div class="row"><span>波次</span><b id="wave"></b></div>
+    <div class="row"><span>💰 能源</span><b id="gold"></b></div>
+    <div class="row"><span>🏰 基地耐久</span><b id="hp"></b></div>
+    <div class="row"><span>部署上限</span><b id="cap"></b></div>
+    <div id="shop"></div>
+    <button id="bSell">♻️ 回收模式（返还 70%）</button>
+    <button id="bGo" class="go">⚔️ 开战</button>
+    <div id="log"></div>
+    <div style="font-size:12px;opacity:.7;margin-top:8px"><a href="../../index.html">← 返回目录</a></div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

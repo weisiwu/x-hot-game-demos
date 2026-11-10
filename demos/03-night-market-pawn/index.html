@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>03 · 夜市旧货摊 Night Market Pawn</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0d0518; color: #eadcff; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  header { text-align: center; padding: 10px; background: linear-gradient(90deg, #ff2fa0, #6a2cff); color: #fff; }
+  header h1 { margin: 0; font-size: 22px; text-shadow: 0 0 8px #fff8; }
+  header .sub { font-size: 13px; opacity: .9; }
+  main { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 12px; padding: 12px; max-width: 1100px; margin: auto; }
+  .panel { background: #1b0d30; border: 1px solid #ff2fa055; border-radius: 10px; padding: 12px; box-shadow: 0 0 12px #ff2fa022 inset; }
+  .panel h3 { margin: 0 0 8px; color: #ff7ad1; font-size: 15px; }
+  #cust .emoji { font-size: 56px; text-align: center; }
+  #cust .say { background: #2c1650; border-radius: 8px; padding: 8px; margin: 8px 0; min-height: 48px; }
+  .row { display: flex; justify-content: space-between; margin: 3px 0; font-size: 14px; }
+  .serial { font-family: ui-monospace, Consolas, monospace; color: #7dfcff; letter-spacing: 1px; }
+  button { padding: 8px 10px; border: 0; border-radius: 6px; background: #ff2fa0; color: #fff; font-weight: 700; cursor: pointer; margin: 3px 2px; }
+  button.alt { background: #4b2c80; }
+  button:disabled { opacity: .4; cursor: not-allowed; }
+  #offer { font-size: 26px; text-align: center; margin: 8px 0; color: #7dfcff; }
+  #log { font-size: 13px; max-height: 190px; overflow: auto; }
+  #log div { border-bottom: 1px dashed #ffffff18; padding: 3px 0; }
+  ul { margin: 0; padding-left: 18px; font-size: 13px; }
+  #overlay { position: fixed; inset: 0; background: #000c; display: none; align-items: center; justify-content: center; }
+  #overlay .box { background: #1b0d30; border: 2px solid #ff2fa0; border-radius: 12px; padding: 24px; max-width: 460px; text-align: center; }
+  a { color: #7dfcff; }
+  @media (max-width: 860px) { main { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>🏮 夜市旧货摊 Night Market Pawn</h1>
+  <div class="sub">霓虹夜市里的旧货摊：鉴定成色、比对失窃登记序列号、讨价还价。撑过 5 天并交得起摊位费就算赢。</div>
+</header>
+<main>
+  <section class="panel" id="cust">
+    <h3 id="custTitle">顾客</h3>
+    <div class="emoji" id="cEmoji">🧑‍🎤</div>
+    <div class="row"><span>顾客</span><b id="cName"></b></div>
+    <div class="row"><span>物品</span><b id="cItem"></b></div>
+    <div class="row"><span>序列号</span><b class="serial" id="cSerial"></b></div>
+    <div class="row"><span>成色</span><b id="cCond"></b></div>
+    <div class="row"><span>要价</span><b id="cAsk"></b></div>
+    <div class="row"><span>耐心</span><b id="cPat"></b></div>
+    <div class="say" id="cSay"></div>
+    <div id="offer">$0</div>
+    <div style="text-align:center">
+      <button class="alt" data-d="-50">-50</button><button class="alt" data-d="-10">-10</button>
+      <button class="alt" data-d="10">+10</button><button class="alt" data-d="50">+50</button>
+    </div>
+    <div style="text-align:center">
+      <button id="bOffer">💬 出价</button>
+      <button id="bScan" class="alt">🔍 扫描成色</button>
+      <button id="bReject" class="alt">🚪 请走</button>
+    </div>
+  </section>
+  <section class="panel">
+    <h3>📋 今日失窃登记序列号（巡逻队推送）</h3>
+    <ul id="hot"></ul>
+    <h3 style="margin-top:12px">📖 市场参考价（全新品）</h3>
+    <ul id="guide"></ul>
+  </section>
+  <section class="panel">
+    <h3 id="dayTitle">第 1 天</h3>
+    <div class="row"><span>现金</span><b id="money"></b></div>
+    <div class="row"><span>今晚摊位费</span><b id="rent"></b></div>
+    <div class="row"><span>今日剩余顾客</span><b id="remain"></b></div>
+    <div class="row"><span>今日剩余扫描</span><b id="scans"></b></div>
+    <div class="row"><span>警方关注度</span><b id="heat"></b></div>
+    <h3 style="margin-top:10px">📦 库存（打烊时自动转卖）</h3>
+    <ul id="inv"></ul>
+    <h3 style="margin-top:10px">📝 日志</h3>
+    <div id="log"></div>
+    <div style="font-size:12px;opacity:.7;margin-top:8px"><a href="../../index.html">← 返回目录</a></div>
+  </section>
+</main>
+<div id="overlay"><div class="box" id="ovBox"></div></div>
+<script src="game.js"></script>
+</body>
+</html>

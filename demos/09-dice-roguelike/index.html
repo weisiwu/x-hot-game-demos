@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>09 · 骰运连连 Dice Gambit</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: radial-gradient(circle at 50% 30%, #2a4a3a, #0f1d17); color: #f5f1e3; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; min-height: 100vh; }
+  .wrap { max-width: 960px; margin: auto; padding: 12px; }
+  h1 { text-align: center; margin: 6px 0; font-size: 22px; }
+  .sub { text-align: center; font-size: 13px; opacity: .8; }
+  .bar { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 10px 0; }
+  .chip { background: #0007; border-radius: 8px; padding: 6px 12px; font-size: 14px; }
+  .chip b { color: #ffd76b; }
+  #dice { display: flex; gap: 14px; justify-content: center; margin: 18px 0 8px; }
+  .die { width: 84px; height: 84px; border-radius: 14px; background: #fffaf0; color: #222; font-size: 64px; line-height: 84px; text-align: center; cursor: pointer; user-select: none; box-shadow: 0 6px 0 #b9ad92; transition: transform .1s; }
+  .die.held { background: #ffd76b; transform: translateY(-8px); box-shadow: 0 10px 0 #b38b1f; }
+  .die.rolling { animation: wob .25s; }
+  @keyframes wob { 0% { transform: rotate(-15deg) } 50% { transform: rotate(15deg) } 100% { transform: rotate(0) } }
+  #preview { text-align: center; font-size: 18px; min-height: 28px; }
+  #preview b { color: #7fd8ff; } #preview i { color: #ff8a7a; font-style: normal; }
+  .btns { display: flex; gap: 10px; justify-content: center; margin: 10px 0; }
+  button { padding: 10px 18px; border: 0; border-radius: 8px; background: #ffd76b; color: #222; font-weight: 800; cursor: pointer; font-size: 15px; }
+  button.blue { background: #7fd8ff; }
+  button:disabled { opacity: .35; cursor: not-allowed; }
+  h3 { margin: 14px 0 6px; font-size: 15px; color: #ffd76b; }
+  .charms { display: flex; gap: 8px; flex-wrap: wrap; }
+  .charm { background: #0008; border: 1px solid #ffd76b55; border-radius: 8px; padding: 8px; width: 170px; font-size: 13px; }
+  .charm .n { font-weight: 800; color: #ffd76b; }
+  .charm button { margin-top: 6px; padding: 5px 10px; font-size: 13px; }
+  #log { font-size: 13px; opacity: .85; min-height: 20px; text-align: center; }
+  #shop { display: none; background: #0009; border-radius: 12px; padding: 12px; margin-top: 10px; }
+  table { font-size: 12px; border-collapse: collapse; margin: auto; }
+  td { padding: 2px 8px; border-bottom: 1px solid #ffffff14; }
+  a { color: #7fd8ff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎲 骰运连连 Dice Gambit</h1>
+  <div class="sub">掷 5 颗骰子，点击骰子可<b>锁定</b>，再重掷其它骰子，凑出牌型后计分：<b>得分 = 筹码 × 倍率</b>。每轮在出手次数内达到目标分。过关后去商店买护符改造规则，连过 <b>8 轮</b>即胜利。</div>
+  <div class="bar">
+    <div class="chip">轮次 <b id="round"></b></div>
+    <div class="chip">目标 <b id="target"></b></div>
+    <div class="chip">当前 <b id="score"></b></div>
+    <div class="chip">剩余出手 <b id="hands"></b></div>
+    <div class="chip">剩余重掷 <b id="rerolls"></b></div>
+    <div class="chip">💰 <b id="money"></b></div>
+  </div>
+  <div id="dice"></div>
+  <div id="preview"></div>
+  <div class="btns"><button id="bReroll" class="blue">🔄 重掷未锁定</button><button id="bScore">✅ 计分出手</button></div>
+  <div id="log"></div>
+  <div id="shop">
+    <h3>🛍️ 护符商店（最多持有 5 个）</h3>
+    <div class="charms" id="shopItems"></div>
+    <div class="btns"><button id="bReshop" class="blue">🔁 刷新商店 $2</button><button id="bNext">➡️ 下一轮</button></div>
+  </div>
+  <h3>🧿 我的护符</h3>
+  <div class="charms" id="mine"></div>
+  <h3>📜 牌型表</h3>
+  <table id="table"></table>
+  <div style="font-size:12px;opacity:.7;margin-top:12px;text-align:center"><a href="../../index.html">← 返回目录</a></div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
