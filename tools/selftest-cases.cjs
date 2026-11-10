@@ -184,5 +184,44 @@ module.exports = {
       return [['双指按住左右半屏 = 前进', y1 < y0 - 30], ['只按左半屏 = 转向', Math.abs(a1 - a0) > 0.05]];
     },
   },
+
+  '07-pocket-volley': {
+    async play(h) {
+      await sleep(1200);
+      await h.keyDown('KeyD'); await sleep(150);
+      const vx = await h.ev('__demo.M.L.vx'); await h.keyUp('KeyD');
+      const x0 = 0, x1 = vx > 0 ? 100 : 0;
+      await h.press('KeyW'); await sleep(80);
+      const vy = await h.ev('__demo.M.L.vy');
+      await sleep(5000);
+      return [['A/D 移动', x1 > x0 + 30], ['W 跳跃', vy < 0], ['比赛能得分', (await h.ev('__demo.M.score[0] + __demo.M.score[1]')) >= 1]];
+    },
+    async finish(h) {
+      // 让 AI 代打左边，加速打完整场
+      await h.ev('__demo.M.L.ai = __demo.mkAI(__demo.OPP[5])');
+      const ok = await h.waitFor('__demo.G.state === "end"', 240000, 500);
+      return [['AI 代打完成整场比赛（7 分制）', ok]];
+    },
+    async afterReload(h) { return [['战绩已保存', await h.ev('__demo.SV.totalWins + __demo.SV.totalLosses >= 1')]]; },
+    async touch(h) {
+      await sleep(900);
+      const btn = async label => h.ev(`(() => { const b = [...document.querySelectorAll('.xg-vbtn')].find(b => b.textContent === ${JSON.stringify(label)} && b.offsetParent); const r = b.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()`);
+      const R = await btn('▶'), J = await btn('跳');
+      const x0 = await h.ev('__demo.M.L.x');
+      await h.touchHold(R[0], R[1], 500);
+      const x1 = await h.ev('__demo.M.L.x');
+      await h.touch('touchStart', [[J[0], J[1], 3]]); await sleep(60);
+      const vy = await h.ev('__demo.M.L.vy'); await h.touch('touchEnd', []);
+      // 双人：两组按钮同时操作
+      await h.ev('__demo.G.start({ mode: "pvp" })'); await sleep(400);
+      const vis = await h.ev(`[...document.querySelectorAll('.xg-vbtn')].filter(b => b.offsetParent).length`);
+      const p2r = await h.ev(`(() => { const bs = [...document.querySelectorAll('.xg-vbtn')].filter(b => b.textContent === '◀' && b.offsetParent); const r = bs[1].getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()`);
+      const p1r = await btn('▶');
+      const a0 = await h.ev('[__demo.M.L.x, __demo.M.R.x]');
+      await h.touch('touchStart', [[p1r[0], p1r[1], 1], [p2r[0], p2r[1], 2]]); await sleep(500); await h.touch('touchEnd', []);
+      const a1 = await h.ev('[__demo.M.L.x, __demo.M.R.x]');
+      return [['触屏 ▶ 移动', x1 > x0 + 30], ['触屏「跳」', vy < 0], ['双人显示两组共 8 个按钮', vis === 8], ['双人同时操作两边', a1[0] > a0[0] + 20 && a1[1] < a0[1] - 20]];
+    },
+  },
 };
 module.exports.sleep = sleep; module.exports.canvasPt = canvasPt; module.exports.vbtn = vbtn;

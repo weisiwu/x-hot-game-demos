@@ -2,22 +2,17 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>07 · 口袋排球 Pocket Volley</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>口袋排球 Pocket Volley</title>
+<link rel="stylesheet" href="../../shared/xg.css">
 <style>
-  body { margin: 0; background: #142033; color: #fff; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; }
-  h1 { margin: 10px 0 2px; font-size: 22px; }
-  .sub { font-size: 13px; opacity: .85; margin-bottom: 6px; text-align: center; max-width: 880px; }
-  canvas { border-radius: 10px; max-width: 100%; }
-  kbd { background: #fff2; padding: 1px 6px; border-radius: 4px; }
-  a { color: #9fd0ff; }
+  body { margin: 0; background: #142033; color: #fff; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; overflow: hidden; }
+  canvas { border-radius: 12px; margin-top: 6px; touch-action: none; display: block; box-shadow: 0 8px 30px #0008; }
 </style>
 </head>
 <body>
-<h1>🏐 口袋排球 Pocket Volley</h1>
-<div class="sub">左边是你：<kbd>A</kbd><kbd>D</kbd> 移动，<kbd>W</kbd> 跳跃，空中靠近球按 <kbd>S</kbd> 扣球。每边最多碰 3 次，球落在对方场地得分，先到 <b>7 分</b>获胜。按 <kbd>2</kbd> 切换本地双人（右边用 <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd>）。</div>
 <canvas id="c" width="880" height="480"></canvas>
-<div style="font-size:12px;opacity:.7;margin:6px"><a href="../../index.html">← 返回目录</a></div>
+<script src="../../shared/xg.js"></script>
 <script src="game.js"></script>
 </body>
 </html>
