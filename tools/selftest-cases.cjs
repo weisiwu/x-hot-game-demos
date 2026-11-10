@@ -129,5 +129,60 @@ module.exports = {
       return [['手指刮开卡片', await h.ev('!!__demo.card && __demo.card.done')]];
     },
   },
+
+  '05-class-clown': {
+    async play(h) {
+      await h.ev('__demo.S.T.state = "writing"; __demo.S.T.timer = 99');
+      const x0 = await h.ev('__demo.S.p.x');
+      await h.hold('KeyA', 500);
+      const x1 = await h.ev('__demo.S.p.x');
+      // 走到恶作剧点并按住空格
+      await h.ev('(() => { const p = __demo.S.pranks[0]; __demo.S.p.x = p.x; __demo.S.p.y = p.y; })()');
+      await h.hold('Space', 3400);
+      const done = await h.ev('__demo.S.pranks[0].done');
+      // 老师回头时不在座位会被抓
+      await h.ev('__demo.S.T.state = "watching"; __demo.S.T.timer = 2'); await sleep(200);
+      const strikes = await h.ev('__demo.S.strikes');
+      return [['WASD 移动', x1 < x0 - 30], ['按住空格完成恶作剧', done], ['老师看过来时离座被抓', strikes >= 1]];
+    },
+    async finish(h) { await h.ev('__demo.S.pranks.forEach(p => p.done = true)'); await sleep(300); return [['完成全部恶作剧过关', (await h.ev('__demo.SV.unlocked')) >= 2]]; },
+    async afterReload(h) { return [['解锁与星级已保存', await h.ev('__demo.SV.unlocked >= 2 && __demo.SV.stars.L0 >= 1')]]; },
+    async touch(h) {
+      await h.ev('__demo.S.T.state = "writing"; __demo.S.T.timer = 99');
+      const r = await h.rect('#c');
+      const x0 = await h.ev('__demo.S.p.x');
+      const sx = r.x + r.w * 0.3, sy = r.y + r.h * 0.6;
+      await h.touchDrag([[sx, sy], [sx + 20, sy], [sx + 50, sy]], 600);
+      const x1 = await h.ev('__demo.S.p.x');
+      await h.ev('(() => { const p = __demo.S.pranks[0]; __demo.S.p.x = p.x; __demo.S.p.y = p.y; __demo.S.T.timer = 99; })()');
+      const b = await h.ev(`(() => { const b = [...document.querySelectorAll('.xg-vbtn')].find(b => b.textContent.includes('恶作剧')); const r = b.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()`);
+      await h.touchHold(b[0], b[1], 3400);
+      return [['触屏摇杆移动', x1 > x0 + 30], ['按住触屏按钮完成恶作剧', await h.ev('__demo.S.pranks[0].done')]];
+    },
+  },
+
+  '06-soda-raft': {
+    async play(h) {
+      await h.hold('ArrowUp', 1800);
+      const y = await h.ev('__demo.S.raft.y'), gas = await h.ev('__demo.S.gasL');
+      const a0 = await h.ev('__demo.S.raft.a');
+      await h.hold('KeyA', 500);
+      const a1 = await h.ev('__demo.S.raft.a');
+      return [['双喷向上游前进', y < -30], ['喷气消耗汽水', gas < 100], ['单侧喷气会转向', Math.abs(a1 - a0) > 0.05]];
+    },
+    async finish(h) { await h.ev('__demo.S.hp = 99; __demo.S.raft.y = __demo.S.FIN + 120; __demo.S.raft.a = 0; __demo.S.raft.va = 0'); await h.hold('ArrowUp', 1800); await sleep(200); return [['到达终点过关', (await h.ev('__demo.SV.unlocked')) >= 2]]; },
+    async afterReload(h) { return [['解锁与成绩已保存', await h.ev('__demo.SV.unlocked >= 2 && __demo.SV.best.L0 > 0')]]; },
+    async touch(h) {
+      const L = await h.ev(`(() => { const r = __demo.S && document.querySelectorAll('.xg-vbtn')[0].getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()`);
+      const R = await h.ev(`(() => { const r = document.querySelectorAll('.xg-vbtn')[1].getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()`);
+      const y0 = await h.ev('__demo.S.raft.y');
+      await h.touch('touchStart', [[L[0], L[1], 1], [R[0], R[1], 2]]); await sleep(1500); await h.touch('touchEnd', []);
+      const y1 = await h.ev('__demo.S.raft.y');
+      const a0 = await h.ev('__demo.S.raft.a');
+      await h.touchHold(L[0], L[1], 600);
+      const a1 = await h.ev('__demo.S.raft.a');
+      return [['双指按住左右半屏 = 前进', y1 < y0 - 30], ['只按左半屏 = 转向', Math.abs(a1 - a0) > 0.05]];
+    },
+  },
 };
 module.exports.sleep = sleep; module.exports.canvasPt = canvasPt; module.exports.vbtn = vbtn;
