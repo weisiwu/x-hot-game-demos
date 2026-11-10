@@ -339,7 +339,7 @@ module.exports = {
   '12-mech-autobattler': {
     async play(h) {
       const c = async (x, y) => { const p = await canvasPt(h, x * 70 + 35, y * 70 + 35, '#c'); await h.click(p[0], p[1]); await sleep(60); };
-      await c(3, 5); await h.clickSel('#b_gunner'); await c(4, 6); await h.clickSel('#b_guard'); await c(2, 5); await c(2, 5);
+      await c(3, 5); await h.clickSel('#b_gunner'); await c(4, 6); await h.clickSel('#b_guard'); await c(2, 5); await h.ev('__demo.S.gold = 50'); await c(2, 5);
       const b = await h.ev('({ n: __demo.S.board.length, lv: __demo.S.board.find(u => u.x === 2).lv })');
       await h.clickSel('#bGo'); await sleep(200);
       const phase = await h.ev('__demo.S.phase');

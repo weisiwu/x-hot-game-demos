@@ -5,9 +5,9 @@
   const $ = id => document.getElementById(id);
   const SCRIPTS = window.SCAM_SCRIPTS, TAGS = window.SCAM_TAGS, TIPS = window.SCAM_TIPS;
   const SHIFTS = [
-    { name: '早班', calls: 5, goal: 60, diff: 1 },
-    { name: '午班', calls: 6, goal: 85, diff: 1.15 },
-    { name: '夜班', calls: 7, goal: 115, diff: 1.3 },
+    { name: '早班', calls: 5, goal: 110, diff: 1 },
+    { name: '午班', calls: 6, goal: 150, diff: 1.15 },
+    { name: '夜班', calls: 7, goal: 185, diff: 1.3 },
   ];
   const SAVE = XG.save('10-scam-buster-hotline', { tutorialSeen: false, unlocked: 1, stars: {}, best: {}, lifetimeMins: 0, calls: 0, cracked: 0, learned: {} });
   const SV = SAVE.data;
@@ -31,7 +31,7 @@
     list.forEach((o, i) => {
       const b = document.createElement('button'); b.className = o.cls || ''; b.textContent = (list.length > 1 ? `${i + 1}. ` : '') + o.text;
       if (o.tag) { const t = document.createElement('span'); t.className = 'tag'; t.textContent = o.tag; b.appendChild(t); }
-      if (o.hold) { b.addEventListener('pointerdown', e => { e.preventDefault(); o.hold(true); }); ['pointerup', 'pointerleave', 'pointercancel'].forEach(ev => b.addEventListener(ev, () => o.hold(false))); }
+      if (o.hold) { b.addEventListener('pointerdown', e => { e.preventDefault(); try { b.setPointerCapture(e.pointerId); } catch (_) { /* 合成事件 */ } o.hold(true); }); ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(ev => b.addEventListener(ev, () => o.hold(false))); window.addEventListener('pointerup', () => o.hold(false), { once: true }); }
       else b.onclick = () => { XG.audio.sfx('click'); o.fn(); };
       box.appendChild(b);
     });

@@ -1,5 +1,36 @@
 [
  {
+  "name": "06-cover",
+  "batch": "batch-a-covers-01-06",
+  "prompt": "Key art for a co-op raft game: two cute green frogs on a small wooden raft propelled by fizzing soda bottles shooting bubbly jets, racing upstream on a blue river with rocks and lily pads, lush green banks. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-a-covers-01-06-r2.json",
+    "job_id": "7f2ce049-b3ff-43b7-a11f-ec08258d92f9",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 4383906,
+   "sha256": "28b099a94a25b828f58816678e824c782e3b3be4359fa98f47e8d86a610be050"
+  },
+  "output": {
+   "path": "assets/06-soda-raft/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 180124,
+   "sha256": "b6a454dc9c7ae719727df2828c05188642932376b39061a8022df4935333939a"
+  },
+  "result": "used"
+ },
+ {
   "name": "01-cover",
   "batch": "batch-a-covers-01-06",
   "prompt": "Key art for a casual game about finding a needle in a giant haystack: a huge golden haystack on a sunny farm field at golden hour, a tiny shiny silver needle glinting among the straw, a wooden rake and a magnifying glass leaning nearby, scattered straw. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
@@ -155,17 +186,6 @@
   "result": "used"
  },
  {
-  "name": "06-cover",
-  "batch": "batch-a-covers-01-06",
-  "prompt": "Key art for a co-op raft game: two cute green frogs on a small wooden raft propelled by fizzing soda bottles shooting bubbly jets, racing upstream on a blue river with rocks and lily pads, lush green banks. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
-  "request_size": [
-   1536,
-   1024
-  ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
- },
- {
   "name": "10-cover",
   "batch": "batch-b-covers-07-12",
   "prompt": "Key art for an anti-scam phone hotline game: a friendly volunteer with a headset at a desk in a cozy call center booth, a retro phone ringing with exaggerated cartoon ringing lines, a shield icon shape made of light, sticky notes on the wall. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
@@ -173,8 +193,28 @@
    1536,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-b-covers-07-12-r2.json",
+    "job_id": "459e15cf-594f-4013-9cec-c22859e6917f",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3857446,
+   "sha256": "9e693595c5018fbcfc56579c55508a4a9a3d237b68b6313366a3dada1eca9406"
+  },
+  "output": {
+   "path": "assets/10-scam-buster-hotline/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 97026,
+   "sha256": "bb1e19891ce4bab380e8f0314aaddabc92b0a7969c35a32495d76924f5f7d534"
+  },
+  "result": "used"
  },
  {
   "name": "11-cover",
@@ -184,8 +224,28 @@
    1536,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-b-covers-07-12-r2.json",
+    "job_id": "dd930810-60de-4447-b931-72bf994fc3c1",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3947824,
+   "sha256": "181ece8d3ac32055d46d744c4217971ae952e20d4aaa2e707db36df4e213ec1d"
+  },
+  "output": {
+   "path": "assets/11-stamina-summit/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 107700,
+   "sha256": "8a7f4455d275364da6699ac7e7723c250b74a3a1ea6571977c28349e9a5f455b"
+  },
+  "result": "used"
  },
  {
   "name": "12-cover",
@@ -195,8 +255,28 @@
    1536,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-b-covers-07-12-r4.json",
+    "job_id": "98f53722-ae6a-43b3-8e58-0fe75a6f9871",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 4010540,
+   "sha256": "9cbff82eece2b361593fe5f8720719f72473b5fa8effa4e16170b6d5bdd3dae0"
+  },
+  "output": {
+   "path": "assets/12-mech-autobattler/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 116494,
+   "sha256": "0d9bd9d2a4347954f275710de26456e52fe1d72c7faba6637b8fd91afbde037f"
+  },
+  "result": "used"
  },
  {
   "name": "07-cover",
@@ -290,8 +370,28 @@
    1536,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-c-backgrounds-r2.json",
+    "job_id": "d1f7d187-f133-471a-b8bb-95cd7d8de884",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3023679,
+   "sha256": "50e7a18a52c4817ea0c2a9e3c3358437e807a22d4cd4965f030198882fa086a5"
+  },
+  "output": {
+   "path": "assets/09-dice-roguelike/felt.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "bytes": 49188,
+   "sha256": "df85d5380afdc670253051b285eabd191d7e866b9e7ee7866d3ab128a78fd793"
+  },
+  "result": "used"
  },
  {
   "name": "11-cliff",
@@ -301,8 +401,28 @@
    1024,
    1536
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-c-backgrounds-r2.json",
+    "job_id": "8f6e2ea1-884e-4ae7-a82a-06cdfcc4af6c",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3976341,
+   "sha256": "4fdf514fdbabe892e8579bf5790fb89e96dc54aedcf67fd62daccab7cee5a2c7"
+  },
+  "output": {
+   "path": "assets/11-stamina-summit/cliff.webp",
+   "size": [
+    600,
+    900
+   ],
+   "bytes": 120168,
+   "sha256": "745b3ca5e82f5d064b9bb0591786f51596bf4a32702adc66a2be782b7d933852"
+  },
+  "result": "used"
  },
  {
   "name": "12-deck",
@@ -312,8 +432,28 @@
    1536,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-c-backgrounds-r2.json",
+    "job_id": "f78a009c-8184-4e27-9dec-2e46b31841c6",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3182060,
+   "sha256": "84de79d76ab2984a468daf88f4c0f12f49596175e97f06e2fac0a38bedfda370"
+  },
+  "output": {
+   "path": "assets/12-mech-autobattler/deck.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 61228,
+   "sha256": "c9cfc8e4acb97db61703a91d459abf9589a27145ba68540e7a9228cbc7ab0258"
+  },
+  "result": "used"
  },
  {
   "name": "05-floor",
@@ -323,8 +463,28 @@
    1536,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-c-backgrounds-r3.json",
+    "job_id": "cdb5bec6-ec0c-41ac-8c1a-47d37371b246",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3259951,
+   "sha256": "0f246301ad3ca0b83bcf73e13fa4f11683288862fb0e4a3f7e031f4daa59e2f1"
+  },
+  "output": {
+   "path": "assets/05-class-clown/floor.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 57168,
+   "sha256": "b24622f78d24635e192782f62efa1379310e1fcd327e9cdb3c46c620c8df5b51"
+  },
+  "result": "used"
  },
  {
   "name": "03-backdrop",
@@ -334,8 +494,28 @@
    1536,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-c-backgrounds-r3.json",
+    "job_id": "977e52c1-1766-464f-b21f-7a812b719e75",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3709881,
+   "sha256": "6a8d48960de533b74a4f1fa2ef73f8be81934937f90acf97022cfcba8fa0d787"
+  },
+  "output": {
+   "path": "assets/03-night-market-pawn/backdrop.webp",
+   "size": [
+    1280,
+    853
+   ],
+   "bytes": 75610,
+   "sha256": "0df12dc5db214cf10ec5bf65951d0a5978940a64c63552a2c8126079283cc4ca"
+  },
+  "result": "used"
  },
  {
   "name": "01-ground",
@@ -493,50 +673,6 @@
   "result": "used"
  },
  {
-  "name": "03-cust-buyer",
-  "batch": "batch-d-portraits",
-  "prompt": "Square portrait avatar of a stylish young collector holding cash, excited, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
-  "request_size": [
-   1024,
-   1024
-  ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
- },
- {
-  "name": "10-caller-service",
-  "batch": "batch-d-portraits",
-  "prompt": "Square portrait avatar of a overly polite fake customer service agent with a headset, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
-  "request_size": [
-   1024,
-   1024
-  ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
- },
- {
-  "name": "10-caller-police",
-  "batch": "batch-d-portraits",
-  "prompt": "Square portrait avatar of a fake police officer with an exaggerated stern face and a toy badge, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
-  "request_size": [
-   1024,
-   1024
-  ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
- },
- {
-  "name": "10-caller-mentor",
-  "batch": "batch-d-portraits",
-  "prompt": "Square portrait avatar of a too-cheerful online part-time job mentor holding a phone, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
-  "request_size": [
-   1024,
-   1024
-  ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
- },
- {
   "name": "10-caller-prize",
   "batch": "batch-d-portraits",
   "prompt": "Square portrait avatar of a flashy prize announcer with confetti, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
@@ -544,8 +680,28 @@
    1024,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-d-portraits-r2.json",
+    "job_id": "28f76e45-c290-4cac-8bfb-06bd777df16c",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2422532,
+   "sha256": "bf0b890bb17b24e3422483d06fc4ac635f64fa90fb49735a4ef4d29485210b6f"
+  },
+  "output": {
+   "path": "assets/10-scam-buster-hotline/caller-prize.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 15214,
+   "sha256": "df02a6608259eb6ee675eb4c6b9cb559c15963cdf5977b97eaef67b5059abafe"
+  },
+  "result": "used"
  },
  {
   "name": "10-caller-friend",
@@ -555,8 +711,28 @@
    1024,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-d-portraits-r2.json",
+    "job_id": "cf93d898-50bc-46ef-87fb-a48933c897f4",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2350642,
+   "sha256": "838e98b35dfaadf2dff4be3cf711872976cc59bb3d2bfbdbc36343578890fd4c"
+  },
+  "output": {
+   "path": "assets/10-scam-buster-hotline/caller-friend.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 11496,
+   "sha256": "c0473c8c2274accd17dbcf865729bd8975fb54ed0d0e6aaab6bca16fc898945b"
+  },
+  "result": "used"
  },
  {
   "name": "10-caller-invest",
@@ -566,8 +742,28 @@
    1024,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-d-portraits-r2.json",
+    "job_id": "a84d5844-31cf-4336-bcdd-d57aca8c2f3e",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2315189,
+   "sha256": "7e9b245618a68f5cae7b02818e6d47a55a1479e023afaec331f988cb2b311921"
+  },
+  "output": {
+   "path": "assets/10-scam-buster-hotline/caller-invest.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 14494,
+   "sha256": "25a8cd66bf724d2b0092a22de5b8d9678a85c3f61cab1bfda7a0b76fccef58cc"
+  },
+  "result": "used"
  },
  {
   "name": "12-mech-guard",
@@ -577,8 +773,28 @@
    1024,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-d-portraits-r3.json",
+    "job_id": "f42c1ada-16b3-44ee-b07b-579a3dc189ed",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1926117,
+   "sha256": "026d3f1a797d5187a7c9fa05bf64268ac43f06e6afb8cf35272327dd4f75ac8c"
+  },
+  "output": {
+   "path": "assets/12-mech-autobattler/mech-guard.webp",
+   "size": [
+    192,
+    192
+   ],
+   "bytes": 10868,
+   "sha256": "fd7c49529dc0e9331209b807f2fb8bff02aadfb51787f47d9995c32db1533d0d"
+  },
+  "result": "used"
  },
  {
   "name": "12-mech-gunner",
@@ -588,8 +804,28 @@
    1024,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-d-portraits-r3.json",
+    "job_id": "d47a61dc-cb28-4339-b345-cdfbee02fd46",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1855722,
+   "sha256": "0fe8cf9b706997b31ddb147a82e7a333a19533e20a857e38f82a667379ab0f48"
+  },
+  "output": {
+   "path": "assets/12-mech-autobattler/mech-gunner.webp",
+   "size": [
+    192,
+    192
+   ],
+   "bytes": 9234,
+   "sha256": "399fc0d878de006e13f9bc1aba29211a0351b6643812a21d561e793ad13defbf"
+  },
+  "result": "used"
  },
  {
   "name": "12-mech-artillery",
@@ -599,8 +835,28 @@
    1024,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-d-portraits-r3.json",
+    "job_id": "d24a3464-b4c5-4066-be03-f52feff6e488",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1705446,
+   "sha256": "d663fce99d238983829fdf504eb0106398da129a244897afb224dd54222b85d1"
+  },
+  "output": {
+   "path": "assets/12-mech-autobattler/mech-artillery.webp",
+   "size": [
+    192,
+    192
+   ],
+   "bytes": 8312,
+   "sha256": "360bab9c70c0e3f1c25ff17a29ac8a92d060e1cc919b14bd5e943ba57b6c1588"
+  },
+  "result": "used"
  },
  {
   "name": "12-mech-raider",
@@ -610,8 +866,28 @@
    1024,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-d-portraits-r3.json",
+    "job_id": "7cd5918c-b650-4a44-9fbd-a72367913ea8",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1810192,
+   "sha256": "d907002f4a45432801bfa68915b6614aeb6392b555bd9bd52d025815ec568a35"
+  },
+  "output": {
+   "path": "assets/12-mech-autobattler/mech-raider.webp",
+   "size": [
+    192,
+    192
+   ],
+   "bytes": 8664,
+   "sha256": "5ef458e267be043511dcfca367424f2c52415b46c5e967efbaebfdd1cbd252e5"
+  },
+  "result": "used"
  },
  {
   "name": "12-mech-medic",
@@ -621,8 +897,28 @@
    1024,
    1024
   ],
-  "attempts": [],
-  "result": "missing (job not downloaded)"
+  "attempts": [
+   {
+    "spec": "batch-d-portraits-r3.json",
+    "job_id": "7ed5feca-de1a-47d7-a1ac-0b0efbe5ea03",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1564802,
+   "sha256": "12c55556243124402477beb775c28a7238e634731ea2235cb09a3a27f8e5d1f2"
+  },
+  "output": {
+   "path": "assets/12-mech-autobattler/mech-medic.webp",
+   "size": [
+    192,
+    192
+   ],
+   "bytes": 7302,
+   "sha256": "afe3f01fbc830e71dd23a4df3470dfb60d5386751828336e392467477d1af253"
+  },
+  "result": "used"
  },
  {
   "name": "03-cust-normal",
@@ -780,6 +1076,102 @@
   "result": "used"
  },
  {
+  "name": "03-cust-buyer",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a stylish young collector holding cash, excited, cartoon character bust, centered, simple dark purple neon night market background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "raw": {
+   "bytes": 2560917,
+   "sha256": "f7c44966d0b0afdab24cd16b363178921ab18dde8c80c00738623e252e778bed"
+  },
+  "output": {
+   "path": "assets/03-night-market-pawn/cust-buyer.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 18460,
+   "sha256": "9e3e61d6e9ab91b86a34f0bb2fc0b3fde1094b5434683609abae6e45b73ed5ce"
+  },
+  "result": "used"
+ },
+ {
+  "name": "10-caller-service",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a overly polite fake customer service agent with a headset, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "raw": {
+   "bytes": 2281977,
+   "sha256": "c91b63e6c18c0a7eae9f20247e7c37206331636a78e5c36e928c6609898f0c37"
+  },
+  "output": {
+   "path": "assets/10-scam-buster-hotline/caller-service.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 10894,
+   "sha256": "6723f83733aedd0f1da7c4e15bf1781589237ff4297543a21816f7077409f510"
+  },
+  "result": "used"
+ },
+ {
+  "name": "10-caller-police",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a fake police officer with an exaggerated stern face and a toy badge, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "raw": {
+   "bytes": 2280519,
+   "sha256": "f1f0d3da49fcbb22b2e9b6e300e5cfc1af0528beb3f1af025e9746cd2b3a741c"
+  },
+  "output": {
+   "path": "assets/10-scam-buster-hotline/caller-police.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 9632,
+   "sha256": "2e1b4abdf33e89f248be53ed7491fe659dfeb1c802642388ce627b494337074a"
+  },
+  "result": "used"
+ },
+ {
+  "name": "10-caller-mentor",
+  "batch": "batch-d-portraits",
+  "prompt": "Square portrait avatar of a too-cheerful online part-time job mentor holding a phone, cartoon character bust, centered, simple soft gradient background, slightly comedic. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [],
+  "raw": {
+   "bytes": 2265363,
+   "sha256": "60d20a747fdb0f017f156beb752924eb367646dbe555fa9c46c26b7d8332be76"
+  },
+  "output": {
+   "path": "assets/10-scam-buster-hotline/caller-mentor.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 13072,
+   "sha256": "e7209b7123af2c7223e39052b803d4cd132fd36f9556f37d32b8724dd5eb28ef"
+  },
+  "result": "used"
+ },
+ {
   "name": "07-cover-v2",
   "batch": "batch-e-retry",
   "prompt": "Key art for an arcade beach volleyball game: two dome-shaped jelly slime characters (perfect half-circle bodies sitting on the sand, no arms, no legs, simple big eyes), one orange and one teal, on opposite sides of a volleyball net on a sunny sandy beach at sunset, a volleyball flying high above the net, ocean behind. Original character design. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
@@ -807,6 +1199,37 @@
    ],
    "bytes": 96058,
    "sha256": "f18e6014ef07a15003a5b89ff7d3b6c4c2e057e758a7f523e288404b4e3ce2a8"
+  },
+  "result": "used"
+ },
+ {
+  "name": "12-mech-sniper",
+  "batch": "batch-f-extra",
+  "prompt": "Square icon of a sniper mech with a very long railgun barrel and a scope visor, chunky cute toy-like sci-fi robot, three-quarter view, centered, plain dark blue background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-f-extra-r2.json",
+    "job_id": "255d1259-2dfc-4799-b863-fcf59a16b70a",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1713859,
+   "sha256": "74d14f0244079d38d1c200c91eec7122bb74e9939f332d6a129b214da454bc20"
+  },
+  "output": {
+   "path": "assets/12-mech-autobattler/mech-sniper.webp",
+   "size": [
+    192,
+    192
+   ],
+   "bytes": 8408,
+   "sha256": "08bbaa5b56c422581dd47248f232a8893d3c84fffe277221471b50ca62f3d6e3"
   },
   "result": "used"
  }

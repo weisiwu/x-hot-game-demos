@@ -5,11 +5,11 @@
   const cv = document.getElementById('c'), ctx = cv.getContext('2d');
   const W = cv.width, H = cv.height, REACH = 125;
   const PEAKS = [
-    { name: '晨雾小丘', height: 2000, crumbly: 0.06, ice: 0, wind: 0, gust: 99, drain: 3.2, ropes: 0, par: 90 },
-    { name: '松林峭壁', height: 2800, crumbly: 0.12, ice: 0, wind: 14, gust: 11, drain: 3.6, ropes: 1, par: 130 },
-    { name: '冰瀑岩', height: 3400, crumbly: 0.12, ice: 0.16, wind: 16, gust: 10, drain: 4.0, ropes: 1, par: 160 },
-    { name: '风之脊', height: 4000, crumbly: 0.16, ice: 0.12, wind: 22, gust: 8, drain: 4.3, ropes: 2, par: 200 },
-    { name: '云顶之巅', height: 4800, crumbly: 0.2, ice: 0.18, wind: 24, gust: 7, drain: 4.8, ropes: 2, par: 250 },
+    { name: '晨雾小丘', height: 2000, crumbly: 0.06, ice: 0, wind: 0, gust: 99, drain: 3.2, ropes: 0, par: 50 },
+    { name: '松林峭壁', height: 2800, crumbly: 0.12, ice: 0, wind: 14, gust: 11, drain: 3.6, ropes: 1, par: 75 },
+    { name: '冰瀑岩', height: 3400, crumbly: 0.12, ice: 0.16, wind: 16, gust: 10, drain: 4.0, ropes: 1, par: 100 },
+    { name: '风之脊', height: 4000, crumbly: 0.16, ice: 0.12, wind: 22, gust: 8, drain: 4.3, ropes: 2, par: 115 },
+    { name: '云顶之巅', height: 4800, crumbly: 0.2, ice: 0.18, wind: 24, gust: 7, drain: 4.8, ropes: 2, par: 145 },
   ];
   const SAVE = XG.save('11-stamina-summit', { tutorialSeen: false, unlocked: 1, stars: {}, best: {}, meters: 0, summits: 0 });
   const SV = SAVE.data;

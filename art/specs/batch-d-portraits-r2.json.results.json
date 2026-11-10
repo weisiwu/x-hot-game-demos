@@ -1,49 +1,49 @@
 {
- "03-cust-buyer": [
+ "10-caller-prize": [
   {
-   "job_id": "3788a6c6-0690-4cb5-a039-a5c506ce70f2",
+   "job_id": "28f76e45-c290-4cac-8bfb-06bd777df16c",
    "status": "completed",
    "attempt": 1,
    "download": {
-    "path": "/tmp/xg-art/raw/batch-d-portraits/03-cust-buyer.png",
+    "path": "/tmp/xg-art/raw/batch-d-portraits/10-caller-prize.png",
     "size": [
      1024,
      1024
     ],
-    "bytes": 2560917,
-    "sha256": "f7c44966d0b0afdab24cd16b363178921ab18dde8c80c00738623e252e778bed"
+    "bytes": 2422532,
+    "sha256": "bf0b890bb17b24e3422483d06fc4ac635f64fa90fb49735a4ef4d29485210b6f"
    }
   }
  ],
- "10-caller-service": [
+ "10-caller-friend": [
   {
-   "job_id": "32ee6f11-4388-4067-b96e-f23c5221c488",
+   "job_id": "cf93d898-50bc-46ef-87fb-a48933c897f4",
    "status": "completed",
    "attempt": 1,
    "download": {
-    "path": "/tmp/xg-art/raw/batch-d-portraits/10-caller-service.png",
+    "path": "/tmp/xg-art/raw/batch-d-portraits/10-caller-friend.png",
     "size": [
      1024,
      1024
     ],
-    "bytes": 2281977,
-    "sha256": "c91b63e6c18c0a7eae9f20247e7c37206331636a78e5c36e928c6609898f0c37"
+    "bytes": 2350642,
+    "sha256": "838e98b35dfaadf2dff4be3cf711872976cc59bb3d2bfbdbc36343578890fd4c"
    }
   }
  ],
- "10-caller-police": [
+ "10-caller-invest": [
   {
-   "job_id": "efa89f00-6f17-4346-8b15-2f6794b06544",
+   "job_id": "a84d5844-31cf-4336-bcdd-d57aca8c2f3e",
    "status": "completed",
    "attempt": 1,
    "download": {
-    "path": "/tmp/xg-art/raw/batch-d-portraits/10-caller-police.png",
+    "path": "/tmp/xg-art/raw/batch-d-portraits/10-caller-invest.png",
     "size": [
      1024,
      1024
     ],
-    "bytes": 2280519,
-    "sha256": "f1f0d3da49fcbb22b2e9b6e300e5cfc1af0528beb3f1af025e9746cd2b3a741c"
+    "bytes": 2315189,
+    "sha256": "7e9b245618a68f5cae7b02818e6d47a55a1479e023afaec331f988cb2b311921"
    }
   }
  ]

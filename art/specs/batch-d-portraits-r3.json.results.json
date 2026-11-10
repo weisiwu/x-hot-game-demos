@@ -1,17 +1,81 @@
 {
- "10-caller-mentor": [
+ "12-mech-guard": [
   {
-   "job_id": "3b7cd552-d000-4772-a2f6-945098c6f438",
+   "job_id": "f42c1ada-16b3-44ee-b07b-579a3dc189ed",
    "status": "completed",
    "attempt": 1,
    "download": {
-    "path": "/tmp/xg-art/raw/batch-d-portraits/10-caller-mentor.png",
+    "path": "/tmp/xg-art/raw/batch-d-portraits/12-mech-guard.png",
     "size": [
      1024,
      1024
     ],
-    "bytes": 2265363,
-    "sha256": "60d20a747fdb0f017f156beb752924eb367646dbe555fa9c46c26b7d8332be76"
+    "bytes": 1926117,
+    "sha256": "026d3f1a797d5187a7c9fa05bf64268ac43f06e6afb8cf35272327dd4f75ac8c"
+   }
+  }
+ ],
+ "12-mech-gunner": [
+  {
+   "job_id": "d47a61dc-cb28-4339-b345-cdfbee02fd46",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/12-mech-gunner.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1855722,
+    "sha256": "0fe8cf9b706997b31ddb147a82e7a333a19533e20a857e38f82a667379ab0f48"
+   }
+  }
+ ],
+ "12-mech-artillery": [
+  {
+   "job_id": "d24a3464-b4c5-4066-be03-f52feff6e488",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/12-mech-artillery.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1705446,
+    "sha256": "d663fce99d238983829fdf504eb0106398da129a244897afb224dd54222b85d1"
+   }
+  }
+ ],
+ "12-mech-raider": [
+  {
+   "job_id": "7cd5918c-b650-4a44-9fbd-a72367913ea8",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/12-mech-raider.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1810192,
+    "sha256": "d907002f4a45432801bfa68915b6614aeb6392b555bd9bd52d025815ec568a35"
+   }
+  }
+ ],
+ "12-mech-medic": [
+  {
+   "job_id": "7ed5feca-de1a-47d7-a1ac-0b0efbe5ea03",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-d-portraits/12-mech-medic.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1564802,
+    "sha256": "12c55556243124402477beb775c28a7238e634731ea2235cb09a3a27f8e5d1f2"
    }
   }
  ]
