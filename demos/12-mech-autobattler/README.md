@@ -33,10 +33,37 @@
 - `assets/12-mech-autobattler/mech-medic.webp`（192×192 webp，7 KB）
 - `assets/12-mech-autobattler/mech-sniper.webp`（192×192 webp，8 KB）
 
-## 对应的热门趋势
+
+## 灵感来源（X 原帖）
+
+数据由 Kai 使用 X 公开读取工具抓取，抓取时间：北京时间 2026-11-11 10:13:42（太平洋时间 2026-11-10 18:13:42 PST）。指标为抓取那一刻的公开数据，之后会变化。第三方资讯账号帖子里的销量 / 同时在线等数字只代表该帖原文说法，不是官方或审计数据。
+
+- 对应灵感：Mechabellum（机甲自走棋 / auto-battler；既有作品，期间有 2.0 更新与 Epic 免费赠送）
+- X 佐证强度：**弱**
+- 结论：找到官方更新帖与免费领取讨论，可确认该作仍在被讨论；近 1–3 个月 X 上没有爆款级新热度，更像既有品类的持续存在。
+
+- [x.com/mechabellum/status/2102807041869791285](https://x.com/mechabellum/status/2102807041869791285)
+  - 作者 @mechabellum（Mechabellum），发布于北京时间 2026-09-24 01:07:21
+  - 抓取时公开指标：赞 18 · 转发 2 · 回复 0 · 引用 0 · 书签 0 · 浏览 1,591
+  - 摘要：官方宣布 Update 2.0.0.1：修 bug、小幅平衡，并为完整版所有者增加额外奖励，同时说明免费版与完整版差异。
+- [x.com/mechabellum/status/2104892247514734870](https://x.com/mechabellum/status/2104892247514734870)
+  - 作者 @mechabellum（Mechabellum），发布于北京时间 2026-09-29 19:13:13
+  - 抓取时公开指标：赞 17 · 转发 1 · 回复 2 · 引用 0 · 书签 0 · 浏览 1,021
+  - 摘要：官方宣布 Update 2.0.0.2：修 bug、调整星途远征匹配，并启用新的 Elite Battle Contract DLC。
+- [x.com/mechabellum/status/2105331564892553541](https://x.com/mechabellum/status/2105331564892553541)
+  - 作者 @mechabellum（Mechabellum），发布于北京时间 2026-10-01 00:18:54
+  - 抓取时公开指标：赞 11 · 转发 0 · 回复 1 · 引用 0 · 书签 0 · 浏览 664
+  - 摘要：官方宣布 Update 2.0.0.3 平衡与修复，特别提到削弱近期的 Centurion Spam。
+- [x.com/freegamessales/status/2103577145226272971](https://x.com/freegamessales/status/2103577145226272971)
+  - 作者 @freegamessales（Free Games & Sales），发布于北京时间 2026-09-26 04:07:28
+  - 抓取时公开指标：赞 0 · 转发 0 · 回复 0 · 引用 0 · 书签 0 · 浏览 50
+  - 摘要：称 Mechabellum 在 Epic Games 免费领取至 10 月 1 日，并转述 Steam 好评信息。
+
+## 其他公开报道（第一轮调研）
 Discord 2026-10-01 当周独立游戏趋势榜上的机甲自走棋（Discord 页面描述为 “epic mech auto-battler”）；该作 2.0 版本于 2026-09-22 推出免费版。
 
 具体链接见仓库根目录 [README.md](../../README.md) 的来源表。
+
 
 ## 原创说明
 单位、数值、地图均为原创，只保留“布阵 → 自动战斗”的通用类型。

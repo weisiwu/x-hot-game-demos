@@ -27,10 +27,33 @@
 - `assets/08-bullet-heaven/cover.webp`（960×640 webp，98 KB）
 - `assets/08-bullet-heaven/arena.webp`（512×512 webp，40 KB）
 
-## 对应的热门趋势
+
+## 灵感来源（X 原帖）
+
+数据由 Kai 使用 X 公开读取工具抓取，抓取时间：北京时间 2026-11-11 10:13:42（太平洋时间 2026-11-10 18:13:42 PST）。指标为抓取那一刻的公开数据，之后会变化。第三方资讯账号帖子里的销量 / 同时在线等数字只代表该帖原文说法，不是官方或审计数据。
+
+- 对应灵感：Bullet Heaven / Vampire Survivors 类（Steam 在 2026-05 将其列为官方标签；全年持续趋势）
+- X 佐证强度：**中**
+- 结论：找到关于 Steam 正式加入 Bullet Heaven 标签的高互动报道帖，能印证品类趋势；这是 2026 年 5 月事件，不是 10–11 月新爆款单一作品。
+
+- [x.com/Pirat_Nation/status/2056827481718419804](https://x.com/Pirat_Nation/status/2056827481718419804)
+  - 作者 @Pirat_Nation（Pirat_Nation 🔴），发布于北京时间 2026-05-20 04:01:00
+  - 抓取时公开指标：赞 1,286 · 转发 51 · 回复 35 · 引用 4 · 书签 108 · 浏览 63,204
+  - 摘要：报道 Steam 正式加入 Bullet Heaven 类型标签，用于 Vampire Survivors 风格游戏，并转述 Valve 定义：与弹幕地狱相对，强调升级与自动攻击。该标签更新同时引入 17 个新类型。
+- [x.com/AwesomeGamesStd/status/2056735687932579848](https://x.com/AwesomeGamesStd/status/2056735687932579848)
+  - 作者 @AwesomeGamesStd（Awesome Games Studio），发布于北京时间 2026-05-19 21:56:14
+  - 抓取时公开指标：赞 58 · 转发 9 · 回复 7 · 引用 1 · 书签 2 · 浏览 3,870
+  - 摘要：工作室宣布 Bullet Heaven 标签已上线，并向玩家和开发者征集作品。
+- [x.com/AwesomeGamesStd/status/2058946057887698971](https://x.com/AwesomeGamesStd/status/2058946057887698971)
+  - 作者 @AwesomeGamesStd（Awesome Games Studio），发布于北京时间 2026-05-26 00:19:28
+  - 抓取时公开指标：赞 65 · 转发 12 · 回复 7 · 引用 0 · 书签 2 · 浏览 4,013
+  - 摘要：感谢社区协助推动 Steam 将该类型正式化，并发布致谢视频。
+
+## 其他公开报道（第一轮调研）
 howtomarketagame.com 2026-05-19 的分析文章写道 Valve 在“周一”宣布 Bullet Heaven 成为 Steam 官方标签（按发文日期推算为 2026-05-18），并分析了该类型现状；另有文章提到 2026 年 bullet heaven 与增量玩法融合的趋势。注意：这是 2026 年全年的持续趋势，并非 10–11 月的新热点。
 
 具体链接见仓库根目录 [README.md](../../README.md) 的来源表。
+
 
 ## 原创说明
 通用类型玩法，武器、敌人、数值全部原创。

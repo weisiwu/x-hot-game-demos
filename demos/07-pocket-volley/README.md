@@ -28,10 +28,45 @@
 - `assets/07-pocket-volley/cover.webp`（960×640 webp，94 KB）
 - `assets/07-pocket-volley/beach.webp`（880×587 webp，47 KB）
 
-## 对应的热门趋势
+
+## 灵感来源（X 原帖）
+
+数据由 Kai 使用 X 公开读取工具抓取，抓取时间：北京时间 2026-11-11 10:13:42（太平洋时间 2026-11-10 18:13:42 PST）。指标为抓取那一刻的公开数据，之后会变化。第三方资讯账号帖子里的销量 / 同时在线等数字只代表该帖原文说法，不是官方或审计数据。
+
+- 对应灵感：just volleyball（@temkosoft 的街机排球，1v1 到 6v6，Steam Next Fest 热门 demo）
+- X 佐证强度：**强**
+- 结论：开发者多条高互动原帖，是 12 款里 X 佐证最强的之一。
+
+- [x.com/temkosoft/status/2103173634244091945](https://x.com/temkosoft/status/2103173634244091945)
+  - 作者 @temkosoft（temkosoft），发布于北京时间 2026-09-25 01:24:04
+  - 抓取时公开指标：赞 4,687 · 转发 199 · 回复 83 · 引用 27 · 书签 1,454 · 浏览 343,360
+  - 摘要：开发者说本该修 bug，却太沉迷自己的游戏。
+- [x.com/temkosoft/status/2112209327666659534](https://x.com/temkosoft/status/2112209327666659534)
+  - 作者 @temkosoft（temkosoft），发布于北京时间 2026-10-19 23:48:41
+  - 抓取时公开指标：赞 4,351 · 转发 361 · 回复 105 · 引用 112 · 书签 1,169 · 浏览 235,993
+  - 摘要：官方宣布 Steam Next Fest 限时免费 demo，开放至 10 月 26 日，进度可带到 11 月 4 日正式版。
+- [x.com/temkosoft/status/2113307721420198022](https://x.com/temkosoft/status/2113307721420198022)
+  - 作者 @temkosoft（temkosoft），发布于北京时间 2026-10-23 00:33:18
+  - 抓取时公开指标：赞 3,048 · 转发 158 · 回复 65 · 引用 30 · 书签 1,041 · 浏览 193,824
+  - 摘要：开发者分享激烈对拉，称没什么比这更有趣。
+- [x.com/temkosoft/status/2106442577717215563](https://x.com/temkosoft/status/2106442577717215563)
+  - 作者 @temkosoft（temkosoft），发布于北京时间 2026-10-04 01:53:40
+  - 抓取时公开指标：赞 2,199 · 转发 77 · 回复 57 · 引用 12 · 书签 483 · 浏览 126,528
+  - 摘要：宣布游戏里「现在可以死了」。
+- [x.com/temkosoft/status/2120195252984357199](https://x.com/temkosoft/status/2120195252984357199)
+  - 作者 @temkosoft（temkosoft），发布于北京时间 2026-11-11 00:41:54
+  - 抓取时公开指标：赞 2,046 · 转发 187 · 回复 81 · 引用 54 · 书签 290 · 浏览 59,456
+  - 摘要：因 Steam 审核推迟发售，再开一轮免费 demo 至 11 月 18 日。
+- [x.com/indieradartr/status/2114419033768395070](https://x.com/indieradartr/status/2114419033768395070)
+  - 作者 @indieradartr（Indie Radar），发布于北京时间 2026-10-26 02:09:16
+  - 抓取时公开指标：赞 6 · 转发 0 · 回复 1 · 引用 0 · 书签 0 · 浏览 389
+  - 摘要：土耳其资讯：单人开发的 just volleyball 在 Next Fest 达到 8,188 同接。
+
+## 其他公开报道（第一轮调研）
 Output Lag 统计的 Steam Next Fest 2026 年 10 月峰值在线榜第 4 名是一款街机排球 demo（标签：Sports、Arcade）。
 
 具体链接见仓库根目录 [README.md](../../README.md) 的来源表。
+
 
 ## 原创说明
 采用通用的 2D 街机排球物理，角色、画面均为原创。

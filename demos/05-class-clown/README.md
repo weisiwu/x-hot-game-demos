@@ -27,10 +27,45 @@
 - `assets/05-class-clown/cover.webp`（960×640 webp，95 KB）
 - `assets/05-class-clown/floor.webp`（900×600 webp，56 KB）
 
-## 对应的热门趋势
+
+## 灵感来源（X 原帖）
+
+数据由 Kai 使用 X 公开读取工具抓取，抓取时间：北京时间 2026-11-11 10:13:42（太平洋时间 2026-11-10 18:13:42 PST）。指标为抓取那一刻的公开数据，之后会变化。第三方资讯账号帖子里的销量 / 同时在线等数字只代表该帖原文说法，不是官方或审计数据。
+
+- 对应灵感：Worst Class Ever（不对称教室派对：一人当老师，其余混在 NPC 学生里恶作剧）
+- X 佐证强度：**中**
+- 结论：开发者官方帖确认 Next Fest 按独立玩家数登顶，以及 demo 玩家与同接数据；X 点赞不高，热度主要在 Steam。
+
+- [x.com/Yomi_Funcore/status/2114962296313467030](https://x.com/Yomi_Funcore/status/2114962296313467030)
+  - 作者 @Yomi_Funcore（夜之黄泉 | 顽核社），发布于北京时间 2026-10-27 14:08:00
+  - 抓取时公开指标：赞 21 · 转发 0 · 回复 2 · 引用 0 · 书签 1 · 浏览 696
+  - 摘要：官方宣布 Worst Class Ever 成为 Steam Next Fest 游玩人数第一的 demo 并致谢。
+- [x.com/Yomi_Funcore/status/2113596547338236095](https://x.com/Yomi_Funcore/status/2113596547338236095)
+  - 作者 @Yomi_Funcore（夜之黄泉 | 顽核社），发布于北京时间 2026-10-23 19:41:00
+  - 抓取时公开指标：赞 7 · 转发 2 · 回复 1 · 引用 1 · 书签 0 · 浏览 532
+  - 摘要：官方称 demo 玩家已超 30 万，邀人在课堂上和朋友一起捣乱、躲老师。
+- [x.com/Yomi_Funcore/status/2113547725296079053](https://x.com/Yomi_Funcore/status/2113547725296079053)
+  - 作者 @Yomi_Funcore（夜之黄泉 | 顽核社），发布于北京时间 2026-10-23 16:27:00
+  - 抓取时公开指标：赞 6 · 转发 0 · 回复 2 · 引用 0 · 书签 0 · 浏览 471
+  - 摘要：官方称 demo 同接峰值达到 2 万。
+- [x.com/DanielOlimac/status/2113619541033156621](https://x.com/DanielOlimac/status/2113619541033156621)
+  - 作者 @DanielOlimac（Daniel Camilo），发布于北京时间 2026-10-23 21:12:22
+  - 抓取时公开指标：赞 9 · 转发 1 · 回复 1 · 引用 0 · 书签 2 · 浏览 795
+  - 摘要：转述 demo 下载超 30 万、同接超 20,600，开发商为 Funcore Games，不对称多人：一班学生对抗老师。
+- [x.com/InvenGlobal/status/2115119620579377236](https://x.com/InvenGlobal/status/2115119620579377236)
+  - 作者 @InvenGlobal（Inven Global），发布于北京时间 2026-10-28 00:33:09
+  - 抓取时公开指标：赞 0 · 转发 0 · 回复 0 · 引用 0 · 书签 0 · 浏览 355
+  - 摘要：Inven Global：Valve 公布 Next Fest 游玩人数前 50，Worst Class Ever 按独立玩家数第一。
+- [x.com/2game_info/status/2120154560543264845](https://x.com/2game_info/status/2120154560543264845)
+  - 作者 @2game_info（ゲームをもっと楽しく。2game.info 🎮️），发布于北京时间 2026-11-10 22:00:12
+  - 抓取时公开指标：赞 0 · 转发 0 · 回复 0 · 引用 0 · 书签 0 · 浏览 31
+  - 摘要：日语资讯：11 月 9 日（美国时间）发售后，11 月 10 日 22:15 同接 26,496。
+
+## 其他公开报道（第一轮调研）
 Steam Next Fest 2026 年 10 月：一款教室恶作剧派对游戏在 Valve 官方榜（按独立玩家数）位列第 1（Inven Global 报道标题），在 Output Lag 峰值在线榜位列第 2（标签：Team-Based、Social Deduction）。
 
 具体链接见仓库根目录 [README.md](../../README.md) 的来源表。
+
 
 ## 原创说明
 原作是多人非对称派对游戏；本 demo 是原创的单人潜行玩法（“一二三木头人”式节奏 + 躲藏 + 告密者），名称、角色、关卡均为原创。

@@ -26,10 +26,37 @@
 以下图片由 imgen（gpt-image-2，quality high）生成，经人工筛选后裁切压缩为 webp；生成记录（prompt、job id、原图与输出的哈希/体积）见仓库根目录 `art/manifest.json`。画布中的角色、特效等其余图形为代码绘制或系统 emoji。
 - `assets/04-scratch-tycoon/cover.webp`（960×640 webp，165 KB）
 
-## 对应的热门趋势
+
+## 灵感来源（X 原帖）
+
+数据由 Kai 使用 X 公开读取工具抓取，抓取时间：北京时间 2026-11-11 10:13:42（太平洋时间 2026-11-10 18:13:42 PST）。指标为抓取那一刻的公开数据，之后会变化。第三方资讯账号帖子里的销量 / 同时在线等数字只代表该帖原文说法，不是官方或审计数据。
+
+- 对应灵感：刮刮卡增量游戏；检索到对应作品 Scritchy Scratchy（incremental scratch-off）
+- X 佐证强度：**弱**
+- 结论：找到对 Scritchy Scratchy 的真实讨论与媒体标题帖，可确认该品类存在，但未找到高互动爆款原帖；X 热度明显低于 Steam/Discord 叙事。
+
+- [x.com/HappyGamerNews/status/2075084724603887908](https://x.com/HappyGamerNews/status/2075084724603887908)
+  - 作者 @HappyGamerNews（Happy Gamer），发布于北京时间 2026-07-09 13:08:46
+  - 抓取时公开指标：赞 0 · 转发 0 · 回复 0 · 引用 0 · 书签 0 · 浏览 38
+  - 摘要：标题式报道：Scritchy Scratchy 把刮刮卡做成容易上瘾的放置游戏。互动为 0，仅证明该作在 X 上被点名。
+- [x.com/Psm6I/status/2091824742496133183](https://x.com/Psm6I/status/2091824742496133183)
+  - 作者 @Psm6I（レジェビリ先輩𝕏），发布于北京时间 2026-08-24 17:47:37
+  - 抓取时公开指标：赞 21 · 转发 0 · 回复 0 · 引用 0 · 书签 0 · 浏览 418
+  - 摘要：玩家介绍：一直刮刮卡、冲多巴胺、想当亿万富翁；并提到游戏出现「保护手腕模式」。此为 8 月窗口内互动相对较高的讨论帖。
+- [x.com/kotetsu_399/status/2076547175593472212](https://x.com/kotetsu_399/status/2076547175593472212)
+  - 作者 @kotetsu_399（こてつ＠Vtuber），发布于北京时间 2026-07-13 14:00:01
+  - 抓取时公开指标：赞 30 · 转发 3 · 回复 0 · 引用 0 · 书签 0 · 浏览 793
+  - 摘要：VTuber 预告直播刮 Scritchy Scratchy，并边刮边闲聊。
+- [x.com/LoverOfKitsune/status/2089970340021563505](https://x.com/LoverOfKitsune/status/2089970340021563505)
+  - 作者 @LoverOfKitsune（Lover of Kitsune），发布于北京时间 2026-08-19 14:58:53
+  - 抓取时公开指标：赞 2 · 转发 0 · 回复 0 · 引用 0 · 书签 0 · 浏览 365
+  - 摘要：在推荐列表里将 Scritchy Scratchy 称为 Incremental scratch off。
+
+## 其他公开报道（第一轮调研）
 Discord 2026-10-01 当周独立游戏趋势榜上的刮刮卡增量游戏（Steam 描述为 “scratch card incremental game”）。
 
 具体链接见仓库根目录 [README.md](../../README.md) 的来源表。
+
 
 ## 原创说明
 奖金表、卡种、升级树均为原创；不涉及真实金钱。

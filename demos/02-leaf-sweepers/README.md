@@ -29,10 +29,45 @@
 - `assets/02-leaf-sweepers/cover.webp`（960×640 webp，157 KB）
 - `assets/02-leaf-sweepers/lawn.webp`（900×600 webp，84 KB）
 
-## 对应的热门趋势
+
+## 灵感来源（X 原帖）
+
+数据由 Kai 使用 X 公开读取工具抓取，抓取时间：北京时间 2026-11-11 10:13:42（太平洋时间 2026-11-10 18:13:42 PST）。指标为抓取那一刻的公开数据，之后会变化。第三方资讯账号帖子里的销量 / 同时在线等数字只代表该帖原文说法，不是官方或审计数据。
+
+- 对应灵感：Moon Sweepers（最多 16 人合作、从牙刷开始清扫月球的增量清洁游戏）
+- X 佐证强度：**中**
+- 结论：找到官方账号与多条讨论帖，能交叉印证 Steam 热度（报道称首周约 60 万玩家、同接峰值约 8.3 万），但 X 帖本身点赞普遍不高，热度主要在 Steam 而非 X。
+
+- [x.com/Moon_Sweepers/status/2109571601804955889](https://x.com/Moon_Sweepers/status/2109571601804955889)
+  - 作者 @Moon_Sweepers（MoonSweepers），发布于北京时间 2026-10-12 17:07:18
+  - 抓取时公开指标：赞 13 · 转发 0 · 回复 7 · 引用 0 · 书签 0 · 浏览 1,008
+  - 摘要：官方账号称 5 天内 Steam 愿望单破 1 万并致谢。官方账号粉丝数读取时为 108。
+- [x.com/Moon_Sweepers/status/2107808767731437826](https://x.com/Moon_Sweepers/status/2107808767731437826)
+  - 作者 @Moon_Sweepers（MoonSweepers），发布于北京时间 2026-10-07 20:22:26
+  - 抓取时公开指标：赞 3 · 转发 0 · 回复 2 · 引用 0 · 书签 0 · 浏览 450
+  - 摘要：官方介绍：新独立游戏已上 Steam，16 名清洁工、预算只够一把牙刷，请加入愿望单。
+- [x.com/YorchTorchGames/status/2117446845693559032](https://x.com/YorchTorchGames/status/2117446845693559032)
+  - 作者 @YorchTorchGames（Yorch Torch Games），发布于北京时间 2026-11-03 10:40:42
+  - 抓取时公开指标：赞 17 · 转发 1 · 回复 6 · 引用 0 · 书签 1 · 浏览 1,898
+  - 摘要：称该作发行周 Steam 同接峰值 83,138，高于《Gears of War: E-Day》的不到 32,000，并写「两个芬兰开发者」。
+- [x.com/gamewith_review/status/2117201304682381440](https://x.com/gamewith_review/status/2117201304682381440)
+  - 作者 @gamewith_review（GameWith@最新ゲーム情報局），发布于北京时间 2026-11-02 18:25:01
+  - 抓取时公开指标：赞 5 · 转发 1 · 回复 0 · 引用 0 · 书签 0 · 浏览 5,980
+  - 摘要：日语媒体：发售不到两周销量破 60 万；11 月 2 日时 Steam 最高同接破 8.3 万；12 月计划 1.1 更新。
+- [x.com/AppMagicRocks/status/2115139597667647616](https://x.com/AppMagicRocks/status/2115139597667647616)
+  - 作者 @AppMagicRocks（AppMagic.rocks），发布于北京时间 2026-10-28 01:52:32
+  - 抓取时公开指标：赞 0 · 转发 0 · 回复 0 · 引用 0 · 书签 0 · 浏览 165
+  - 摘要：称首日（10 月 23 日）售出 4.1 万份；第三日售出 10.2 万份、同接峰值 3.6 万，营收 130 万美元。互动极低，数字仅作该账号原文记录。
+- [x.com/JoshOG/status/2115302569564336461](https://x.com/JoshOG/status/2115302569564336461)
+  - 作者 @JoshOG（JoshOG），发布于北京时间 2026-10-28 12:40:07
+  - 抓取时公开指标：赞 13 · 转发 1 · 回复 1 · 引用 0 · 书签 0 · 浏览 9,861
+  - 摘要：提醒玩家：主持或加入对局时 IP 会对局内其他人可见。
+
+## 其他公开报道（第一轮调研）
 GameDiscoverCo 2026-11-06 月报把一款月面清扫游戏称为 “super-viral co-op incremental cleaning-game”；ixbt.games 2026-10-28 报道其在 Steam 畅销榜上超过多款 3A。
 
 具体链接见仓库根目录 [README.md](../../README.md) 的来源表。
+
 
 ## 原创说明
 原作是清扫月球；本 demo 换成原创的落叶公园主题，仅保留“合作 + 增量清洁”这一类型。

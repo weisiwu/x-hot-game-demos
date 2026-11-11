@@ -33,10 +33,45 @@
 - `assets/03-night-market-pawn/cust-regular.webp`（256×256 webp，18 KB）
 - `assets/03-night-market-pawn/cust-buyer.webp`（256×256 webp，18 KB）
 
-## 对应的热门趋势
+
+## 灵感来源（X 原帖）
+
+数据由 Kai 使用 X 公开读取工具抓取，抓取时间：北京时间 2026-11-11 10:13:42（太平洋时间 2026-11-10 18:13:42 PST）。指标为抓取那一刻的公开数据，之后会变化。第三方资讯账号帖子里的销量 / 同时在线等数字只代表该帖原文说法，不是官方或审计数据。
+
+- 对应灵感：Probably Stolen: Cyberpunk Pawnshop Simulator（赛博朋克当铺/店主经营，Steam Next Fest 热门 demo）
+- X 佐证强度：**强**
+- 结论：官方账号有多条中高互动庆功帖，能直接印证 Next Fest 与发售后的销量节点。
+
+- [x.com/Probably_Stolen/status/2117351164958372297](https://x.com/Probably_Stolen/status/2117351164958372297)
+  - 作者 @Probably_Stolen（Probably Stolen: Cyberpunk Pawnshop Simulator），发布于北京时间 2026-11-03 04:20:30
+  - 抓取时公开指标：赞 303 · 转发 23 · 回复 18 · 引用 8 · 书签 21 · 浏览 16,821
+  - 摘要：官方宣布售出 75 万份。
+- [x.com/Probably_Stolen/status/2118784062827733255](https://x.com/Probably_Stolen/status/2118784062827733255)
+  - 作者 @Probably_Stolen（Probably Stolen: Cyberpunk Pawnshop Simulator），发布于北京时间 2026-11-07 03:14:20
+  - 抓取时公开指标：赞 160 · 转发 16 · 回复 6 · 引用 2 · 书签 9 · 浏览 8,103
+  - 摘要：官方称已有 100 万名店主开张，并预告后续内容。
+- [x.com/Probably_Stolen/status/2116244979102392650](https://x.com/Probably_Stolen/status/2116244979102392650)
+  - 作者 @Probably_Stolen（Probably Stolen: Cyberpunk Pawnshop Simulator），发布于北京时间 2026-10-31 03:04:55
+  - 抓取时公开指标：赞 186 · 转发 20 · 回复 10 · 引用 4 · 书签 5 · 浏览 8,685
+  - 摘要：官方宣布 50 万份销量，好评率 96%（Overwhelmingly Positive）。
+- [x.com/Probably_Stolen/status/2116280230599881106](https://x.com/Probably_Stolen/status/2116280230599881106)
+  - 作者 @Probably_Stolen（Probably Stolen: Cyberpunk Pawnshop Simulator），发布于北京时间 2026-10-31 05:25:00
+  - 抓取时公开指标：赞 100 · 转发 9 · 回复 3 · 引用 0 · 书签 7 · 浏览 3,297
+  - 摘要：官方再报：50 万店主、96% 好评、Steam 全球同时在线榜第 12。
+- [x.com/Probably_Stolen/status/2118801101562769753](https://x.com/Probably_Stolen/status/2118801101562769753)
+  - 作者 @Probably_Stolen（Probably Stolen: Cyberpunk Pawnshop Simulator），发布于北京时间 2026-11-07 04:22:02
+  - 抓取时公开指标：赞 176 · 转发 22 · 回复 55 · 引用 4 · 书签 16 · 浏览 8,343
+  - 摘要：官方公布未来数月免费更新路线图。
+- [x.com/gamelassogg/status/2115564147505021163](https://x.com/gamelassogg/status/2115564147505021163)
+  - 作者 @gamelassogg（GameLasso），发布于北京时间 2026-10-29 05:59:32
+  - 抓取时公开指标：赞 6 · 转发 0 · 回复 3 · 引用 0 · 书签 0 · 浏览 222
+  - 摘要：称该作为 Steam Next Fest 第一 demo，发售日同接 82,906。互动不高，作第三方转述。
+
+## 其他公开报道（第一轮调研）
 Steam Next Fest 2026 年 10 月期间，一款店主经营模拟 demo 在 Output Lag 按峰值在线统计的榜单中排第 1（标签：Shop Keeper、Trading）；PC Gamer 也推荐了该 demo。
 
 具体链接见仓库根目录 [README.md](../../README.md) 的来源表。
+
 
 ## 原创说明
 原作是赛博朋克题材；本 demo 采用原创的夜市旧货摊主题、原创物品与角色，核验玩法属于通用的“证件核验”类机制。

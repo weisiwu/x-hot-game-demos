@@ -27,10 +27,33 @@
 - `assets/09-dice-roguelike/cover.webp`（960×640 webp，101 KB）
 - `assets/09-dice-roguelike/felt.webp`（1200×800 webp，48 KB）
 
-## 对应的热门趋势
+
+## 灵感来源（X 原帖）
+
+数据由 Kai 使用 X 公开读取工具抓取，抓取时间：北京时间 2026-11-11 10:13:42（太平洋时间 2026-11-10 18:13:42 PST）。指标为抓取那一刻的公开数据，之后会变化。第三方资讯账号帖子里的销量 / 同时在线等数字只代表该帖原文说法，不是官方或审计数据。
+
+- 对应灵感：Balatro-like / 骰子或计分构筑 roguelike（持续涌现的品类，而非单一新作）
+- X 佐证强度：**弱**
+- 结论：找到 Balatro 2 相关泄露讨论（互动中等）以及骰子构筑 demo（如 Seferia Matrix、Lucky Hell）的推广帖，可印证品类仍热；未找到与本 demo 一一对应的爆款新作官帖。
+
+- [x.com/ForwardLeaks/status/2097533807444283560](https://x.com/ForwardLeaks/status/2097533807444283560)
+  - 作者 @ForwardLeaks（Forward），发布于北京时间 2026-09-09 11:53:24
+  - 抓取时公开指标：赞 216 · 转发 17 · 回复 16 · 引用 48 · 书签 79 · 浏览 100,859
+  - 摘要：「Steam 成就泄露第 4 版」名单中包含 Balatro 2（sequel）。此为泄露帖而非官方发布，但带动了大量后续讨论。
+- [x.com/Jackmike00/status/2100552724513423429](https://x.com/Jackmike00/status/2100552724513423429)
+  - 作者 @Jackmike00（JACK），发布于北京时间 2026-09-17 19:49:30
+  - 抓取时公开指标：赞 20 · 转发 3 · 回复 0 · 引用 0 · 书签 0 · 浏览 828
+  - 摘要：介绍 Seferia Matrix：骰子 roguelike 构筑，锁定并重掷 5 枚骰子施法、叠升级打出高伤害，demo 已上线。
+- [x.com/sinful_dice/status/2096223477833613430](https://x.com/sinful_dice/status/2096223477833613430)
+  - 作者 @sinful_dice（Sinful Dice），发布于北京时间 2026-09-05 21:06:37
+  - 抓取时公开指标：赞 0 · 转发 0 · 回复 0 · 引用 0 · 书签 0 · 浏览 0
+  - 摘要：Lucky Hell 自称骰子 roguelike 构筑，Steam 免费 demo。该条读取时各项互动均为 0，仅作存在性记录。
+
+## 其他公开报道（第一轮调研）
 roguelike 计分/构筑类在 2026 年依然大量涌现：GamesRadar 一篇文章的标题称某游戏发行方高管表示过去 12 个月收到了“maybe 250”个 roguelike 卡牌构筑提案（只读到标题、正文未能抓取，以原文为准）；Output Lag 的 Next Fest 榜单也单列了 roguelike 分类。
 
 具体链接见仓库根目录 [README.md](../../README.md) 的来源表。
+
 
 ## 原创说明
 使用骰子而非扑克牌，牌型、护符和数值全部原创；只借用“筹码 × 倍率”这一通用计分思路。
