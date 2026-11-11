@@ -6,6 +6,8 @@
 
 ## 运行方式
 
+**在线游玩（GitHub Pages）**：https://weisiwu.github.io/x-hot-game-demos/ ——目录页可进入全部 15 个游戏，单个游戏地址形如 `https://weisiwu.github.io/x-hot-game-demos/demos/01-haystack-needle/`。站点由 `main` 分支根目录直接发布（含 `.nojekyll`，按原样提供静态文件），每次推送到 `main` 后会自动重新构建。在线版的存档保存在你浏览器的 localStorage 里（与本地版互不相通）。
+
 **方式一（推荐）：本地静态服务器**，存档最可靠
 
 ```bash
@@ -147,7 +149,7 @@ python3 -m http.server 8000
 
 `node tools/selftest.cjs [截图目录] [只测的编号，如 01,06]`（需要 Node.js 22+ 与本机 Chrome/Chromium）。脚本会：
 
-1. 启动 `python3 -m http.server`（自动选空闲端口）和独立的 headless Chrome；
+1. 启动 `python3 -m http.server`（自动选空闲端口）和独立的 headless Chrome；设置环境变量 `SITE_URL=https://weisiwu.github.io/x-hot-game-demos` 时改为直接测线上站点（跳过 file:// 冒烟）；
 2. 对 15 个游戏逐个走完整流程：开始界面 → 首次教程 → 用真实键鼠输入游玩核心操作 → Esc 暂停与继续 → 推进到结局并确认结算界面出现 → 刷新页面确认存档仍在；
 3. 用手机横屏视口 + 多点触摸事件再测一遍触屏能否独立完成核心操作（包括双人分屏）；
 4. 用 `file://` 打开每个游戏做冒烟检查；

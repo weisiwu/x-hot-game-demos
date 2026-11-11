@@ -4,6 +4,7 @@
 // 打到结局（胜利或失败结算界面）→ 刷新页面检查存档仍在；同时收集未捕获异常、console.error 和资源加载错误。
 // 另外用 file:// 打开每个页面做一次冒烟检查，并用触屏模拟（手机视口）验证触屏能独立完成核心操作。
 // 用法：node tools/selftest.cjs [截图目录] [只测的游戏编号，如 01,06]
+// 测线上站点：SITE_URL=https://weisiwu.github.io/x-hot-game-demos node tools/selftest.cjs [截图目录]
 'use strict';
 const { spawn } = require('node:child_process');
 const http = require('node:http');
@@ -101,9 +102,10 @@ const TESTS = require('./selftest-cases.cjs');
 
 (async () => {
   fs.mkdirSync(SHOTS, { recursive: true });
-  HPORT = await new Promise(res => { const srv = require('node:net').createServer(); srv.listen(0, '127.0.0.1', () => { const p = srv.address().port; srv.close(() => res(p)); }); });
-  const server = spawn('python3', ['-m', 'http.server', String(HPORT), '--bind', '127.0.0.1'], { cwd: ROOT, stdio: 'ignore' });
-  for (let i = 0; i < 50; i++) { const up = await new Promise(r => http.get(`http://127.0.0.1:${HPORT}/index.html`, x => { x.resume(); r(x.statusCode === 200); }).on('error', () => r(false))); if (up) break; await sleep(100); }
+  const SITE = process.env.SITE_URL ? process.env.SITE_URL.replace(/\/$/, '') : '';
+  if (!SITE) HPORT = await new Promise(res => { const srv = require('node:net').createServer(); srv.listen(0, '127.0.0.1', () => { const p = srv.address().port; srv.close(() => res(p)); }); });
+  const server = SITE ? { kill() {} } : spawn('python3', ['-m', 'http.server', String(HPORT), '--bind', '127.0.0.1'], { cwd: ROOT, stdio: 'ignore' });
+  for (let i = 0; i < 50 && !SITE; i++) { const up = await new Promise(r => http.get(`http://127.0.0.1:${HPORT}/index.html`, x => { x.resume(); r(x.statusCode === 200); }).on('error', () => r(false))); if (up) break; await sleep(100); }
   const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'xhgd-chrome-'));
   const chrome = spawn(CHROME, ['--headless=new', `--remote-debugging-port=${PORT}`, `--user-data-dir=${prof}`, '--no-first-run', '--no-default-browser-check', '--disable-gpu', '--autoplay-policy=no-user-gesture-required', 'about:blank'], { stdio: 'ignore' });
   let ok = false;
@@ -143,7 +145,7 @@ const TESTS = require('./selftest-cases.cjs');
     await getJSON(`http://127.0.0.1:${PORT}/json/close/${t.id}`).catch(() => {});
   }
 
-  const base = `http://127.0.0.1:${HPORT}`;
+  const base = SITE || `http://127.0.0.1:${HPORT}`; // SITE_URL=线上地址 时直接测线上站点
   if (!ONLY.length) await runPage('index', base + '/index.html', async h => [['目录页列出 15 个游戏', (await h.ev(`document.querySelectorAll('a[href^="demos/"]').length`)) >= 15]]);
   for (const d of demos) {
     const T = TESTS[d];
@@ -172,8 +174,8 @@ const TESTS = require('./selftest-cases.cjs');
       checks.push(...await T.touch(h));
       return checks;
     }, { mobile: true });
-    // 3) file:// 冒烟
-    await runPage(d + '-file', `file://${ROOT}/demos/${d}/index.html`, async h => [['file:// 打开开始界面', await h.exists('.xg-overlay.show #xgStart')], ['file:// 可进入游戏', await h.startGame()]]);
+    // 3) file:// 冒烟（测线上站点时跳过）
+    if (!SITE) await runPage(d + '-file', `file://${ROOT}/demos/${d}/index.html`, async h => [['file:// 打开开始界面', await h.exists('.xg-overlay.show #xgStart')], ['file:// 可进入游戏', await h.startGame()]]);
   }
   chrome.kill(); server.kill();
   fs.writeFileSync(path.join(SHOTS, 'report.json'), JSON.stringify(report, null, 2));
