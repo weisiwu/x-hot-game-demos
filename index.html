@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>X 热门玩法 · 12 个浏览器小游戏 Demo</title>
+<title>X 热门玩法 · 15 个浏览器小游戏 Demo</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; background: #0e1117; color: #e8ecf2; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; }
@@ -23,21 +23,24 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>🎮 近期热门玩法 · 12 个浏览器小游戏</h1>
-  <p class="lead">基于 2026 年 10–11 月公开报道（Steam Next Fest 榜单、GameDiscoverCo 月报、Discord 趋势榜、X 上的爆款帖子报道等）整理出的热门玩法方向，每个方向做成了一个<strong>原创的完整网页小游戏</strong>：开始/结算界面、关卡与难度曲线、本地存档、暂停、教程、WebAudio 音效与音乐，并支持手机触屏。纯 HTML/JS，无需构建。推荐用 <code>python3 -m http.server</code> 启动后访问，存档最稳定。来源与局限详见仓库 README.md。</p>
+  <h1>🎮 近期热门玩法 · 15 个浏览器小游戏</h1>
+  <p class="lead">基于 X 原帖（抓取于北京时间 2026-11-11 10:13:42）与 2026 年 10–11 月公开报道（Steam Next Fest 榜单、GameDiscoverCo 月报、Discord 趋势榜等）整理出的热门玩法方向，每个方向做成了一个<strong>原创的完整网页小游戏</strong>：开始/结算界面、关卡与难度曲线、本地存档、暂停、教程、WebAudio 音效与音乐，并支持手机触屏。纯 HTML/JS，无需构建。推荐用 <code>python3 -m http.server</code> 启动后访问，存档最稳定。来源与局限详见仓库 README.md。</p>
   <div class="grid">
-    <a class="card" href="demos/01-haystack-needle/index.html"><img src="assets/01-haystack-needle/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">01 · 🪡 草堆寻针</div><div class="d">拖动鼠标拨开上万根稻草找一根针，拨开的稻草换工具升级。</div><div class="k">趋势：X 上爆火的"大海捞针"帖 / 找针增量游戏</div></div></a>
-    <a class="card" href="demos/02-leaf-sweepers/index.html"><img src="assets/02-leaf-sweepers/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">02 · 🍂 落叶清扫队</div><div class="d">扫落叶、卖给堆肥站、换大扫帚买扫地机器人，支持本地双人合作。</div><div class="k">趋势：合作 + 增量清洁类爆款</div></div></a>
-    <a class="card" href="demos/03-night-market-pawn/index.html"><img src="assets/03-night-market-pawn/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">03 · 🏮 夜市旧货摊</div><div class="d">夜市旧货摊：鉴定成色、比对失窃登记序列号、砍价，撑过 5 天。</div><div class="k">趋势：Next Fest 热门的店主经营模拟</div></div></a>
-    <a class="card" href="demos/04-scratch-tycoon/index.html"><img src="assets/04-scratch-tycoon/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">04 · 🎟️ 刮刮大亨</div><div class="d">鼠标刮开涂层，升级幸运与自动刮卡机，赚到一百万。</div><div class="k">趋势：刮刮卡增量游戏</div></div></a>
-    <a class="card" href="demos/05-class-clown/index.html"><img src="assets/05-class-clown/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">05 · 🏫 课堂捣蛋王</div><div class="d">趁老师写板书溜出座位恶作剧，小心老师回头和班长告状。</div><div class="k">趋势：教室恶作剧派对 / 社交潜行</div></div></a>
-    <a class="card" href="demos/06-soda-raft/index.html"><img src="assets/06-soda-raft/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">06 · 🥤 汽水木筏</div><div class="d">两只青蛙靠"汽水喷射"操控同一条木筏逆流而上，双人合作。</div><div class="k">趋势：搞笑物理合作派对游戏</div></div></a>
-    <a class="card" href="demos/07-pocket-volley/index.html"><img src="assets/07-pocket-volley/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">07 · 🏐 口袋排球</div><div class="d">极简街机排球，跳跃扣球，先到 7 分获胜，可本地双人。</div><div class="k">趋势：街机体育类 demo</div></div></a>
-    <a class="card" href="demos/08-bullet-heaven/index.html"><img src="assets/08-bullet-heaven/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">08 · ✨ 弹幕天堂 Mini</div><div class="d">自动攻击、升级三选一、坚持 3 分钟并击败大怪，带局外成长。</div><div class="k">趋势：Bullet Heaven（幸存者类）</div></div></a>
-    <a class="card" href="demos/09-dice-roguelike/index.html"><img src="assets/09-dice-roguelike/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">09 · 🎲 骰运连连</div><div class="d">掷骰凑牌型，"筹码×倍率"计分，买护符改造规则连过 8 轮。</div><div class="k">趋势：roguelike 计分构筑</div></div></a>
-    <a class="card" href="demos/10-scam-buster-hotline/index.html"><img src="assets/10-scam-buster-hotline/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">10 · ☎️ 反诈拖延热线</div><div class="d">接听模拟诈骗电话，拖住骗子、不泄露信息、识别话术。</div><div class="k">趋势：AI 来电呼叫中心合作喜剧（反诈视角）</div></div></a>
-    <a class="card" href="demos/11-stamina-summit/index.html"><img src="assets/11-stamina-summit/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">11 · 🧗 体力登顶</div><div class="d">点击岩点攀爬，管理体力与伤势，躲阵风，登上山顶。</div><div class="k">趋势：合作攀爬类 "friendslop"</div></div></a>
-    <a class="card" href="demos/12-mech-autobattler/index.html"><img src="assets/12-mech-autobattler/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">12 · 🤖 机甲布阵</div><div class="d">部署并升级机甲，自动战斗，击退 7 波敌军。</div><div class="k">趋势：机甲自走棋 / auto-battler</div></div></a>
+    <a class="card" href="demos/01-haystack-needle/index.html"><img src="assets/01-haystack-needle/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">01 · 🪡 草堆寻针</div><div class="d">拖动鼠标拨开上万根稻草找一根针，拨开的稻草换工具升级。</div><div class="k">X 佐证：强 · @NasNakarus 赞 191,818（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/02-leaf-sweepers/index.html"><img src="assets/02-leaf-sweepers/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">02 · 🍂 落叶清扫队</div><div class="d">扫落叶、卖给堆肥站、换大扫帚买扫地机器人，支持本地双人合作。</div><div class="k">X 佐证：中 · @YorchTorchGames 赞 17（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/03-night-market-pawn/index.html"><img src="assets/03-night-market-pawn/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">03 · 🏮 夜市旧货摊</div><div class="d">夜市旧货摊：鉴定成色、比对失窃登记序列号、砍价，撑过 5 天。</div><div class="k">X 佐证：强 · @Probably_Stolen 赞 303（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/04-scratch-tycoon/index.html"><img src="assets/04-scratch-tycoon/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">04 · 🎟️ 刮刮大亨</div><div class="d">鼠标刮开涂层，升级幸运与自动刮卡机，赚到一百万。</div><div class="k">X 佐证：弱 · @kotetsu_399 赞 30（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/05-class-clown/index.html"><img src="assets/05-class-clown/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">05 · 🏫 课堂捣蛋王</div><div class="d">趁老师写板书溜出座位恶作剧，小心老师回头和班长告状。</div><div class="k">X 佐证：中 · @Yomi_Funcore 赞 21（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/06-soda-raft/index.html"><img src="assets/06-soda-raft/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">06 · 🥤 汽水木筏</div><div class="d">两只青蛙靠"汽水喷射"操控同一条木筏逆流而上，双人合作。</div><div class="k">X 佐证：中 · @_pratikpakhale 赞 8（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/07-pocket-volley/index.html"><img src="assets/07-pocket-volley/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">07 · 🏐 口袋排球</div><div class="d">极简街机排球，跳跃扣球，先到 7 分获胜，可本地双人。</div><div class="k">X 佐证：强 · @temkosoft 赞 4,687（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/08-bullet-heaven/index.html"><img src="assets/08-bullet-heaven/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">08 · ✨ 弹幕天堂 Mini</div><div class="d">自动攻击、升级三选一、坚持 3 分钟并击败大怪，带局外成长。</div><div class="k">X 佐证：中 · @Pirat_Nation 赞 1,286（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/09-dice-roguelike/index.html"><img src="assets/09-dice-roguelike/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">09 · 🎲 骰运连连</div><div class="d">掷骰凑牌型，"筹码×倍率"计分，买护符改造规则连过 8 轮。</div><div class="k">X 佐证：弱 · @ForwardLeaks 赞 216（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/10-scam-buster-hotline/index.html"><img src="assets/10-scam-buster-hotline/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">10 · ☎️ 反诈拖延热线</div><div class="d">接听模拟诈骗电话，拖住骗子、不泄露信息、识别话术。</div><div class="k">X 佐证：中 · @DailyDoseNut 赞 76（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/11-stamina-summit/index.html"><img src="assets/11-stamina-summit/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">11 · 🧗 体力登顶</div><div class="d">点击岩点攀爬，管理体力与伤势，躲阵风，登上山顶。</div><div class="k">X 佐证：强 · @LandfallGames 赞 9,492（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/12-mech-autobattler/index.html"><img src="assets/12-mech-autobattler/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">12 · 🤖 机甲布阵</div><div class="d">部署并升级机甲，自动战斗，击退 7 波敌军。</div><div class="k">X 佐证：弱 · @mechabellum 赞 18（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/13-dream-drift/index.html"><img src="assets/13-dream-drift/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">13 · 🌙 梦境漂流</div><div class="d">乘一只纸船穿过 8 个梦境世界，收集光点、避开障碍，每个世界一条怪规则。</div><div class="k">X 候选 #1 · @kevin_t_ngo 赞 4,054（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/14-fluff-house/index.html"><img src="assets/14-fluff-house/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">14 · 🏡 毛球小屋</div><div class="d">摆家具吸引毛球来做客，赚莓果、收礼物，完成每天的访客委托。</div><div class="k">X 候选 #2 · @CharacterHouse1 赞 1,570（抓取于 2026-11-11）</div></div></a>
+    <a class="card" href="demos/15-reactor-night-shift/index.html"><img src="assets/15-reactor-night-shift/cover.webp" alt="" loading="lazy"><div class="in"><div class="t">15 · ☢️ 反应堆夜班</div><div class="d">一个人调功率、冷却、补水、泄压，还要灭火、堵漏、接查岗电话。</div><div class="k">X 候选 #8 · @TableHopGG 赞 0（抓取于 2026-11-11）</div></div></a>
   </div>
   <footer>所有游戏均为原创的玩法致敬实现，不使用任何原作的名称、角色、美术或音乐；美术素材由 imgen（gpt-image-2）生成后压缩为 webp。热度信息只引用公开报道中写明的内容，未做任何编造。</footer>
 </div>
