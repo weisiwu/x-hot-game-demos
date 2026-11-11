@@ -1,0 +1,18 @@
+{
+ "14-c1": [
+  {
+   "job_id": "65c04a85-f2fb-44bb-bcb6-85dd684ed2d6",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-i-critters/14-c1.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1743553,
+    "sha256": "988b94e4f64f29f133664a57618a918330e5248112761d55848b8fa10536f4f3"
+   }
+  }
+ ]
+}

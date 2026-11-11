@@ -1,0 +1,12 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-j-retry",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "14-c2-v2",
+   "prompt": "Single character sprite: a round fluffy mint green creature with a leaf sprout on its head. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  }
+ ]
+}

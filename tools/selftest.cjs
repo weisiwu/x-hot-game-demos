@@ -144,7 +144,7 @@ const TESTS = require('./selftest-cases.cjs');
   }
 
   const base = `http://127.0.0.1:${HPORT}`;
-  if (!ONLY.length) await runPage('index', base + '/index.html', async h => [['目录页列出 12 个游戏', (await h.ev(`document.querySelectorAll('a[href^="demos/"]').length`)) >= 12]]);
+  if (!ONLY.length) await runPage('index', base + '/index.html', async h => [['目录页列出 15 个游戏', (await h.ev(`document.querySelectorAll('a[href^="demos/"]').length`)) >= 15]]);
   for (const d of demos) {
     const T = TESTS[d];
     if (!T) { console.log('⚠ 没有测试用例：' + d); continue; }

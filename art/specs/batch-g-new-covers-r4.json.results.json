@@ -1,0 +1,18 @@
+{
+ "14-cover": [
+  {
+   "job_id": "0869ed18-1f1c-4cbd-a8a1-443b8b1135ae",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-g-new-covers/14-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 4356842,
+    "sha256": "6597e6c10737d36d2d23bd64348b5409114652a8ecc2150cf7d2106b9aa81e03"
+   }
+  }
+ ]
+}

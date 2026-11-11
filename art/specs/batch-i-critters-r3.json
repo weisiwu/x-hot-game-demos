@@ -1,0 +1,54 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-i-critters",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "14-c1",
+   "prompt": "Single character sprite: a round fluffy pink puffball creature with tiny feet and big sparkly eyes. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "14-c2",
+   "prompt": "Single character sprite: a round fluffy mint green creature with a leaf sprout on its head. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "14-c3",
+   "prompt": "Single character sprite: a round fluffy sky blue creature with cloud-like fur, sleepy eyes. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "14-c4",
+   "prompt": "Single character sprite: a round fluffy lemon yellow creature with star-shaped cheeks. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "14-c5",
+   "prompt": "Single character sprite: a round fluffy lavender creature wearing a tiny knitted scarf. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "14-c6",
+   "prompt": "Single character sprite: a round fluffy peach orange creature holding a tiny cookie. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "14-c7",
+   "prompt": "Single character sprite: a round fluffy white creature with a little crown, regal and smug. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  },
+  {
+   "name": "14-c8",
+   "prompt": "Single character sprite: a round fluffy midnight navy creature with glowing moon spots, rare and mysterious. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1024,
+   "h": 1024
+  }
+ ]
+}

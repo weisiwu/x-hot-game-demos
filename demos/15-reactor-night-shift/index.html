@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>反应堆夜班 Reactor Night Shift</title>
+<link rel="stylesheet" href="../../shared/xg.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0a1418; color: #e6fff6; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; overflow-x: hidden; }
+  canvas { border-radius: 12px 12px 0 0; margin-top: 6px; touch-action: manipulation; display: block; cursor: pointer; }
+  #panel { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 8px; background: #13252a; padding: 8px; border-radius: 0 0 12px 12px; box-shadow: 0 8px 30px #000a; }
+  .ctl { background: #1d3a40; border-radius: 10px; padding: 6px; text-align: center; font-size: 12px; user-select: none; -webkit-user-select: none; }
+  .ctl b { display: block; font-size: 13px; margin-bottom: 4px; }
+  .big { width: 100%; border: 0; border-radius: 10px; padding: 12px 4px; font-size: 15px; font-weight: 800; color: #08201a; cursor: pointer; touch-action: none; }
+  .pump { background: #5fd3ff; } .refill { background: #7dffb0; } .vent { background: #ffcc4d; }
+  .big.on { filter: brightness(1.35); box-shadow: 0 0 14px #fff8 inset; }
+  .big:disabled { opacity: .45; }
+  #rod { width: 100%; height: 30px; accent-color: #ff8a3d; touch-action: none; }
+  #rodVal { font-size: 18px; font-weight: 900; color: #ffb36b; }
+</style>
+</head>
+<body>
+<canvas id="c" width="900" height="420"></canvas>
+<div id="panel">
+  <div class="ctl"><b>🎚 控制棒（功率）</b><input id="rod" type="range" min="0" max="100" value="40"><div id="rodVal">40%</div></div>
+  <div class="ctl"><b>❄️ 冷却泵</b><button class="big pump" id="bPump">按住冷却<br>[1]</button></div>
+  <div class="ctl"><b>💧 冷却液</b><button class="big refill" id="bRefill">按住补水<br>[2]</button></div>
+  <div class="ctl"><b>💨 泄压阀</b><button class="big vent" id="bVent">泄压<br>[3]</button></div>
+</div>
+<script src="../../shared/xg.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

@@ -1232,5 +1232,684 @@
    "sha256": "08bbaa5b56c422581dd47248f232a8893d3c84fffe277221471b50ca62f3d6e3"
   },
   "result": "used"
+ },
+ {
+  "name": "13-cover",
+  "batch": "batch-g-new-covers",
+  "prompt": "Key art for a dreamy boat ride game: a small glowing paper boat with a lantern sailing on a shimmering river that flows into the distance through surreal floating islands, giant moons and drifting jellyfish lights, magical night atmosphere. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-g-new-covers-r3.json",
+    "job_id": "cbbfe5f9-4a40-4d49-948c-43c3ff175b47",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 4281542,
+   "sha256": "a5adfd99f6321959256349eba91b017c5200544b3d3bc0eaa590e8aea1c3a89a"
+  },
+  "output": {
+   "path": "assets/13-dream-drift/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 127258,
+   "sha256": "bf616708e75830e780be857cc535cc38bf13203372b15b4f2d071520654997cd"
+  },
+  "result": "used"
+ },
+ {
+  "name": "14-cover",
+  "batch": "batch-g-new-covers",
+  "prompt": "Key art for a cozy critter collection game: a warm cross-section of a tiny wooden house with several rooms, adorable round fluffy creatures of different colors lounging on cushions, shelves with collectibles, fairy lights. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-g-new-covers-r4.json",
+    "job_id": "0869ed18-1f1c-4cbd-a8a1-443b8b1135ae",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 4356842,
+   "sha256": "6597e6c10737d36d2d23bd64348b5409114652a8ecc2150cf7d2106b9aa81e03"
+  },
+  "output": {
+   "path": "assets/14-fluff-house/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 152134,
+   "sha256": "aa71de7f26a443b41a66905f53f0403ddb42ad776267ae4c6a60d53de74074fc"
+  },
+  "result": "used"
+ },
+ {
+  "name": "15-cover",
+  "batch": "batch-g-new-covers",
+  "prompt": "Key art for a frantic reactor control game: a cartoon night-shift engineer in a hard hat juggling levers and buttons in a glowing control room, a big friendly-looking reactor core in the background with steam puffs and warning lights, comedic tension. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-g-new-covers-r5.json",
+    "job_id": "f055b18e-7aab-4958-b68d-7cf3d4e52fe3",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3664890,
+   "sha256": "29d68b93376b2d6233b07334fbdee11a2127855252da4952d8d311aab7da2037"
+  },
+  "output": {
+   "path": "assets/15-reactor-night-shift/cover.webp",
+   "size": [
+    960,
+    640
+   ],
+   "bytes": 96054,
+   "sha256": "691caf2a4ecea42617cbdb6e7418b313a6c9074a51b6bdaf0a3f3aad8849a0ee"
+  },
+  "result": "used"
+ },
+ {
+  "name": "15-room",
+  "batch": "batch-g-new-covers",
+  "prompt": "Wide background of a retro-futuristic reactor control room interior: wall of dials and gauges, glowing green core window in the center, pipes, warm and teal lighting, empty foreground, side view. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-g-new-covers-r5.json",
+    "job_id": "75557b26-0369-4463-876c-08b3e80d02a1",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3765897,
+   "sha256": "ddcdeaff548462e0e881af4cc350dff4549e67cef267c311ad4a212bcd3c2f48"
+  },
+  "output": {
+   "path": "assets/15-reactor-night-shift/room.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 74246,
+   "sha256": "cdceb6d71d641041b76cbd0d26340368c41ae106b1f91832848a5ddff154b694"
+  },
+  "result": "used"
+ },
+ {
+  "name": "14-room",
+  "batch": "batch-g-new-covers",
+  "prompt": "Side view cross-section background of a cozy empty little wooden cottage interior with three floors connected by ladders, wooden floors, windows with sunset, plants, shelves, empty floor space for characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-g-new-covers-r5.json",
+    "job_id": "231c3e4e-8b2a-4a12-bb0a-f7870b4b20f5",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3901132,
+   "sha256": "971f418dd8ad479dc48f63ef75a66f537405f6c337cba7389b08a7a3fa72f1b8"
+  },
+  "output": {
+   "path": "assets/14-fluff-house/room.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 85420,
+   "sha256": "4797bd0556d88104ffc69b85345d541aec465adf2ec1d382f0425a0326cadf98"
+  },
+  "result": "used"
+ },
+ {
+  "name": "13-w1",
+  "batch": "batch-h-dream-worlds",
+  "prompt": "Wide panoramic horizon background for a dream boat ride game: a calm lantern-lit lake with floating paper lanterns and soft fireflies at dusk. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-h-dream-worlds-r2.json",
+    "job_id": "62edda29-076a-4cd4-a9d5-7f8e80c1ab01",
+    "status": "generating",
+    "attempt": 1
+   },
+   {
+    "spec": "batch-h-dream-worlds-r2.json",
+    "job_id": "11391b6a-2508-4a61-97b0-f3699aca6713",
+    "status": "completed",
+    "attempt": 2
+   }
+  ],
+  "raw": {
+   "bytes": 3445523,
+   "sha256": "c0e100f2dce7d30789f1fa96abd40dee10347a1d0e2748b10bd9812088edffee"
+  },
+  "output": {
+   "path": "assets/13-dream-drift/w1.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 69940,
+   "sha256": "2a4b1d47bb0b57a30db00fb372437fc01f86b0dcfb7fb8a8ad16c51dbecd2b6e"
+  },
+  "result": "used"
+ },
+ {
+  "name": "13-w2",
+  "batch": "batch-h-dream-worlds",
+  "prompt": "Wide panoramic horizon background for a dream boat ride game: a candy land shore with cotton candy clouds and lollipop trees under a pink sky. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-h-dream-worlds-r2.json",
+    "job_id": "745d36ae-6f48-4392-a30b-f771cf0a3033",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 2852461,
+   "sha256": "fbe52d40a4008fe5b2c7c5d745d61b6ea7c29ff6927d914c47e9fa29fce45e6b"
+  },
+  "output": {
+   "path": "assets/13-dream-drift/w2.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 52366,
+   "sha256": "5a4ac64d3c8af4b710b6b2eb365c173b7aa5079cb25a4e4ff42c96611bc7643b"
+  },
+  "result": "used"
+ },
+ {
+  "name": "13-w3",
+  "batch": "batch-h-dream-worlds",
+  "prompt": "Wide panoramic horizon background for a dream boat ride game: a deep blue starry sky with planets and comets reflected in calm water. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-h-dream-worlds-r2.json",
+    "job_id": "1f3c4028-c1bd-48ca-9d25-cc26c4d4bfbc",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3559485,
+   "sha256": "2abbedb0b98bdfd3e775fbe6ca0c6dedcc4c70a308cfd6c6c407a1e7f2541c14"
+  },
+  "output": {
+   "path": "assets/13-dream-drift/w3.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 64922,
+   "sha256": "77f89c8e89e78a8969cf7e1379da5f03ac447e6153c481dd960c1684898e0f3e"
+  },
+  "result": "used"
+ },
+ {
+  "name": "13-w4",
+  "batch": "batch-h-dream-worlds",
+  "prompt": "Wide panoramic horizon background for a dream boat ride game: an underwater-like world of glowing jellyfish and coral towers in teal light. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-h-dream-worlds-r2.json",
+    "job_id": "ab6752e7-92e5-4e2d-b749-6ff2f59fca92",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3528573,
+   "sha256": "994610c894c0d35a817f3bb27d6f0f59a0ea3d3c938dd4e7803dfd2826ab2d3c"
+  },
+  "output": {
+   "path": "assets/13-dream-drift/w4.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 83560,
+   "sha256": "e6a77c1f104914ba5073e4fcdd95a7357fa10d43d956ab641b0081d14eb2434e"
+  },
+  "result": "used"
+ },
+ {
+  "name": "13-w5",
+  "batch": "batch-h-dream-worlds",
+  "prompt": "Wide panoramic horizon background for a dream boat ride game: a misty bamboo forest with giant moon and drifting petals. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-h-dream-worlds-r2.json",
+    "job_id": "dc96a3c4-5676-414f-8fe8-8a527051e9eb",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3941660,
+   "sha256": "a631266b2a526671eb04bb497036acffda8d261cae3b1ad29e2f4d4de20482c4"
+  },
+  "output": {
+   "path": "assets/13-dream-drift/w5.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 88376,
+   "sha256": "64121e9509556e83c870c15bf4ab25990659f7f0374c8102af03f5c5af81f419"
+  },
+  "result": "used"
+ },
+ {
+  "name": "13-w6",
+  "batch": "batch-h-dream-worlds",
+  "prompt": "Wide panoramic horizon background for a dream boat ride game: a clockwork world of floating golden gears and brass towers in warm light. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-h-dream-worlds-r2.json",
+    "job_id": "a137bbd0-4488-40e0-b647-1a4fe045752e",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3673047,
+   "sha256": "3238b4a3c315f75d1f7b888fa4ae78d858157c719068ac10556f4c9235096cbf"
+  },
+  "output": {
+   "path": "assets/13-dream-drift/w6.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 86458,
+   "sha256": "b68e9d26de3adecdec2f83affa07dd75c243fa7a968c0c4336387f0c4c0f6c74"
+  },
+  "result": "used"
+ },
+ {
+  "name": "13-w7",
+  "batch": "batch-h-dream-worlds",
+  "prompt": "Wide panoramic horizon background for a dream boat ride game: a world of giant books and floating letters-free pages under a warm library sky. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-h-dream-worlds-r2.json",
+    "job_id": "346e51f2-d456-4619-ae5c-4c9e55b02720",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3816838,
+   "sha256": "abc174c25f7c2a98417742320824e486683550cbbf2cf59421b59a2da7bf6b6f"
+  },
+  "output": {
+   "path": "assets/13-dream-drift/w7.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 89348,
+   "sha256": "5886ba99c670b750c4ab1f9e34d753696850490e7510c2780cb25c63b2639c67"
+  },
+  "result": "used"
+ },
+ {
+  "name": "13-w8",
+  "batch": "batch-h-dream-worlds",
+  "prompt": "Wide panoramic horizon background for a dream boat ride game: a radiant sunrise dreamscape with rainbow aurora over glassy water and floating islands. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1536,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-h-dream-worlds-r2.json",
+    "job_id": "ea92163c-ce38-44a6-8664-517cf3dfd15e",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 3856719,
+   "sha256": "52f6bcf6936fba6443eed54161b50537879f1d1b9ab7378234628118063ff672"
+  },
+  "output": {
+   "path": "assets/13-dream-drift/w8.webp",
+   "size": [
+    900,
+    600
+   ],
+   "bytes": 65860,
+   "sha256": "047a1ec730e30779cd877c05aad383fe91c1ce6740edce8be4f76b46ed6f944a"
+  },
+  "result": "used"
+ },
+ {
+  "name": "14-c1",
+  "batch": "batch-i-critters",
+  "prompt": "Single character sprite: a round fluffy pink puffball creature with tiny feet and big sparkly eyes. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-i-critters-r3.json",
+    "job_id": "65c04a85-f2fb-44bb-bcb6-85dd684ed2d6",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1743553,
+   "sha256": "988b94e4f64f29f133664a57618a918330e5248112761d55848b8fa10536f4f3"
+  },
+  "output": {
+   "path": "assets/14-fluff-house/c1.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 19298,
+   "sha256": "cc934260edf83c9329b48816bfc9a9e9072be26797672422018d52d3eb232d11"
+  },
+  "result": "used"
+ },
+ {
+  "name": "14-c2",
+  "batch": "batch-i-critters",
+  "prompt": "Single character sprite: a round fluffy mint green creature with a leaf sprout on its head. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-i-critters-r4.json",
+    "job_id": "4f55b2d7-7e78-4095-8978-7960fa3fbddb",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1642078,
+   "sha256": "2a8b857e56162a43a6c5a50109dc39d2c252a91f07c3ba5219d01b044401ab41"
+  },
+  "result": "rejected in review (not used)"
+ },
+ {
+  "name": "14-c3",
+  "batch": "batch-i-critters",
+  "prompt": "Single character sprite: a round fluffy sky blue creature with cloud-like fur, sleepy eyes. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-i-critters-r4.json",
+    "job_id": "3d43e0ce-74ee-4ebe-b2c5-0146e93b8268",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1621142,
+   "sha256": "f31eaa064232e48e6b1c1cb1edc45e4fc091f4966fa5cee5d8b38ce13b9b025e"
+  },
+  "output": {
+   "path": "assets/14-fluff-house/c3.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 16702,
+   "sha256": "97efd96ac8fbc09f3898d382e3840bb9f6b6dcb3f0e80f8425d9801187d044cc"
+  },
+  "result": "used"
+ },
+ {
+  "name": "14-c4",
+  "batch": "batch-i-critters",
+  "prompt": "Single character sprite: a round fluffy lemon yellow creature with star-shaped cheeks. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-i-critters-r4.json",
+    "job_id": "61bcef23-f1bd-45b1-aba7-c6d9a92e6f60",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1673160,
+   "sha256": "4b241aa965ad3a6450084d5134feeb314975eedb5a3d967509c89aaed2296e73"
+  },
+  "output": {
+   "path": "assets/14-fluff-house/c4.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 17400,
+   "sha256": "33019ab43fc67f2fa22db4533c2ab4052890ccdb3a0d7073544cd5c8bc1c58ec"
+  },
+  "result": "used"
+ },
+ {
+  "name": "14-c5",
+  "batch": "batch-i-critters",
+  "prompt": "Single character sprite: a round fluffy lavender creature wearing a tiny knitted scarf. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-i-critters-r4.json",
+    "job_id": "106e350c-f6d4-4c27-a4b6-7efb224ebe3e",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1643554,
+   "sha256": "7e082860ad8bc5530eb356a9124b0da988a48cca52904508d877080d97b0c029"
+  },
+  "output": {
+   "path": "assets/14-fluff-house/c5.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 22478,
+   "sha256": "4698f3fbfbca653704d0f04114eec14346bf8b16c7c946236b7b62b4631dc113"
+  },
+  "result": "used"
+ },
+ {
+  "name": "14-c6",
+  "batch": "batch-i-critters",
+  "prompt": "Single character sprite: a round fluffy peach orange creature holding a tiny cookie. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-i-critters-r4.json",
+    "job_id": "d9aa7dff-26cb-4cda-879e-85436dd7dd27",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1750441,
+   "sha256": "21936b3b5532ad33801f013642fac4684f49cb821db8575e857657acb72b49e2"
+  },
+  "output": {
+   "path": "assets/14-fluff-house/c6.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 18634,
+   "sha256": "5364054b2fe3b70232220f63ea1a0b3fb3848f8dce2ccc12e37e6fb262cf7902"
+  },
+  "result": "used"
+ },
+ {
+  "name": "14-c7",
+  "batch": "batch-i-critters",
+  "prompt": "Single character sprite: a round fluffy white creature with a little crown, regal and smug. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-i-critters-r4.json",
+    "job_id": "232d9919-ea1f-4862-942c-6ecd4d8f60c2",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1807629,
+   "sha256": "26f50839eaae4a6855c11ca3ee073ea2d77cb27e86fc2f5e4c59585a1febcbf7"
+  },
+  "output": {
+   "path": "assets/14-fluff-house/c7.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 19562,
+   "sha256": "7af52f53024eeec82b04e83263a503adfa5e0b8000d7a8f7a55d9f3d3c4b3205"
+  },
+  "result": "used"
+ },
+ {
+  "name": "14-c8",
+  "batch": "batch-i-critters",
+  "prompt": "Single character sprite: a round fluffy midnight navy creature with glowing moon spots, rare and mysterious. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure green (#00FF00) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-i-critters-r4.json",
+    "job_id": "8a0421a5-58de-41ce-8b6e-107ed127cc64",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1986224,
+   "sha256": "46d56aae92aeff3dc0469db5a079f38f5d33d9b02deb010e8a676d8987ac3f03"
+  },
+  "output": {
+   "path": "assets/14-fluff-house/c8.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 20490,
+   "sha256": "3ef908a147ccf98615d09f83c055ae52c7ef037c4770b1a02747fe381770b1c4"
+  },
+  "result": "used"
+ },
+ {
+  "name": "14-c2-v2",
+  "batch": "batch-j",
+  "prompt": "Single character sprite: a round fluffy mint green creature with a leaf sprout on its head. Original design. Full body, centered, front view, isolated on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+  "request_size": [
+   1024,
+   1024
+  ],
+  "attempts": [
+   {
+    "spec": "batch-j-retry-r2.json",
+    "job_id": "304fe359-9a52-4f32-8420-06c3503869dc",
+    "status": "completed",
+    "attempt": 1
+   }
+  ],
+  "raw": {
+   "bytes": 1740742,
+   "sha256": "622490fdbd858b189380cce0bc9617e0e4ca7a48945b3c6517b103d457a4cd6b"
+  },
+  "output": {
+   "path": "assets/14-fluff-house/c2.webp",
+   "size": [
+    256,
+    256
+   ],
+   "bytes": 17090,
+   "sha256": "49084c0b612330a337887144f3dfa8c62a2c1aa0343a34fe76364218983547c5"
+  },
+  "result": "used"
  }
 ]

@@ -1,0 +1,30 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-g-new-covers",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "14-cover",
+   "prompt": "Key art for a cozy critter collection game: a warm cross-section of a tiny wooden house with several rooms, adorable round fluffy creatures of different colors lounging on cushions, shelves with collectibles, fairy lights. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "15-cover",
+   "prompt": "Key art for a frantic reactor control game: a cartoon night-shift engineer in a hard hat juggling levers and buttons in a glowing control room, a big friendly-looking reactor core in the background with steam puffs and warning lights, comedic tension. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "15-room",
+   "prompt": "Wide background of a retro-futuristic reactor control room interior: wall of dials and gauges, glowing green core window in the center, pipes, warm and teal lighting, empty foreground, side view. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "14-room",
+   "prompt": "Side view cross-section background of a cozy empty little wooden cottage interior with three floors connected by ladders, wooden floors, windows with sunset, plants, shelves, empty floor space for characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  }
+ ]
+}

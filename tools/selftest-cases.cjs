@@ -38,6 +38,8 @@ module.exports = {
   },
   '02-leaf-sweepers': {
     async play(h) {
+      // 先把 P1 放到一片有落叶的区域左侧，避免随机地图里路径上恰好没有落叶
+      await h.ev('(() => { const L = __demo.leaf; let best = 0, bi = 0; for (let i = 0; i < L.length; i++) { const gx = i % 90; if (gx > 5 && gx < 70 && L[i] > best) { best = L[i]; bi = i; } } const p = __demo.players[0]; p.x = (bi % 90) * 10 - 20; p.y = Math.floor(bi / 90) * 10 + 5; })()');
       const x0 = await h.ev('__demo.players[0].x');
       await h.hold('KeyD', 900);
       const p = await h.ev('({ x: __demo.players[0].x, bag: __demo.players[0].bag })');
@@ -235,8 +237,13 @@ module.exports = {
     },
     async finish(h) {
       await h.ev('(() => { const R = __demo.R; R.t = R.S.time - 0.3; R.p.hp = R.p.maxHp = 1e6; R.dmgMul = 400; })()');
-      const ok = await h.waitFor('__demo.G.state === "end" || __demo.mode === "levelup"', 30000, 300);
-      for (let i = 0; i < 20 && (await h.ev('__demo.G.state')) !== 'end'; i++) { if ((await h.ev('__demo.mode')) === 'levelup') await h.press('Digit1'); await sleep(500); }
+      const ok = await h.waitFor('__demo.R.bossSpawned', 10000, 200);
+      // Boss 出现后把它拉到玩家身边，让自动武器能打到它（真实战斗流程不变）
+      for (let i = 0; i < 60 && (await h.ev('__demo.G.state')) !== 'end'; i++) {
+        if ((await h.ev('__demo.mode')) === 'levelup') await h.press('Digit1');
+        await h.ev('(() => { const R = __demo.R, b = R.enemies.find(e => e.type === "boss"); if (b) { b.x = R.p.x + 60; b.y = R.p.y; } })()');
+        await sleep(500);
+      }
       return [['Boss 出现并被击败', ok && (await h.ev('__demo.SV.clears.S0 >= 1'))]];
     },
     async afterReload(h) { return [['星币与通关记录已保存（修复 file:// 存档问题后走统一存档）', await h.ev('__demo.SV.coins > 0 && __demo.SV.clears.S0 >= 1 && __demo.SV.unlocked >= 2')]]; },
@@ -363,6 +370,74 @@ module.exports = {
       const n = await h.ev('__demo.S.board.length');
       await h.tapSel('#bGo'); await sleep(200);
       return [['触屏部署', n === 2], ['触屏开战', (await h.ev('__demo.S.phase')) === 'battle']];
+    },
+  },
+
+  '13-dream-drift': {
+    async play(h) {
+      const x0 = await h.ev('__demo.S.x');
+      await h.hold('KeyD', 600);
+      const x1 = await h.ev('__demo.S.x');
+      const e0 = await h.ev('__demo.S.energy'); await h.hold('Space', 600);
+      const e1 = await h.ev('__demo.S.energy');
+      await sleep(1500);
+      return [['A/D 转向', x1 > x0 + 0.2], ['空格冲刺消耗梦能', e1 < e0], ['小船在航行', (await h.ev('__demo.S.dist')) > 0.5]];
+    },
+    async finish(h) {
+      await h.ev('(() => { const S = __demo.S; S.orbs = 999; S.dist = S.Wd.len; S.objs = []; })()'); await sleep(400);
+      return [['航程结束且光点达标过关', (await h.ev('__demo.SV.unlocked')) >= 2]];
+    },
+    async afterReload(h) { return [['解锁与星级已保存', await h.ev('__demo.SV.unlocked >= 2 && __demo.SV.stars.W0 >= 1')]]; },
+    async touch(h) {
+      const btn = async label => h.ev(`(() => { const b = [...document.querySelectorAll('.xg-vbtn')].find(b => b.textContent.includes(${JSON.stringify(label)}) && b.offsetParent); const r = b.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()`);
+      const R = await btn('右'), D = await btn('冲刺');
+      const x0 = await h.ev('__demo.S.x'); await h.touchHold(R[0], R[1], 600); const x1 = await h.ev('__demo.S.x');
+      const e0 = await h.ev('__demo.S.energy'); await h.touchHold(D[0], D[1], 600); const e1 = await h.ev('__demo.S.energy');
+      return [['按住右侧转向', x1 > x0 + 0.2], ['按住冲刺', e1 < e0]];
+    },
+  },
+  '14-fluff-house': {
+    async play(h) {
+      await h.clickSel('#i_cushion');
+      const slot = await h.ev('(() => { const s = __demo.SLOTS[__demo.SV.slots.indexOf(null)]; return [s.x, s.y - 40]; })()');
+      const p = await canvasPt(h, slot[0], slot[1], '#c'); await h.click(p[0], p[1]); await sleep(200);
+      const placed = await h.ev('__demo.SV.slots.includes("cushion")');
+      const ok = await h.waitFor('__demo.S.guests.length > 0', 15000, 300);
+      const g = await h.ev('(() => { const g = __demo.S.guests[0]; return [g.x, [190, 390, 585][g.f] - 46]; })()');
+      const q = await canvasPt(h, g[0], g[1], '#c'); await h.click(q[0], q[1]); await sleep(150);
+      return [['选家具点空位摆放', placed], ['喜欢它的毛球来做客', ok], ['点毛球摸摸', (await h.ev('__demo.S.pets')) >= 1]];
+    },
+    async finish(h) {
+      await h.ev('(() => { const S = __demo.S; S.reqs.forEach(r => r.done = true); S.t = 0.01; })()'); await sleep(400);
+      return [['一天结束、委托达标过关', (await h.ev('__demo.SV.unlocked')) >= 2]];
+    },
+    async afterReload(h) { return [['家具摆放与图鉴已保存', await h.ev('__demo.SV.slots.includes("cushion") && __demo.SV.unlocked >= 2')]]; },
+    async touch(h) {
+      await h.ev('__demo.SV.berries = 200');
+      await h.tapSel('#i_plant');
+      const slot = await h.ev('(() => { const s = __demo.SLOTS[__demo.SV.slots.indexOf(null)]; return [s.x, s.y - 40]; })()');
+      const p = await canvasPt(h, slot[0], slot[1], '#c'); await h.tap(p[0], p[1]); await sleep(200);
+      return [['触屏摆放家具', await h.ev('__demo.SV.slots.includes("plant")')]];
+    },
+  },
+  '15-reactor-night-shift': {
+    async play(h) {
+      const r = await h.rect('#rod'); await h.click(r.x + r.w * 0.6, r.y + r.h / 2); await sleep(100);
+      const rod = await h.ev('__demo.S.rod');
+      await sleep(1500);
+      const t0 = await h.ev('__demo.S.temp'), c0 = await h.ev('__demo.S.cool');
+      const b = await h.rect('#bPump'); await h.drag([[b.x + b.w / 2, b.y + b.h / 2], [b.x + b.w / 2 + 1, b.y + b.h / 2]], 1500);
+      const c1 = await h.ev('__demo.S.cool');
+      await h.ev('__demo.S.pres = 60'); await h.clickSel('#bVent');
+      const pres = await h.ev('__demo.S.pres');
+      return [['拖动控制棒调功率', rod > 50], ['按住冷却泵消耗冷却液', c1 < c0], ['泄压阀降压', pres < 30], ['在发电', (await h.ev('__demo.S.energy')) > 0]];
+    },
+    async finish(h) { await h.ev('(() => { const S = __demo.S; S.energy = S.N.quota + 1; S.t = S.N.len; })()'); await sleep(400); return [['夜班结束发电达标过关', (await h.ev('__demo.SV.unlocked')) >= 2]]; },
+    async afterReload(h) { return [['夜班进度已保存', await h.ev('__demo.SV.unlocked >= 2 && __demo.SV.shifts >= 1')]]; },
+    async touch(h) {
+      const c0 = await h.ev('__demo.S.cool'); const b = await h.rect('#bPump');
+      await h.ev('__demo.S.temp = 70'); await h.touchHold(b.x + b.w / 2, b.y + b.h / 2, 1200);
+      return [['手指按住冷却泵', (await h.ev('__demo.S.cool')) < c0]];
     },
   },
 };

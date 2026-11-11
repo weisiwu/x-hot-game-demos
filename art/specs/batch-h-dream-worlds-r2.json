@@ -1,0 +1,54 @@
+{
+ "out_dir": "/tmp/xg-art/raw/batch-h-dream-worlds",
+ "retries": 2,
+ "jobs": [
+  {
+   "name": "13-w1",
+   "prompt": "Wide panoramic horizon background for a dream boat ride game: a calm lantern-lit lake with floating paper lanterns and soft fireflies at dusk. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "13-w2",
+   "prompt": "Wide panoramic horizon background for a dream boat ride game: a candy land shore with cotton candy clouds and lollipop trees under a pink sky. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "13-w3",
+   "prompt": "Wide panoramic horizon background for a dream boat ride game: a deep blue starry sky with planets and comets reflected in calm water. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "13-w4",
+   "prompt": "Wide panoramic horizon background for a dream boat ride game: an underwater-like world of glowing jellyfish and coral towers in teal light. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "13-w5",
+   "prompt": "Wide panoramic horizon background for a dream boat ride game: a misty bamboo forest with giant moon and drifting petals. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "13-w6",
+   "prompt": "Wide panoramic horizon background for a dream boat ride game: a clockwork world of floating golden gears and brass towers in warm light. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "13-w7",
+   "prompt": "Wide panoramic horizon background for a dream boat ride game: a world of giant books and floating letters-free pages under a warm library sky. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  },
+  {
+   "name": "13-w8",
+   "prompt": "Wide panoramic horizon background for a dream boat ride game: a radiant sunrise dreamscape with rainbow aurora over glassy water and floating islands. The horizon line sits in the lower third, sky dominates, no boats, no characters. Cute polished casual mobile game art, vibrant colors, soft lighting, clean shapes, high detail, no text, no letters, no numbers, no logo, no watermark, no UI.",
+   "w": 1536,
+   "h": 1024
+  }
+ ]
+}

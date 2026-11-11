@@ -1,0 +1,114 @@
+{
+ "14-c2": [
+  {
+   "job_id": "4f55b2d7-7e78-4095-8978-7960fa3fbddb",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-i-critters/14-c2.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1642078,
+    "sha256": "2a8b857e56162a43a6c5a50109dc39d2c252a91f07c3ba5219d01b044401ab41"
+   }
+  }
+ ],
+ "14-c3": [
+  {
+   "job_id": "3d43e0ce-74ee-4ebe-b2c5-0146e93b8268",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-i-critters/14-c3.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1621142,
+    "sha256": "f31eaa064232e48e6b1c1cb1edc45e4fc091f4966fa5cee5d8b38ce13b9b025e"
+   }
+  }
+ ],
+ "14-c4": [
+  {
+   "job_id": "61bcef23-f1bd-45b1-aba7-c6d9a92e6f60",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-i-critters/14-c4.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1673160,
+    "sha256": "4b241aa965ad3a6450084d5134feeb314975eedb5a3d967509c89aaed2296e73"
+   }
+  }
+ ],
+ "14-c5": [
+  {
+   "job_id": "106e350c-f6d4-4c27-a4b6-7efb224ebe3e",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-i-critters/14-c5.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1643554,
+    "sha256": "7e082860ad8bc5530eb356a9124b0da988a48cca52904508d877080d97b0c029"
+   }
+  }
+ ],
+ "14-c6": [
+  {
+   "job_id": "d9aa7dff-26cb-4cda-879e-85436dd7dd27",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-i-critters/14-c6.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1750441,
+    "sha256": "21936b3b5532ad33801f013642fac4684f49cb821db8575e857657acb72b49e2"
+   }
+  }
+ ],
+ "14-c7": [
+  {
+   "job_id": "232d9919-ea1f-4862-942c-6ecd4d8f60c2",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-i-critters/14-c7.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1807629,
+    "sha256": "26f50839eaae4a6855c11ca3ee073ea2d77cb27e86fc2f5e4c59585a1febcbf7"
+   }
+  }
+ ],
+ "14-c8": [
+  {
+   "job_id": "8a0421a5-58de-41ce-8b6e-107ed127cc64",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-i-critters/14-c8.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1986224,
+    "sha256": "46d56aae92aeff3dc0469db5a079f38f5d33d9b02deb010e8a676d8987ac3f03"
+   }
+  }
+ ]
+}

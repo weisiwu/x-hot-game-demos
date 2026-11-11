@@ -1,0 +1,50 @@
+{
+ "15-cover": [
+  {
+   "job_id": "f055b18e-7aab-4958-b68d-7cf3d4e52fe3",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-g-new-covers/15-cover.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3664890,
+    "sha256": "29d68b93376b2d6233b07334fbdee11a2127855252da4952d8d311aab7da2037"
+   }
+  }
+ ],
+ "15-room": [
+  {
+   "job_id": "75557b26-0369-4463-876c-08b3e80d02a1",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-g-new-covers/15-room.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3765897,
+    "sha256": "ddcdeaff548462e0e881af4cc350dff4549e67cef267c311ad4a212bcd3c2f48"
+   }
+  }
+ ],
+ "14-room": [
+  {
+   "job_id": "231c3e4e-8b2a-4a12-bb0a-f7870b4b20f5",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-g-new-covers/14-room.png",
+    "size": [
+     1536,
+     1024
+    ],
+    "bytes": 3901132,
+    "sha256": "971f418dd8ad479dc48f63ef75a66f537405f6c337cba7389b08a7a3fa72f1b8"
+   }
+  }
+ ]
+}

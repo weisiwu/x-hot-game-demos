@@ -1,0 +1,18 @@
+{
+ "14-c2-v2": [
+  {
+   "job_id": "304fe359-9a52-4f32-8420-06c3503869dc",
+   "status": "completed",
+   "attempt": 1,
+   "download": {
+    "path": "/tmp/xg-art/raw/batch-j-retry/14-c2-v2.png",
+    "size": [
+     1024,
+     1024
+    ],
+    "bytes": 1740742,
+    "sha256": "622490fdbd858b189380cce0bc9617e0e4ca7a48945b3c6517b103d457a4cd6b"
+   }
+  }
+ ]
+}
